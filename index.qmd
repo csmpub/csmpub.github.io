@@ -3,7 +3,7 @@ title: "Wintree's Home"
 listing: 
     contents:
         - "POSTS/*.qmd"
-    fields: [title, description, date, categories, image]
+    fields: [title, description, date]
     type: table
     sort: "date desc"
     sort-ui: true
