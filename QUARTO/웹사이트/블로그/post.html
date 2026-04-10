@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>보건 데이터 – wintree</title>
+<title>포스팅 폴더 – wintree</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -33,8 +68,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<script src="../../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
@@ -72,70 +105,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "검색"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-description','listing-date','listing-date-modified',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="nav-sidebar floating nav-fixed quarto-light">
+<body class="nav-sidebar floating nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -183,7 +158,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../FILES/index.html">데이터 다운로드</a></li><li class="breadcrumb-item"><a href="../../../FILES/KOSIS/index.html">통계포털(KOSIS)</a></li><li class="breadcrumb-item"><a href="../../../FILES/KOSIS/보건/index.html">보건 데이터</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Quarto</li><li class="breadcrumb-item"><a href="../../../QUARTO/웹사이트/리스팅/index.html">Website</a></li><li class="breadcrumb-item"><a href="../../../QUARTO/웹사이트/블로그/index.html">Blog</a></li><li class="breadcrumb-item"><a href="../../../QUARTO/웹사이트/블로그/post.html">포스팅 폴더</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -220,8 +195,8 @@ window.Quarto = {
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../FILES/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">데이터 다운로드</span></a>
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Quarto</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -229,8 +204,8 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../FILES/KOSIS/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">통계포털(KOSIS)</span></a>
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Website</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -238,25 +213,61 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../FILES/KOSIS/보건/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">보건 데이터</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+            <a href="../../../QUARTO/웹사이트/리스팅/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Listing</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../FILES/KOSIS/보건/완전생명표_1세별.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">완전생명표(1세별)</span></a>
+  <a href="../../../QUARTO/웹사이트/리스팅/categories-feeds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">분류 피드</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../QUARTO/웹사이트/리스팅/fields.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">리스팅 필드</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../QUARTO/웹사이트/리스팅/including-excluding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">리스팅 포함 제외</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../QUARTO/웹사이트/리스팅/listing-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">리스팅 개요</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../QUARTO/웹사이트/리스팅/listing-usertool.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">리스팅 툴</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../QUARTO/웹사이트/리스팅/options.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">리스팅 옵션</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../QUARTO/웹사이트/리스팅/others.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">리스팅 위치, 다중 리스팅, YAML 리스팅</span></a>
   </div>
 </li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../FILES/KOSIS/인구/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">인구 데이터</span></a>
+            <a href="../../../QUARTO/웹사이트/초안/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Draft</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -264,36 +275,138 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../FILES/KOSIS/인구/가구주의_성_연령_혼인상태별_추계가구-시도.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">가구주의 성/연령/혼인상태별 추계가구-시도</span></a>
+  <a href="../../../QUARTO/웹사이트/초안/website-draft.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">웹사이트 초안</span></a>
   </div>
 </li>
       </ul>
   </li>
-      </ul>
-  </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../FILES/DATA/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">공공데이터포털(DATA)</span></a>
+            <a href="../../../QUARTO/웹사이트/네비게이션/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Nevigation</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../QUARTO/웹사이트/네비게이션/404page.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">404 에러 페이지</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../QUARTO/웹사이트/네비게이션/back-to-top.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">처음으로 이동</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../QUARTO/웹사이트/네비게이션/breadcrums.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">탐색 경로</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../QUARTO/웹사이트/네비게이션/github-link.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GitHub Link</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../QUARTO/웹사이트/네비게이션/hide-navigation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">네비게이션 감추기 및 읽기 모드</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../QUARTO/웹사이트/네비게이션/hybrid-navigation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">메뉴바와 사이드바의 결합</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../QUARTO/웹사이트/네비게이션/navbar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">메뉴바(navbar:)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../QUARTO/웹사이트/네비게이션/page-footer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">꼬리말</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../QUARTO/웹사이트/네비게이션/page-navigation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">페이지 이동</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../QUARTO/웹사이트/네비게이션/redirects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">다른 페이지로</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../QUARTO/웹사이트/네비게이션/sidebar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">사이드바(sidebar:)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../QUARTO/웹사이트/네비게이션/site-search.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">사이트 검색</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../FILES/DATA/한국부동산원/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">한국부동산원</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="토글 섹션">
+            <a href="../../../QUARTO/웹사이트/블로그/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Blog</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../FILES/DATA/한국부동산원/전국청약평균분양가.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">전국 청약 평균 분양가</span></a>
+  <a href="../../../QUARTO/웹사이트/블로그/about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About page</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../QUARTO/웹사이트/블로그/home.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">블로그 홈</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../QUARTO/웹사이트/블로그/post.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">포스팅 폴더</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../QUARTO/웹사이트/블로그/rss-feed.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">RSS 피드</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../QUARTO/웹사이트/블로그/subscribe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">구독</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../QUARTO/웹사이트/블로그/theme.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">블로그 테마</span></a>
   </div>
 </li>
       </ul>
@@ -307,18 +420,17 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">분류</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">전체 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVBJUI4JUIwJUVCJThDJTgwJUVDJTk3JUFDJUVCJUFBJTg1">기대여명 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJTgzJTlEJUVCJUFBJTg1JUVEJTkxJTlD">생명표 <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../FILES/index.html">데이터 다운로드</a></li><li class="breadcrumb-item"><a href="../../../FILES/KOSIS/index.html">통계포털(KOSIS)</a></li><li class="breadcrumb-item"><a href="../../../FILES/KOSIS/보건/index.html">보건 데이터</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Quarto</li><li class="breadcrumb-item"><a href="../../../QUARTO/웹사이트/리스팅/index.html">Website</a></li><li class="breadcrumb-item"><a href="../../../QUARTO/웹사이트/블로그/index.html">Blog</a></li><li class="breadcrumb-item"><a href="../../../QUARTO/웹사이트/블로그/post.html">포스팅 폴더</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">보건 데이터</h1>
+<h1 class="title">포스팅 폴더</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">KOSIS</div>
-    <div class="quarto-category">보건</div>
+    <div class="quarto-category">웹사이트</div>
+    <div class="quarto-category">블로그</div>
+    <div class="quarto-category">포스팅폴더</div>
   </div>
   </div>
 
@@ -336,81 +448,32 @@ window.Quarto = {
 </header>
 
 
-<p>KOSIS에서 제공하는 <code>통계주제: 보건</code> 데이터</p>
-<section id="데이터-목록" class="level2">
-<h2 class="anchored" data-anchor-id="데이터-목록">데이터 목록</h2>
-
+<p>블로그 글을 저장하는 포스팅 폴더 설정</p>
+<section id="초안" class="level3">
+<h3 class="anchored" data-anchor-id="초안">초안</h3>
+<p>프리뷰에서만 보이고, 렌더링에서는 제외되는 섫정</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">draft</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="최종-수정일" class="level3">
+<h3 class="anchored" data-anchor-id="최종-수정일">최종 수정일</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">last-modified</span><span class="kw">:</span><span class="at"> </span><span class="st">"2026-03-27"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="렌더링-결과-보관" class="level3">
+<h3 class="anchored" data-anchor-id="렌더링-결과-보관">렌더링 결과 보관</h3>
+<section id="폴더-설정_metadata.yml" class="level4">
+<h4 class="anchored" data-anchor-id="폴더-설정_metadata.yml">폴더 설정(_metadata.yml)</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># freeze computational output</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">freeze</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code></pre></div><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></div>
 
 
 </section>
+</section>
 
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="정렬" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">정렬</option>
-      <option value="index" data-direction="asc">기본</option>
-      <option value="listing-date-sort" data-direction="asc">
-        날짜 - 오름차순
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        날짜 - 내림차순
-      </option>
-      <option value="listing-title-sort" data-direction="asc">
-        제목
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="필터">
-    </div>
-</div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">제목</a>
-</th>
-
-<th>
-설명
-</th>
-
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">날짜</a>
-</th>
-
-<th>
-개정
-</th>
-
-</tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-categories="JUVBJUI4JUIwJUVCJThDJTgwJUVDJTk3JUFDJUVCJUFBJTg1JTJDJUVDJTgzJTlEJUVCJUFBJTg1JUVEJTkxJTlD" data-listing-date-sort="1764687600000" data-listing-file-modified-sort="1775808454592" data-listing-date-modified-sort="1775142000000" data-listing-reading-time-sort="1" data-listing-word-count-sort="175" data-listing-title-sort="완전생명표(1세별)" data-listing-filename-sort="완전생명표_1세별.qmd">
-<td>
-<a href="../../../FILES/KOSIS/보건/완전생명표_1세별.html" class="title listing-title">완전생명표(1세별)</a>
-</td>
-<td>
-<span class="listing-description">기대여명(전체, 남, 여) 기간: 1970~2024년</span>
-</td>
-<td>
-<span class="listing-date">2025-12-03</span>
-</td>
-<td>
-<span class="listing-date-modified">2026-04-03</span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
-<div class="listing-no-matching d-none">일치 없음</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
