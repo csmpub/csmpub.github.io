@@ -17,6 +17,7 @@ website:
   sidebar:
     - id: menu
       title: "Menu"
+      collapse-level: 3
       contents:
         - text: "Top Menu"
         - text: "---" 
@@ -52,3 +53,4 @@ format:
 
 language: korean.yml
 date-format: iso
+toc: true

@@ -1,4 +1,3 @@
 ---
 title: "Listing"
-categories: [웹사이트, 리스팅]
 ---

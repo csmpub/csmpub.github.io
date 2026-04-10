@@ -1,5 +1,4 @@
 ---
 title: "Draft"
-categories: [웹사이트, 초안, Draft]
 ---
 
