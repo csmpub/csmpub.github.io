@@ -1,6 +1,6 @@
 ---
 title: "한국부동산원"
-categories: [부동산원]
+categories: [DATA,부동산원]
 listing: 
     contents:
       - "*.qmd"
@@ -12,5 +12,6 @@ listing:
     categories: true
 ---
 
+공공데이터 포털에서 제공하는 `한국부동산원` 데이터
 
 ## 데이터 목록
