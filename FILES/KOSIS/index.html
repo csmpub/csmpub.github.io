@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-description','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-description','listing-date','listing-date-modified',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author"],
     };
@@ -365,11 +365,15 @@ window.Quarto = {
 <a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">날짜</a>
 </th>
 
+<th>
+개정
+</th>
+
 </tr>
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-categories="JUVBJUI4JUIwJUVCJThDJTgwJUVDJTk3JUFDJUVCJUFBJTg1JTJDJUVDJTgzJTlEJUVCJUFBJTg1JUVEJTkxJTlD" data-listing-date-sort="1764687600000" data-listing-file-modified-sort="1775790420123" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="175" data-listing-title-sort="완전생명표(1세별)" data-listing-filename-sort="완전생명표_1세별.qmd">
+<tr data-index="0" data-categories="JUVBJUI4JUIwJUVCJThDJTgwJUVDJTk3JUFDJUVCJUFBJTg1JTJDJUVDJTgzJTlEJUVCJUFBJTg1JUVEJTkxJTlD" data-listing-date-sort="1764687600000" data-listing-file-modified-sort="1775803219199" data-listing-date-modified-sort="1775142000000" data-listing-reading-time-sort="1" data-listing-word-count-sort="175" data-listing-title-sort="완전생명표(1세별)" data-listing-filename-sort="완전생명표_1세별.qmd">
 <td>
 <a href="../../FILES/KOSIS/보건/완전생명표_1세별.html" class="title listing-title">완전생명표(1세별)</a>
 </td>
@@ -379,10 +383,13 @@ window.Quarto = {
 <td>
 <span class="listing-date">2025-12-03</span>
 </td>
+<td>
+<span class="listing-date-modified">2026-04-03</span>
+</td>
 
 </tr>
 
-<tr data-index="1" data-categories="JUVDJUI2JTk0JUVBJUIzJTg0JUVBJUIwJTgwJUVBJUI1JUFDJTJDJUVBJUIwJTgwJUVBJUI1JUFDJUVDJUEzJUJDJTJDJUVDJTg0JUIxJUVCJUIzJTg0JTJDJUVDJTk3JUIwJUVCJUEwJUI5JTJDJUVEJTk4JUJDJUVDJTlEJUI4JUVDJTgzJTgxJUVEJTgzJTlD" data-listing-date-sort="1733929200000" data-listing-file-modified-sort="1775790420124" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="153" data-listing-title-sort="가구주의 성/연령/혼인상태별 추계가구-시도" data-listing-filename-sort="가구주의_성_연령_혼인상태별_추계가구-시도.qmd">
+<tr data-index="1" data-categories="JUVDJUI2JTk0JUVBJUIzJTg0JUVBJUIwJTgwJUVBJUI1JUFDJTJDJUVBJUIwJTgwJUVBJUI1JUFDJUVDJUEzJUJDJTJDJUVDJTg0JUIxJUVCJUIzJTg0JTJDJUVDJTk3JUIwJUVCJUEwJUI5JTJDJUVEJTk4JUJDJUVDJTlEJUI4JUVDJTgzJTgxJUVEJTgzJTlD" data-listing-date-sort="1733929200000" data-listing-file-modified-sort="1775804619575" data-listing-date-modified-sort="1775487600000" data-listing-reading-time-sort="1" data-listing-word-count-sort="153" data-listing-title-sort="가구주의 성/연령/혼인상태별 추계가구-시도" data-listing-filename-sort="가구주의_성_연령_혼인상태별_추계가구-시도.qmd">
 <td>
 <a href="../../FILES/KOSIS/인구/가구주의_성_연령_혼인상태별_추계가구-시도.html" class="title listing-title">가구주의 성/연령/혼인상태별 추계가구-시도</a>
 </td>
@@ -391,6 +398,9 @@ window.Quarto = {
 </td>
 <td>
 <span class="listing-date">2024-12-12</span>
+</td>
+<td>
+<span class="listing-date-modified">2026-04-07</span>
 </td>
 
 </tr>
