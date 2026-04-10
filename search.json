@@ -66,18 +66,25 @@
     "text": "콘텐츠 창작자・개발자\n건설도시연구 대표\n\n학력사항\n○ 공학사: 연세대학교 건축공학과\n○ 공학석사: 연세대학교 공학대학원 도시계획전공\n○ 공학박사: 연세대학교 대학원 도시공학과\n\n\n경력사항\n○ 대우건설: 상무\n○ 대우에스티: 전무\n○ 겸임교수: 이화여자대학교 엘텍공과대학 미래사회공학부\n○ 집필위원: 대한건축학회 발행 건축기술지침(Rev. 2) 건축 I, 건축 II\n\n\n\n\n주메일\n\n\n부메일"
   },
   {
-    "objectID": "POSTS/start_blog.html",
-    "href": "POSTS/start_blog.html",
-    "title": "블로그(?) 메뉴 추가",
+    "objectID": "POSTS/2026-04-07_가구주의-성-연령-혼인상태별-추계가구.html",
+    "href": "POSTS/2026-04-07_가구주의-성-연령-혼인상태별-추계가구.html",
+    "title": "추계가구(가구주의 성/연령/혼인상태별)",
     "section": "",
-    "text": "일단 추가는 했지만 얼마나 자주 글을 쓸지? 올릴지?"
+    "text": "KOSIS 가구주의 성/연령/혼인상태별 추계가구-시도에서 전국 및 서울 데이터 생성"
   },
   {
-    "objectID": "POSTS/2026-04-10_vector.html",
-    "href": "POSTS/2026-04-10_vector.html",
-    "title": "벡터(Vector)",
+    "objectID": "POSTS/2026-04-03_연령별-기대여명.html",
+    "href": "POSTS/2026-04-03_연령별-기대여명.html",
+    "title": "연령별 기대여명",
     "section": "",
-    "text": "R의 데이터 기본 요소인 벡터\n\n기본(automic) 벡터\n타입들\n\n\n일반화된(generic) 벡터\n리스트"
+    "text": "KOSIS 생명표에서 기대여명 추출하여 연령별기대여명 생성"
+  },
+  {
+    "objectID": "POSTS/2026-04-03_월별-평균-분양가.html",
+    "href": "POSTS/2026-04-03_월별-평균-분양가.html",
+    "title": "월별 평균 분양가",
+    "section": "",
+    "text": "한국부동산원(구 한국감정원)의 청약홈에서 제공하는 전국 청약 평균분양가 정보"
   },
   {
     "objectID": "index.html",
