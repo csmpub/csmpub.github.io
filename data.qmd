@@ -4,10 +4,13 @@ listing:
     contents:
         - "*/*/*/index.qmd"
         - "!POSTS/"
-    type: table
     fields: [title, description]
-    sort-ui: false
-    filter-ui: false
+    type: table
+    sort: "date desc"
+    sort-ui: true
+    filter-ui: true
+    categories: true
+    date-format: iso
 sidebar: data
 ---
 

@@ -28,12 +28,6 @@ website:
       - data.qmd
       - text: "---"
       - auto: FILES
-listing: 
-    sort: "date desc"
-    sort-ui: true
-    filter-ui: true
-    categories: true
-    date-format: iso
 
 format:
   html:

@@ -2,12 +2,17 @@
 title: "보건 데이터"
 categories: [KOSIS, 보건]
 listing: 
-  contents:
-    - "*.qmd"
-  fields: [title, description, date]
-  type: table
+    contents:
+      - "*.qmd"
+    fields: [title, description, date]
+    type: table
+    sort: "date desc"
+    sort-ui: true
+    filter-ui: true
+    categories: true
+    date-format: iso
+
 ---
 
-_____
 
-통계포털(KOSIS) - 주제별: 보건
+## 데이터 목록

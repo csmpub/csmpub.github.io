@@ -6,8 +6,12 @@ listing:
         - KOSIS
         - "!index.qmd"
     fields: [title, description, date]
-    sort: "date desc"
     type: table
+    sort: "date desc"
+    sort-ui: true
+    filter-ui: true
+    categories: true
+    date-format: iso
 sidebar: data
 ---
 

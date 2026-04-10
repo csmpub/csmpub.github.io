@@ -1,9 +1,15 @@
 ---
 title: "Wintree's Home"
 listing: 
-    contents: POSTS
+    contents:
+        - "POSTS/*.qmd"
     fields: [title, description, date, categories, image]
     type: table
+    sort: "date desc"
+    sort-ui: true
+    filter-ui: true
+    categories: true
+    date-format: iso
 sidebar: data
 ---
 

@@ -2,12 +2,16 @@
 title: "한국부동산원"
 categories: [부동산원]
 listing: 
-  contents:
-    - "*.qmd"
-  fields: [title, description, date]
-  type: table
+    contents:
+      - "*.qmd"
+    fields: [title, description, date]
+    type: table
+    sort: "date desc"
+    sort-ui: true
+    filter-ui: true
+    categories: true
+    date-format: iso
 ---
 
-_____
 
-공공데이터포털(DATA) - 한국부동산원
+## 데이터 목록
