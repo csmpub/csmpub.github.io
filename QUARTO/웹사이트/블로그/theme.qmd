@@ -1,0 +1,20 @@
+---
+title: "블로그 테마"
+categories: [웹사이트, 블로그, 테마]
+---
+
+블로그 테마 설정
+
+### 테마
+
+25개의 Bootswatch 테마를 사용하거나 자체 테마를 작성할 수 있다.
+
+`default`, `cerulean`, `cosmo`, `cyborg`, `darkly`, `flatly`, `journal`, `litera`, `lumen`, `lux`, `materia`, `minty`, `morph`, `pulse`, `quartz`, `sandstone`, `simplex`, `sketchy`, `slate`, `solar`, `spacelab`, `superhero`, `united`, `vapor`, `yeti`, `zephyr`
+
+#### 프로젝트 설정(_quarto.yml)
+
+```yml
+format:
+  html:
+    theme: cosmo
+```

@@ -1,0 +1,46 @@
+---
+title: "페이지 이동"
+categories: [웹사이트, 네비게이션, 이전페이지, 이후페이지]
+---
+
+섹션이나 서브섹션에서 페이지 하부에 이전/이후 링크 표시
+
+::: {.callout-tip collapse="false"}
+### Seperators
+- `sidebar: `하부 섹션(section) 또는 항목(item) 사이에 `text: "---"`가 있는 경우 보이지 않음
+```yml
+website:
+  sidebar:
+    contents:
+      - section: "section one"
+        contents:
+          - href: documents.qmd
+          - ...
+      - text: "---"
+      - section: "section two"
+        contents:
+          - href: ...
+          ...
+```
+:::
+
+### 프로젝트 설정(_quarto.yml)
+
+```yml
+website:
+  page-navigation: ture   # or false
+```
+
+### 폴더 설정(_metadata.yml)
+
+```yml
+page-navigation: true   # or false
+```
+
+### 문서 설정(yml 헤더)
+
+```yml
+---
+page-navigation: false  # or true
+---
+```

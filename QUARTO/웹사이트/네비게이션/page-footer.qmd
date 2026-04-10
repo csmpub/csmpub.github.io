@@ -1,0 +1,36 @@
+---
+title: "꼬리말"
+categories: [웹사이트, 네비게이션, 꼬리말]
+---
+
+웹사이트 모든 페이지의 꼬리말 설정
+
+### 프로젝트 설정(_quarto.yml)
+
+```yml
+website:
+  page-footer:
+    left: "단순 텍스트 문자열"
+    center: ...
+    right:
+      - icon: github
+        href: https://github.com
+```
+
+### page-footer: 옵션
+
+background
+foreground
+border
+
+```yml
+website:
+  page-footer:
+    border: flase   # default - true
+    background: light   # default - no background color
+```
+
+::: {.callout-tip}
+### foreground color
+지정하지 않으면 background와 대비되는 색으로 자동 지정됨
+:::

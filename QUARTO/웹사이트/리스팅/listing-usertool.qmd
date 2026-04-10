@@ -1,0 +1,61 @@
+---
+title: "리스팅 툴"
+categories: [웹사이트, 리스팅, 툴]
+---
+
+리스팅에 추가할 수 있는 사용자 툴
+
+### 정렬
+
+- 기본 필드 포함
+
+```yml
+---
+listing:
+  sort-ui: false
+---
+```
+
+- 필드 지정
+
+```yml
+---
+listing:
+  sort-ui: [title, date]
+---
+```
+
+### 필터
+
+- 표시 제거
+
+```yml
+---
+listing:
+  filter-ui: false
+---
+```
+
+- 필드 지정
+
+```yml
+---
+listing:
+  filter-ui: [title, date]
+---
+```
+
+### 페이징 관리
+
+- 기본 페이지
+
+default: 25, table: 30, grid: 18
+
+- 페이징 지정
+
+```yml
+---
+listing:
+  page-size: 36
+---
+```

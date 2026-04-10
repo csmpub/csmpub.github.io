@@ -1,21 +1,25 @@
 ---
 title: "Wintree's Home"
 listing: 
-    contents:
-        - "POSTS/*.qmd"
+    contents: POSTS
     fields: [title, description, date]
     type: table
     sort: "date desc"
     sort-ui: true
     filter-ui: true
     categories: true
-sidebar: data
+sidebar: menu
 ---
 
 \
 
-개인용 데이터 리포지토리입니다.\
-데이터 분석 목적에 따라 공공데이터에서 취득한 원데이터를 가공한 과정을 기록하는 목적입니다.\
+개인용 데이터 리포지토리.
+
+- 공공 데이터 가공 과정
+- Quarto How-to 노트
+- 기타 이런 저런 생각들...
+
+\
 
 ## 새 글
 

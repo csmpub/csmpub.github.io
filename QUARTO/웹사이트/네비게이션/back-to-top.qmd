@@ -1,0 +1,21 @@
+---
+title: "처음으로 이동"
+categories: [웹사이트, 네비게이션, 처음으로]
+---
+
+페이지 하부에 처음으로 링크 표시
+
+### 프로젝트 설정(_quarto.yml)
+
+```yml
+website:
+  back-to-top-navigation: ture   # or false
+```
+
+### 문서 설정(yml 헤더)
+
+```yml
+---
+page-navigation: false  # or true
+---
+```

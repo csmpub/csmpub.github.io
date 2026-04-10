@@ -1,0 +1,57 @@
+---
+title: "리스팅 옵션"
+categories: [웹사이트, 리스팅, 옵션]
+---
+
+리스팅 타입별 옵션, 기타 옵션
+
+### 타입 default 옵션
+
+`max-items: ` The maximum number of items to include in this listing.
+`image-align: ` Whether to place the image on the right or left side of the post content. Defaults to right.
+`image-height: ` The height of the image being displayed. The width is automatically determined and the image will fill the rectangle without scaling (i.e. cropped to fill).
+`image-placeholder: ` The default image for items if they have no image.
+
+### 타입 grid 옵션
+
+`max-items`	The maximum number of items to include in this listing.
+`image-height`	The height of the image being displayed. The width is automatically determined and the image will fill the rectangle without scaling (i.e. cropped to fill).
+`image-placeholder`	The default image for items if they have no image.
+`grid-columns`	The number of columns in the grid display. Defaults to 3.
+`grid-item-border`	Whether to display a border around the item card. Defaults to true.
+`grid-item-align`	Aligns the content within the card (left, right, or center). Defaults to left.
+
+### 타입 table 옵션
+
+`max-items`	The maximum number of items to include in this listing.
+`image-height`	The height of the image being displayed. The width is automatically select and the image will fill the rectangle without scaling (i.e. cropped to fill).
+`image-placeholder`	The default image for items if they have no image.
+`table-striped`	Display the table rows with alternating background colors (true or false). Defaults to false
+`table-hover`	Highlight rows of the table when the user hovers the mouse over them (true or false). Defaults to false.
+`field-links`	A list of fields that should link to the document in the table (defaults to title).
+
+### 기타 옵션
+
+`field-display-names` A mapping that provides display name for specific fields. For example, to display the title column as ‘Report’ in a table listing you would write:
+
+```yml
+listing:
+  field-display-names:
+    title: "Report"
+```
+
+`image-lazy-loading`	When true, listing images are loaded only as they come into view. When false, images are automatically loaded. Default: true
+
+`max-description-length`	The maximum length of the description displayed in the listing (in characters). Defaults to 175.
+
+`date-format`
+
+The date format to use when displaying dates (e.g. d-M-yyyy).
+
+You may either provide a date style (full, long, medium, short or iso) or a format string for formatting the date. The behavior of date styles varies depending upon locale, but examples in the en locale are as follows:
+
+- full: Saturday, February 5, 2022
+- long: February 5, 2022
+- medium: Feb 5, 2022
+- short: 2/5/22
+- iso: 2022-05-22

@@ -1,0 +1,22 @@
+---
+title: "사이트 검색"
+categories: [웹사이트, 네비게이션, 검색, 찾기]
+---
+
+사이트 내용을 검색하는 기능 추가
+
+### search: true
+
+`navbar: ` 또는 `sidebar: ` 하부에 추가 (한쪽만 설정 가능)
+
+```yml
+website:
+    navbar:
+        search: true
+```
+
+```yml
+website:
+    sidebar:
+        search: true
+```

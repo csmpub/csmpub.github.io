@@ -4,9 +4,9 @@ listing:
     contents:
         - "*/*/*/index.qmd"
         - "!POSTS/"
+        - "!QUARTO/"
     fields: [title, description]
     type: table
-    sort: "date desc"
     sort-ui: true
     filter-ui: true
     categories: true

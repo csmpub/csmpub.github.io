@@ -1,0 +1,28 @@
+---
+title: 네비게이션 감추기 및 읽기 모드
+categories: [웹사이트, 네비게이션, 감추기]
+---
+
+메뉴바, 사이드바를 감추거나 사이드바와 목차를 감추는 설정
+
+### 네비에기션 감추기
+
+페이지의 yml 헤더에서 설정
+
+```yml
+---
+# Hides the sidebar on this page
+sidebar: false
+# Hides the navbar on this page
+navbar: false
+---
+```
+
+### 읽기 모드
+
+프로젝트 설정(_quarto.yml) 웹사이트
+
+```yml
+website:
+  reader-mode: true
+```

@@ -10,22 +10,40 @@ website:
         text: "Home"
       - href: data.qmd
         text: "Data"
+      - href: quarto.qmd
+        text: "Quarto"
       - href: about.qmd
         text: "About"
-  sidebar: 
-    - id: home
-      title: "Home"
-      contents: 
-      - index.qmd
-      - data.qmd
-      - text: "---"
+  sidebar:
+    - id: menu
+      title: "Menu"
+      contents:
+        - text: "Top Menu"
+        - text: "---" 
+        - index.qmd
+        - data.qmd
+        - quarto.qmd
+        - text: "---" 
     - id: data
       title: "Data"
       contents: 
-      - index.qmd
-      - data.qmd
-      - text: "---"
-      - auto: FILES
+        - text: "Top Menu"
+        - text: "---" 
+        - index.qmd
+        - data.qmd
+        - quarto.qmd
+        - text: "---"
+        - auto: FILES
+    - id: quarto
+      title: "Quarto"
+      contents: 
+        - text: "Top Menu"
+        - text: "---" 
+        - index.qmd
+        - data.qmd
+        - quarto.qmd
+        - text: "---"
+        - auto: QUARTO
 
 format:
   html:

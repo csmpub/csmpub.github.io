@@ -1,0 +1,32 @@
+---
+title: "GitHub Link"
+categories: [웹사이트, 네비게이션, GitHub]
+---
+
+GitHub 리포지토리 편집, 보기, 이슈 리포트 액션 설정
+
+### 프로젝트 설정(_quarto.yml)
+
+```yml
+website:
+  repo-url: https://github.com/quarto-dev/quarto-demo
+  repo-actions: [edit, source, issue]
+```
+
+### 문서 설정(yml 헤더)
+
+특정 페이지에서 GutHub 액션 중지 설정
+
+```yml
+---
+repo-actions: false
+---
+```
+
+### 추가 옵션
+
+- `repo-subdir:	` Subdirectory of repository containing source files (defaults to root directory).
+- `repo-branch:	` Repository branch containing the source files (defaults to main)
+- `issue-url: ` Provide an explicit URL for the ‘Report an Issue’ action.
+- `repo-link-target: ` The target attribute to use for repo action links. E.g., set to “_blank” to open in a new tab or window.
+- `repo-link-rel: ` The rel attribute to use for repo action links.
