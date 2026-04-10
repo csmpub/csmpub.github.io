@@ -4,10 +4,34 @@
     "href": "data.html",
     "title": "Data Repository",
     "section": "",
-    "text": "노트wintree\n\n\n\n!! 공공 데이터 소스 정보, 직접 조사 또는 가공한 데이터, 저작물에 사용한 데이터 등의 보관소 !!\n\n\n\n데이터 폴더로 이동\n\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n\n\n\n\n\n한국부동산원\n\n\n\n\n\n\n\n\n\n보건 데이터\n\n\n\n\n\n\n\n\n\n인구 데이터\n\n\n\n\n\n\n\n\n\n일치 없음",
+    "text": "노트wintree\n\n\n\n공공 데이터 소스 정보, 직접 조사 또는 가공한 데이터, 저작물에 사용한 데이터 등의 보관소\n\n\n\n데이터 폴더로 이동\n\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n\n\n\n\n\n한국부동산원\n\n\n\n\n\n\n\n\n\n보건 데이터\n\n\n\n\n\n\n\n\n\n인구 데이터\n\n\n\n\n\n\n\n\n\n일치 없음",
     "crumbs": [
       "Home",
       "Data Repository"
+    ]
+  },
+  {
+    "objectID": "FILES/DATA/한국부동산원/index.html",
+    "href": "FILES/DATA/한국부동산원/index.html",
+    "title": "한국부동산원",
+    "section": "",
+    "text": "공공데이터 포털에서 제공하는 한국부동산원 데이터",
+    "crumbs": [
+      "데이터 다운로드",
+      "공공데이터포털(DATA)",
+      "한국부동산원"
+    ]
+  },
+  {
+    "objectID": "FILES/DATA/한국부동산원/index.html#데이터-목록",
+    "href": "FILES/DATA/한국부동산원/index.html#데이터-목록",
+    "title": "한국부동산원",
+    "section": "데이터 목록",
+    "text": "데이터 목록",
+    "crumbs": [
+      "데이터 다운로드",
+      "공공데이터포털(DATA)",
+      "한국부동산원"
     ]
   },
   {
@@ -106,6 +130,54 @@
     "crumbs": [
       "Home",
       "Wintree's Home"
+    ]
+  },
+  {
+    "objectID": "FILES/KOSIS/보건/index.html",
+    "href": "FILES/KOSIS/보건/index.html",
+    "title": "보건 데이터",
+    "section": "",
+    "text": "KOSIS에서 제공하는 통계주제: 보건 데이터",
+    "crumbs": [
+      "데이터 다운로드",
+      "통계포털(KOSIS)",
+      "보건 데이터"
+    ]
+  },
+  {
+    "objectID": "FILES/KOSIS/보건/index.html#데이터-목록",
+    "href": "FILES/KOSIS/보건/index.html#데이터-목록",
+    "title": "보건 데이터",
+    "section": "데이터 목록",
+    "text": "데이터 목록",
+    "crumbs": [
+      "데이터 다운로드",
+      "통계포털(KOSIS)",
+      "보건 데이터"
+    ]
+  },
+  {
+    "objectID": "FILES/KOSIS/인구/index.html",
+    "href": "FILES/KOSIS/인구/index.html",
+    "title": "인구 데이터",
+    "section": "",
+    "text": "KOSIS에서 제공하는 통계주제: 인구 데이터",
+    "crumbs": [
+      "데이터 다운로드",
+      "통계포털(KOSIS)",
+      "인구 데이터"
+    ]
+  },
+  {
+    "objectID": "FILES/KOSIS/인구/index.html#데이터-목록",
+    "href": "FILES/KOSIS/인구/index.html#데이터-목록",
+    "title": "인구 데이터",
+    "section": "데이터 목록",
+    "text": "데이터 목록",
+    "crumbs": [
+      "데이터 다운로드",
+      "통계포털(KOSIS)",
+      "인구 데이터"
     ]
   },
   {
