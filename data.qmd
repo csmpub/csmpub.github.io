@@ -10,7 +10,6 @@ listing:
     sort-ui: true
     filter-ui: true
     categories: true
-    date-format: iso
 sidebar: data
 ---
 

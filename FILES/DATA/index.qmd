@@ -4,13 +4,12 @@ listing:
     contents:
         - 한국부동산원
         - "!한국부동산원/index.qmd"
-    fields: [title, description, date]
+    fields: [title, description, date, date-modified]
     type: table
     sort: "date desc"
     sort-ui: true
     filter-ui: true
     categories: true
-    date-format: iso
 ---
 
 공공데이터포털 자료를 제공기관별로 분류

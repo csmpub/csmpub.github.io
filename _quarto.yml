@@ -1,8 +1,6 @@
 project:
   type: website
 
-language: korean.yml
-
 website:
   title: "wintree"
   navbar:
@@ -33,3 +31,6 @@ format:
   html:
     theme: spacelab
     css: styles.css
+
+language: korean.yml
+date-format: iso

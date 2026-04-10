@@ -5,7 +5,7 @@ listing:
         - DATA
         - KOSIS
         - "!index.qmd"
-    fields: [title, description, date]
+    fields: [title, description, date, date-modified]
     type: table
     sort: "date desc"
     sort-ui: true

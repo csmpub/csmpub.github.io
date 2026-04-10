@@ -1,6 +1,7 @@
 ---
 title: "완전생명표(1세별)"
 date: "2025-12-03"
+date-modified: "2026-04-03"
 categories: [기대여명, 생명표]
 toc: true
 toc-depth: 4

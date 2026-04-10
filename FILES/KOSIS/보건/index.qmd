@@ -4,14 +4,12 @@ categories: [KOSIS, 보건]
 listing: 
     contents:
       - "*.qmd"
-    fields: [title, description, date]
+    fields: [title, description, date, date-modified]
     type: table
     sort: "date desc"
     sort-ui: true
     filter-ui: true
     categories: true
-    date-format: iso
-
 ---
 
 
