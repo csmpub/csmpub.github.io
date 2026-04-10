@@ -1,0 +1,197 @@
+[
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Data Repository",
+    "section": "",
+    "text": "노트wintree\n\n\n\n!! 공공 데이터 소스 정보, 직접 조사 또는 가공한 데이터, 저작물에 사용한 데이터 등의 보관소 !!\n\n\n\n데이터 폴더로 이동\n\n\n\n\n\n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n\n\n\n\n\n한국부동산원\n\n\n\n\n\n\n\n\n\n보건 데이터\n\n\n\n\n\n\n\n\n\n인구 데이터\n\n\n\n\n\n\n\n\n\n일치 없음",
+    "crumbs": [
+      "Home",
+      "Data Repository"
+    ]
+  },
+  {
+    "objectID": "FILES/DATA/한국부동산원/index.html",
+    "href": "FILES/DATA/한국부동산원/index.html",
+    "title": "한국부동산원",
+    "section": "",
+    "text": "공공데이터포털(DATA) - 한국부동산원\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        날짜 - 오름차순\n      \n      \n        날짜 - 내림차순\n      \n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n날짜\n\n\n\n\n\n\n\n\n전국 청약 평균 분양가\n\n\n\n\n\n2026-06-23\n\n\n\n\n\n\n일치 없음",
+    "crumbs": [
+      "데이터 다운로드",
+      "공공데이터포털(DATA)",
+      "한국부동산원"
+    ]
+  },
+  {
+    "objectID": "FILES/index.html",
+    "href": "FILES/index.html",
+    "title": "데이터 다운로드",
+    "section": "",
+    "text": "노트자료 출처\n\n\n\n통계포털(KOSIS), 공공데이터포털(DATA)",
+    "crumbs": [
+      "Home",
+      "데이터 다운로드"
+    ]
+  },
+  {
+    "objectID": "FILES/index.html#데이터-목록",
+    "href": "FILES/index.html#데이터-목록",
+    "title": "데이터 다운로드",
+    "section": "데이터 목록",
+    "text": "데이터 목록",
+    "crumbs": [
+      "Home",
+      "데이터 다운로드"
+    ]
+  },
+  {
+    "objectID": "FILES/KOSIS/인구/가구주의_성_연령_혼인상태별_추계가구-시도.html",
+    "href": "FILES/KOSIS/인구/가구주의_성_연령_혼인상태별_추계가구-시도.html",
+    "title": "가구주의 성/연령/혼인상태별 추계가구-시도",
+    "section": "",
+    "text": "가구주의 성/연령/혼인상태별 추계가구-시도 기간: 년, 2000-2052\n파일 위치: 인구-장래가구추계-시도(2022년 기준)\n.xlsx로 다운로드 받아서 정리 후 .csv로 변환하여 저장\n\n데이터\n\n연령별 기대여명\n\n조회조건\n\n항목: 전체(계, 미혼, 유배우, 사별, 이혼) 선택\n행정구역별(시도): 전국, 서울 (개별 선택)\n가구주의 성별: 계, 남자, 여자 선택\n가구주의 연령별: 계, 전체 구간 선택\n시점: 년, 2026년 - 2052년\n\n파일다운로드: 가구주의-성-연령-혼인상태별-추계가구-전국.csv\n파일다운로드: 가구주의-성-연령-혼인상태별-추계가구-서울.csv\n\n\n\n\n통계표\n\n메타자료\n\n통계표ID : DT_1BZ05042\n통계표명 : 가구주의 성/연령/혼인상태별 추계가구-시도\n출처 : KOSIS(「장래가구추계」, 국가데이터처), 2026.04.09 10:12\n문의처 : 042-481-2256\n통계표URL : https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1BZ05042&conn_path=I3\n\nKOSIS 개편 시 통계표 URL은 달라질 수 있음\n\n단위 : 가구\n\n\n\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n      \n        저자\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n인구 데이터\n\n\n\n인구\n\nKOSIS\n\n\n\n\n\n\n\n\n\n\n\n\n일치 없음",
+    "crumbs": [
+      "데이터 다운로드",
+      "통계포털(KOSIS)",
+      "인구 데이터",
+      "가구주의 성/연령/혼인상태별 추계가구-시도"
+    ]
+  },
+  {
+    "objectID": "FILES/KOSIS/보건/완전생명표_1세별.html",
+    "href": "FILES/KOSIS/보건/완전생명표_1세별.html",
+    "title": "완전생명표(1세별)",
+    "section": "",
+    "text": "기대여명(전체, 남, 여) 기간: 1970~2024년\n파일 위치: 보건-생명표-완전생명표(1세별)(년 1970-2024)\n.xlsx로 다운로드 받아서 정리 후 .csv로 변환하여 저장\n\n데이터\n\n연령별 기대여명\n\n조회조건\n\n항목: 기대여명(전체, 남자, 여자) 선택\n연령별: 0세 - 100세 이상 전체 선택\n시점: 년, 1970년 - 2024년\n\n파일다운로드: 연령별기대여명.csv\n\n\n\n\n통계표\n\n메타자료\n\n통계표ID : DT_1B42\n통계표명 : 완전생명표(1세별)\n출처 : KOSIS(「생명표」, 국가데이터처), 2026.04.08 22:37\n문의처 : 02-2012-9114, 042-481-2251\n통계표URL : https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1B42&conn_path=I3\nKOSIS 개편 시 통계표 URL은 달라질 수 있음\n\n\n\n주석\n통계표 16.12.2일 생명표 작성방법 개선으로 과거 공표된 ’70-’14년 생명표 수치가 갱신되었으니, 사용에 유의하시기 바랍니다.\n\n’70-’00년 생명표를 대상으로 Brass-logit 모형을 통해 80, 85세 사망확률 재작성, CK 모형 한계연령을 110세로 통일\n’70-’00년 생명표를 대상으로 Spline 내삽법으로 5세별 사망확률을 1세별 사망확률로 확장\n’15년 등록센서스 전환으로 인구통계의 연령자료 정합성 확보를 위해 주민등록 보정계수 적용절차 삭제\n자세한 사항은 온라인 간행물 생명표(1970-2015)의 작성절차 부분 참조\n\n\n\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n      \n        저자\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n보건 데이터\n\n\n\nKOSIS\n\n보건\n\n\n\n\n\n\n\n\n\n\n\n\n일치 없음",
+    "crumbs": [
+      "데이터 다운로드",
+      "통계포털(KOSIS)",
+      "보건 데이터",
+      "완전생명표(1세별)"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Who is Wintree?",
+    "section": "",
+    "text": "콘텐츠 창작자・개발자\n건설도시연구 대표\n\n학력사항\n○ 공학사: 연세대학교 건축공학과\n○ 공학석사: 연세대학교 공학대학원 도시계획전공\n○ 공학박사: 연세대학교 대학원 도시공학과\n\n\n경력사항\n○ 대우건설: 상무\n○ 대우에스티: 전무\n○ 겸임교수: 이화여자대학교 엘텍공과대학 미래사회공학부\n○ 집필위원: 대한건축학회 발행 건축기술지침(Rev. 2) 건축 I, 건축 II\n\n\n\n\n주메일\n\n\n부메일\n\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n      \n        날짜 - 오름차순\n      \n      \n        날짜 - 내림차순\n      \n      \n        저자\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n페이지를 찾을 수 없습니다!!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWintree’s Home\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n보건 데이터\n\n\nKOSIS\n보건\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n인구 데이터\n\n\n인구\nKOSIS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n통계포털(KOSIS)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n데이터 다운로드\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n한국부동산원\n\n\n부동산원\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n공공데이터포털(DATA)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Repository\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n전국 청약 평균 분양가\n\n\n청약\n분양가\n\n\n\n\n\n\n\n\n2026-06-23\n\n\n\n\n\n\n\n\n\n\n벡터(Vector)\n\n\nR\n\n\n\n\n\n\n\n\n2026-04-10\n\n\n\n\n\n\n\n\n\n\n블로그(?) 메뉴 추가\n\n\nnews\ndata\n\n\n\n\n\n\n\n\n2026-04-01\n\n\n\n\n\n\n\n\n\n\n완전생명표(1세별)\n\n\n기대여명\n생명표\n\n\n\n\n\n\n\n\n2025-12-03\n\n\n\n\n\n\n\n\n\n\n가구주의 성/연령/혼인상태별 추계가구-시도\n\n\n추계가구\n가구주\n성별\n연령\n혼인상태\n\n\n\n\n\n\n\n\n2024-12-12\n\n\n\n\n\n일치 없음"
+  },
+  {
+    "objectID": "POSTS/start_blog.html",
+    "href": "POSTS/start_blog.html",
+    "title": "블로그(?) 메뉴 추가",
+    "section": "",
+    "text": "일단 추가는 했지만 얼마나 자주 글을 쓸지? 올릴지?\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n      \n        날짜 - 오름차순\n      \n      \n        날짜 - 내림차순\n      \n      \n        저자\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n벡터(Vector)\n\n\n\nR\n\n\n\n\n\n\n\n\n\n2026-04-10\n\n\n\n\n\n일치 없음"
+  },
+  {
+    "objectID": "POSTS/2026-04-10_vector.html",
+    "href": "POSTS/2026-04-10_vector.html",
+    "title": "벡터(Vector)",
+    "section": "",
+    "text": "R의 데이터 기본 요소인 벡터\n\n기본(automic) 벡터\n타입들\n\n\n일반화된(generic) 벡터\n리스트\n\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n      \n        날짜 - 오름차순\n      \n      \n        날짜 - 내림차순\n      \n      \n        저자\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n블로그(?) 메뉴 추가\n\n\n\nnews\n\ndata\n\n\n\n\n\n\n\n\n\n2026-04-01\n\n\n\n\n\n일치 없음"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Wintree’s Home",
+    "section": "",
+    "text": "방문을 환영합니다.",
+    "crumbs": [
+      "Home",
+      "Wintree's Home"
+    ]
+  },
+  {
+    "objectID": "index.html#새-글",
+    "href": "index.html#새-글",
+    "title": "Wintree’s Home",
+    "section": "새 글",
+    "text": "새 글",
+    "crumbs": [
+      "Home",
+      "Wintree's Home"
+    ]
+  },
+  {
+    "objectID": "FILES/KOSIS/보건/index.html",
+    "href": "FILES/KOSIS/보건/index.html",
+    "title": "보건 데이터",
+    "section": "",
+    "text": "통계포털(KOSIS) - 주제별: 보건\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        날짜 - 오름차순\n      \n      \n        날짜 - 내림차순\n      \n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n날짜\n\n\n\n\n\n\n\n\n완전생명표(1세별)\n\n\n\n\n\n2025-12-03\n\n\n\n\n\n\n일치 없음",
+    "crumbs": [
+      "데이터 다운로드",
+      "통계포털(KOSIS)",
+      "보건 데이터"
+    ]
+  },
+  {
+    "objectID": "FILES/KOSIS/인구/index.html",
+    "href": "FILES/KOSIS/인구/index.html",
+    "title": "인구 데이터",
+    "section": "",
+    "text": "통계포털(KOSIS) - 주제별: 인구\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        날짜 - 오름차순\n      \n      \n        날짜 - 내림차순\n      \n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n날짜\n\n\n\n\n\n\n\n\n가구주의 성/연령/혼인상태별 추계가구-시도\n\n\n\n\n\n2024-12-12\n\n\n\n\n\n\n일치 없음",
+    "crumbs": [
+      "데이터 다운로드",
+      "통계포털(KOSIS)",
+      "인구 데이터"
+    ]
+  },
+  {
+    "objectID": "FILES/KOSIS/index.html",
+    "href": "FILES/KOSIS/index.html",
+    "title": "통계포털(KOSIS)",
+    "section": "",
+    "text": "국가 데이터처 자료를 통계 주제별로 분류",
+    "crumbs": [
+      "데이터 다운로드",
+      "통계포털(KOSIS)"
+    ]
+  },
+  {
+    "objectID": "FILES/KOSIS/index.html#주제별-통계",
+    "href": "FILES/KOSIS/index.html#주제별-통계",
+    "title": "통계포털(KOSIS)",
+    "section": "주제별 통계",
+    "text": "주제별 통계",
+    "crumbs": [
+      "데이터 다운로드",
+      "통계포털(KOSIS)"
+    ]
+  },
+  {
+    "objectID": "FILES/DATA/한국부동산원/전국청약평균분양가.html",
+    "href": "FILES/DATA/한국부동산원/전국청약평균분양가.html",
+    "title": "전국 청약 평균 분양가",
+    "section": "",
+    "text": "한국부동산원(구 한국감정원)의 청약홈에서 제공하는 월별 평균 분양가 정보입니다.\n한국부동산원_전국 청약 평균 분양가 정보\n\n데이터\n파일 다운로드: 전국-청약-평균분양가\n\n\n설명\n청약홈에서 일반공급 접수를 대행한 일반분양 단지를 기준으로 작성되었습니다.\n공공데이터 제공범위는 한국부동산원이 주택청약 업무를 수행한 2020년 2월부터 데이터 작성 기준 전월 말일까지로 모집공고일을 기준으로 집계하였습니다.\n\n컬럼별 상세설명\n\n연월→ 모집공고일이 포함된 연월\n60제곱미터 이하 → 전용면적 60제곱미터 이+-9하 주택의 제곱미터당 평균 분양가\n60제곱미터 초과 85제곱미터 이하 → 전용면적 60제곱미터 초과 85제곱미터 이하 주택의 제곱미터당 평균 분양가\n85 제곱미터 초과 → 전용면적 85제곱미터 초과 주택의 제곱미터당 평균 분양가\n59형 → 전용면적 59제곱미터(소수점 미만 절사) 주택의 제곱미터당 평균 분양가\n84형 → 전용면적 84제곱미터(소수점 미만 절사) 주택의 제곱미터당 평균 분양가\n\n\n\n참고사항\n\n한국부동산원 청약홈에서 추첨을 진행했던 국민, 민영주택 APT의 최고분양가를 기준으로 작성되었습니다.\n월별 최신화로 자료이용 시 기준월에 유의하시기 바랍니다(ex. “24.7월 업로드 데이터는”24.6월말 기준 APT 대상).\n면적구분은 전용면적 기준이며 평균분양가 산출 시에는 공급면적을 사용하였습니다.\n\n\n\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n      \n        저자\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n한국부동산원\n\n\n\n부동산원\n\n\n\n\n\n\n\n\n\n\n\n\n일치 없음",
+    "crumbs": [
+      "데이터 다운로드",
+      "공공데이터포털(DATA)",
+      "한국부동산원",
+      "전국 청약 평균 분양가"
+    ]
+  },
+  {
+    "objectID": "FILES/DATA/index.html",
+    "href": "FILES/DATA/index.html",
+    "title": "공공데이터포털(DATA)",
+    "section": "",
+    "text": "공공데이터포털 자료를 제공기관별로 분류",
+    "crumbs": [
+      "데이터 다운로드",
+      "공공데이터포털(DATA)"
+    ]
+  },
+  {
+    "objectID": "FILES/DATA/index.html#기관별-통계",
+    "href": "FILES/DATA/index.html#기관별-통계",
+    "title": "공공데이터포털(DATA)",
+    "section": "기관별 통계",
+    "text": "기관별 통계",
+    "crumbs": [
+      "데이터 다운로드",
+      "공공데이터포털(DATA)"
+    ]
+  }
+]
