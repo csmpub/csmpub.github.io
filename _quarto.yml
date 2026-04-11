@@ -19,8 +19,8 @@ website:
       title: "Menu"
       collapse-level: 3
       contents:
-        - text: "Top Menu"
-        - text: "---" 
+#        - text: "Top Menu"
+#        - text: "---" 
         - index.qmd
         - data.qmd
 #        - quarto.qmd
@@ -28,8 +28,8 @@ website:
     - id: data
       title: "Data"
       contents: 
-        - text: "Top Menu"
-        - text: "---" 
+#        - text: "Top Menu"
+#        - text: "---" 
         - index.qmd
         - data.qmd
 #        - quarto.qmd
@@ -53,4 +53,5 @@ format:
 
 language: korean.yml
 date-format: iso
-toc: true
+title-block-banner: true
+#toc: true
