@@ -15,182 +15,98 @@
     "href": "QUARTO/웹사이트/블로그/rss-feed.html",
     "title": "RSS 피드",
     "section": "",
-    "text": "블로그의 RSS 피드 활성화\n\nRSS 활성화 설정\n\n_quarto.yml website: 아래 site-url:, description: 설정\n\nwebsite:\n  title: \"myblog\"\n  site-url: https://www.myblogexample.io\n  description: \"A great sample blog\"\n\n블로그 홈 index.qmd 문서 yml 헤더 listing: 아래 feed: true 설정\n\n---\ntitle: \"myblog\"\nlisting:\n  contents: posts\n  sort: \"date desc\"\n  type: default\n  categories: true\n  feed: true\n---\n\n\n\n\n\n\n힌트메뉴바(navbar)에 RSS 링크 추가\n\n\n\n_quarto.yml\nwebsite:\n  title: \"myblog\"\n  site-url: https://www.myblogexample.io\n  description: \"A great sample blog\"\n  navbar:\n    right:\n      - icon: rss\n        href: index.xml\n\n\n\n특정 분류만 RSS 피드\nfeed: 아래 categories: 리스트 지정\n---\ntitle: \"myblog\"\nlisting:\n  contents: posts\n  sort: \"date desc\"\n  type: default\n  categories: true\n  feed:\n    categories: [news, posts]\n---",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Blog",
-      "RSS 피드"
-    ]
+    "text": "블로그의 RSS 피드 활성화\n\nRSS 활성화 설정\n\n_quarto.yml website: 아래 site-url:, description: 설정\n\nwebsite:\n  title: \"myblog\"\n  site-url: https://www.myblogexample.io\n  description: \"A great sample blog\"\n\n블로그 홈 index.qmd 문서 yml 헤더 listing: 아래 feed: true 설정\n\n---\ntitle: \"myblog\"\nlisting:\n  contents: posts\n  sort: \"date desc\"\n  type: default\n  categories: true\n  feed: true\n---\n\n\n\n\n\n\n힌트메뉴바(navbar)에 RSS 링크 추가\n\n\n\n_quarto.yml\nwebsite:\n  title: \"myblog\"\n  site-url: https://www.myblogexample.io\n  description: \"A great sample blog\"\n  navbar:\n    right:\n      - icon: rss\n        href: index.xml\n\n\n\n특정 분류만 RSS 피드\nfeed: 아래 categories: 리스트 지정\n---\ntitle: \"myblog\"\nlisting:\n  contents: posts\n  sort: \"date desc\"\n  type: default\n  categories: true\n  feed:\n    categories: [news, posts]\n---"
   },
   {
     "objectID": "QUARTO/웹사이트/블로그/subscribe.html",
     "href": "QUARTO/웹사이트/블로그/subscribe.html",
     "title": "구독",
     "section": "",
-    "text": "이메일로 블로그 구독 설정\n\n구독 설정\n\n이메일 서비스에서 제공하는 구독 위젯을 위한 HTML 생성\n생성된 HTML을 프로젝트 루트 폴더에 subscrive.html로 저장\n_quarto.yml 파일의 margin-header:에 위 파일 지정\n\nwebsite:\n  margin-header: subscribe.html",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Blog",
-      "구독"
-    ]
+    "text": "이메일로 블로그 구독 설정\n\n구독 설정\n\n이메일 서비스에서 제공하는 구독 위젯을 위한 HTML 생성\n생성된 HTML을 프로젝트 루트 폴더에 subscrive.html로 저장\n_quarto.yml 파일의 margin-header:에 위 파일 지정\n\nwebsite:\n  margin-header: subscribe.html"
   },
   {
     "objectID": "QUARTO/웹사이트/블로그/home.html",
     "href": "QUARTO/웹사이트/블로그/home.html",
     "title": "블로그 홈",
     "section": "",
-    "text": "리스팅 페이지로 설정\n\n리스팅 페이지\n---\ntitle: \"myblog\"\nlisting:\n  contents: posts\n  sort: \"date desc\"\n  type: default\n  categories: true\n---\n\n카테고리\n카테고리는 포스팅 되는 글의 프폰트 메터에서 읽어들여 분류한다.\n---\ntitle: \"Post With Code\"\ndescription: \"Post description\"\nauthor: \"Fizz McPhee\"\ndate: \"5/22/2021\"\ncategories:\n  - news\n  - code\n  - analysis\n---",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Blog",
-      "블로그 홈"
-    ]
+    "text": "리스팅 페이지로 설정\n\n리스팅 페이지\n---\ntitle: \"myblog\"\nlisting:\n  contents: posts\n  sort: \"date desc\"\n  type: default\n  categories: true\n---\n\n카테고리\n카테고리는 포스팅 되는 글의 프폰트 메터에서 읽어들여 분류한다.\n---\ntitle: \"Post With Code\"\ndescription: \"Post description\"\nauthor: \"Fizz McPhee\"\ndate: \"5/22/2021\"\ncategories:\n  - news\n  - code\n  - analysis\n---"
   },
   {
     "objectID": "QUARTO/웹사이트/네비게이션/breadcrums.html",
     "href": "QUARTO/웹사이트/네비게이션/breadcrums.html",
     "title": "탐색 경로",
     "section": "",
-    "text": "페이지 제목 위에 표시되는 탐색 경로 설정(기본값은 표시)\n\n프로젝트 설정(_quarto.yml)\nwebsite:\n  bread-crumbs: false\n\n\n문서 설정(yml 헤더)\n---\ntitle: Page without breadcrumbs\nbread-crumbs: false\n---",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Nevigation",
-      "탐색 경로"
-    ]
+    "text": "페이지 제목 위에 표시되는 탐색 경로 설정(기본값은 표시)\n\n프로젝트 설정(_quarto.yml)\nwebsite:\n  bread-crumbs: false\n\n\n문서 설정(yml 헤더)\n---\ntitle: Page without breadcrumbs\nbread-crumbs: false\n---"
   },
   {
     "objectID": "QUARTO/웹사이트/네비게이션/site-search.html",
     "href": "QUARTO/웹사이트/네비게이션/site-search.html",
     "title": "사이트 검색",
     "section": "",
-    "text": "사이트 내용을 검색하는 기능 추가\n\nsearch: true\nnavbar: 또는 sidebar: 하부에 추가 (한쪽만 설정 가능)\nwebsite:\n    navbar:\n        search: true\nwebsite:\n    sidebar:\n        search: true",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Nevigation",
-      "사이트 검색"
-    ]
+    "text": "사이트 내용을 검색하는 기능 추가\n\nsearch: true\nnavbar: 또는 sidebar: 하부에 추가 (한쪽만 설정 가능)\nwebsite:\n    navbar:\n        search: true\nwebsite:\n    sidebar:\n        search: true"
   },
   {
     "objectID": "QUARTO/웹사이트/네비게이션/back-to-top.html",
     "href": "QUARTO/웹사이트/네비게이션/back-to-top.html",
     "title": "처음으로 이동",
     "section": "",
-    "text": "페이지 하부에 처음으로 링크 표시\n\n프로젝트 설정(_quarto.yml)\nwebsite:\n  back-to-top-navigation: ture   # or false\n\n\n문서 설정(yml 헤더)\n---\npage-navigation: false  # or true\n---",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Nevigation",
-      "처음으로 이동"
-    ]
+    "text": "페이지 하부에 처음으로 링크 표시\n\n프로젝트 설정(_quarto.yml)\nwebsite:\n  back-to-top-navigation: ture   # or false\n\n\n문서 설정(yml 헤더)\n---\npage-navigation: false  # or true\n---"
   },
   {
     "objectID": "QUARTO/웹사이트/네비게이션/404page.html",
     "href": "QUARTO/웹사이트/네비게이션/404page.html",
     "title": "404 에러 페이지",
     "section": "",
-    "text": "파일을 찾지 못한 에러 발생시 보여질 페이지 사용자 설정\n\n프로젝트 폴더에 404.qmd 작성\n\n프로젝트 폴더에 404.qmd 배치 (404.html 같이 배치할 수 있음)\n사이트 경로가 도메인 루트가 아닌 경우 site-url: 이나 site-path: 설정\n\nwebsite:\n  title: \"My Site\"\n  site-path: \"/mysite/\"\nwebsite:\n  title: \"My Site\"\n  site-url: \"https://example.com/mysite/\"",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Nevigation",
-      "404 에러 페이지"
-    ]
+    "text": "파일을 찾지 못한 에러 발생시 보여질 페이지 사용자 설정\n\n프로젝트 폴더에 404.qmd 작성\n\n프로젝트 폴더에 404.qmd 배치 (404.html 같이 배치할 수 있음)\n사이트 경로가 도메인 루트가 아닌 경우 site-url: 이나 site-path: 설정\n\nwebsite:\n  title: \"My Site\"\n  site-path: \"/mysite/\"\nwebsite:\n  title: \"My Site\"\n  site-url: \"https://example.com/mysite/\""
   },
   {
     "objectID": "QUARTO/웹사이트/네비게이션/page-footer.html",
     "href": "QUARTO/웹사이트/네비게이션/page-footer.html",
     "title": "꼬리말",
     "section": "",
-    "text": "웹사이트 모든 페이지의 꼬리말 설정\n\n프로젝트 설정(_quarto.yml)\nwebsite:\n  page-footer:\n    left: \"단순 텍스트 문자열\"\n    center: ...\n    right:\n      - icon: github\n        href: https://github.com\n\n\npage-footer: 옵션\nbackground foreground border\nwebsite:\n  page-footer:\n    border: flase   # default - true\n    background: light   # default - no background color\n\n\n\n\n\n\n힌트foreground color\n\n\n\n지정하지 않으면 background와 대비되는 색으로 자동 지정됨",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Nevigation",
-      "꼬리말"
-    ]
+    "text": "웹사이트 모든 페이지의 꼬리말 설정\n\n프로젝트 설정(_quarto.yml)\nwebsite:\n  page-footer:\n    left: \"단순 텍스트 문자열\"\n    center: ...\n    right:\n      - icon: github\n        href: https://github.com\n\n\npage-footer: 옵션\nbackground foreground border\nwebsite:\n  page-footer:\n    border: flase   # default - true\n    background: light   # default - no background color\n\n\n\n\n\n\n힌트foreground color\n\n\n\n지정하지 않으면 background와 대비되는 색으로 자동 지정됨"
   },
   {
     "objectID": "QUARTO/웹사이트/네비게이션/navbar.html",
     "href": "QUARTO/웹사이트/네비게이션/navbar.html",
     "title": "메뉴바(navbar:)",
     "section": "",
-    "text": "페이지 상부 메뉴 설정\n\n프로젝트 설정(_quarto.yml)\nwebsite:\n  navbar:\n    left:\n      - text: \"Home\"\n        href: index.qmd\n      - about.qmd\n\n\n메뉴바(navbar:) 옵션\n\ntitle: Navbar title (uses the site: title if none is specified). Use title: false to suppress the display of the title on the navbar.\nlogo: Logo image to be displayed left of the title. When using a _brand.yml with a logo, the brand logo is automatically displayed. Use logo: false to suppress the brand logo on the navbar.\nlogo-alt: Alternate text for the logo image.\nlogo-href: Target href from navbar logo / title. By default, the logo and title link to the root page of the site (/index.html).\nbackground: Background color (“primary”, “secondary”, “success”, “danger”, “warning”, “info”, “light”, “dark”, or hex color).\nforeground: Foreground color (“primary”, “secondary”, “success”, “danger”, “warning”, “info”, “light”, “dark”, or hex color). The foreground color will be used to color navigation elements, text and links that appear in the navbar.\nsearch: Include a search box (true or false).\ntools: List of navbar tools (e.g., link to github or bluesky, etc.). See Navbar Tools for details.\nleft:, right: Lists of navigation items for left and right side of navbar.\npinned: Always show the navbar (true or false). Defaults to false, and uses headroom.js to automatically show the navbar when the user scrolls up on the page.\ncollapse: Collapse the navbar items into a hamburger menu when the display gets narrow (defaults to true).\ncollapse-below: Responsive breakpoint at which to collapse navbar items to a hamburger menu (“sm”, “md”, “lg”, “xl”, or “xxl”, defaults to “lg”).\ntoggle-position: The position of the collapsed navbar hamburger menu when in responsive mode (“left” or “right”, defaults to “left”).\ntools-collapse: Collapse tools into the navbar menu when the display becomes narrow.\n\n\n메뉴바 네니베이션 항목(navigation items) 리스트\n\nhref: Link to file contained with the project or external URL.\ntext: Text to display for navigation item (defaults to the document title if not provided).\nicon: Name of one of the standard Bootstrap 5 icons (e.g., “github”, “bluesky”, “share”, etc.).\naria-label: Accessible label for the navigation item.\nrel: Value for rel attribute. Multiple space-separated values are permitted.\ntarget: Value for target attribute. E.g., _blank to open in a new tab.\nmenu: List of navigation items to populate a drop-down menu.\n\n\n\n메뉴바 툴(tools:) 리스트\n아이콘 이름(Bootstrap icons), 링크로 구성되며 메뉴바 오른쪽에 표시된다.\nwebsite:\n  navbar:\n    tools:\n      - icon: bluesky\n        href: https://bsky.app\n      - icon: github\n        menu:\n          - text: Source Code\n            href:  https://code.com\n          - text: Report a Bug\n            href:  https://bugs.com",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Nevigation",
-      "메뉴바(navbar:)"
-    ]
+    "text": "페이지 상부 메뉴 설정\n\n프로젝트 설정(_quarto.yml)\nwebsite:\n  navbar:\n    left:\n      - text: \"Home\"\n        href: index.qmd\n      - about.qmd\n\n\n메뉴바(navbar:) 옵션\n\ntitle: Navbar title (uses the site: title if none is specified). Use title: false to suppress the display of the title on the navbar.\nlogo: Logo image to be displayed left of the title. When using a _brand.yml with a logo, the brand logo is automatically displayed. Use logo: false to suppress the brand logo on the navbar.\nlogo-alt: Alternate text for the logo image.\nlogo-href: Target href from navbar logo / title. By default, the logo and title link to the root page of the site (/index.html).\nbackground: Background color (“primary”, “secondary”, “success”, “danger”, “warning”, “info”, “light”, “dark”, or hex color).\nforeground: Foreground color (“primary”, “secondary”, “success”, “danger”, “warning”, “info”, “light”, “dark”, or hex color). The foreground color will be used to color navigation elements, text and links that appear in the navbar.\nsearch: Include a search box (true or false).\ntools: List of navbar tools (e.g., link to github or bluesky, etc.). See Navbar Tools for details.\nleft:, right: Lists of navigation items for left and right side of navbar.\npinned: Always show the navbar (true or false). Defaults to false, and uses headroom.js to automatically show the navbar when the user scrolls up on the page.\ncollapse: Collapse the navbar items into a hamburger menu when the display gets narrow (defaults to true).\ncollapse-below: Responsive breakpoint at which to collapse navbar items to a hamburger menu (“sm”, “md”, “lg”, “xl”, or “xxl”, defaults to “lg”).\ntoggle-position: The position of the collapsed navbar hamburger menu when in responsive mode (“left” or “right”, defaults to “left”).\ntools-collapse: Collapse tools into the navbar menu when the display becomes narrow.\n\n\n메뉴바 네니베이션 항목(navigation items) 리스트\n\nhref: Link to file contained with the project or external URL.\ntext: Text to display for navigation item (defaults to the document title if not provided).\nicon: Name of one of the standard Bootstrap 5 icons (e.g., “github”, “bluesky”, “share”, etc.).\naria-label: Accessible label for the navigation item.\nrel: Value for rel attribute. Multiple space-separated values are permitted.\ntarget: Value for target attribute. E.g., _blank to open in a new tab.\nmenu: List of navigation items to populate a drop-down menu.\n\n\n\n메뉴바 툴(tools:) 리스트\n아이콘 이름(Bootstrap icons), 링크로 구성되며 메뉴바 오른쪽에 표시된다.\nwebsite:\n  navbar:\n    tools:\n      - icon: bluesky\n        href: https://bsky.app\n      - icon: github\n        menu:\n          - text: Source Code\n            href:  https://code.com\n          - text: Report a Bug\n            href:  https://bugs.com"
   },
   {
     "objectID": "QUARTO/웹사이트/네비게이션/github-link.html",
     "href": "QUARTO/웹사이트/네비게이션/github-link.html",
     "title": "GitHub Link",
     "section": "",
-    "text": "GitHub 리포지토리 편집, 보기, 이슈 리포트 액션 설정\n\n프로젝트 설정(_quarto.yml)\nwebsite:\n  repo-url: https://github.com/quarto-dev/quarto-demo\n  repo-actions: [edit, source, issue]\n\n\n문서 설정(yml 헤더)\n특정 페이지에서 GutHub 액션 중지 설정\n---\nrepo-actions: false\n---\n\n\n추가 옵션\n\nrepo-subdir: Subdirectory of repository containing source files (defaults to root directory).\nrepo-branch: Repository branch containing the source files (defaults to main)\nissue-url: Provide an explicit URL for the ‘Report an Issue’ action.\nrepo-link-target: The target attribute to use for repo action links. E.g., set to “_blank” to open in a new tab or window.\nrepo-link-rel: The rel attribute to use for repo action links.",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Nevigation",
-      "GitHub Link"
-    ]
+    "text": "GitHub 리포지토리 편집, 보기, 이슈 리포트 액션 설정\n\n프로젝트 설정(_quarto.yml)\nwebsite:\n  repo-url: https://github.com/quarto-dev/quarto-demo\n  repo-actions: [edit, source, issue]\n\n\n문서 설정(yml 헤더)\n특정 페이지에서 GutHub 액션 중지 설정\n---\nrepo-actions: false\n---\n\n\n추가 옵션\n\nrepo-subdir: Subdirectory of repository containing source files (defaults to root directory).\nrepo-branch: Repository branch containing the source files (defaults to main)\nissue-url: Provide an explicit URL for the ‘Report an Issue’ action.\nrepo-link-target: The target attribute to use for repo action links. E.g., set to “_blank” to open in a new tab or window.\nrepo-link-rel: The rel attribute to use for repo action links."
   },
   {
     "objectID": "QUARTO/웹사이트/리스팅/options.html",
     "href": "QUARTO/웹사이트/리스팅/options.html",
     "title": "리스팅 옵션",
     "section": "",
-    "text": "리스팅 타입별 옵션, 기타 옵션\n\n타입 default 옵션\nmax-items: The maximum number of items to include in this listing. image-align: Whether to place the image on the right or left side of the post content. Defaults to right. image-height: The height of the image being displayed. The width is automatically determined and the image will fill the rectangle without scaling (i.e. cropped to fill). image-placeholder: The default image for items if they have no image.\n\n\n타입 grid 옵션\nmax-items The maximum number of items to include in this listing. image-height The height of the image being displayed. The width is automatically determined and the image will fill the rectangle without scaling (i.e. cropped to fill). image-placeholder The default image for items if they have no image. grid-columns The number of columns in the grid display. Defaults to 3. grid-item-border Whether to display a border around the item card. Defaults to true. grid-item-align Aligns the content within the card (left, right, or center). Defaults to left.\n\n\n타입 table 옵션\nmax-items The maximum number of items to include in this listing. image-height The height of the image being displayed. The width is automatically select and the image will fill the rectangle without scaling (i.e. cropped to fill). image-placeholder The default image for items if they have no image. table-striped Display the table rows with alternating background colors (true or false). Defaults to false table-hover Highlight rows of the table when the user hovers the mouse over them (true or false). Defaults to false. field-links A list of fields that should link to the document in the table (defaults to title).\n\n\n기타 옵션\nfield-display-names A mapping that provides display name for specific fields. For example, to display the title column as ‘Report’ in a table listing you would write:\nlisting:\n  field-display-names:\n    title: \"Report\"\nimage-lazy-loading When true, listing images are loaded only as they come into view. When false, images are automatically loaded. Default: true\nmax-description-length The maximum length of the description displayed in the listing (in characters). Defaults to 175.\ndate-format\nThe date format to use when displaying dates (e.g. d-M-yyyy).\nYou may either provide a date style (full, long, medium, short or iso) or a format string for formatting the date. The behavior of date styles varies depending upon locale, but examples in the en locale are as follows:\n\nfull: Saturday, February 5, 2022\nlong: February 5, 2022\nmedium: Feb 5, 2022\nshort: 2/5/22\niso: 2022-05-22",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Listing",
-      "리스팅 옵션"
-    ]
+    "text": "리스팅 타입별 옵션, 기타 옵션\n\n타입 default 옵션\nmax-items: The maximum number of items to include in this listing. image-align: Whether to place the image on the right or left side of the post content. Defaults to right. image-height: The height of the image being displayed. The width is automatically determined and the image will fill the rectangle without scaling (i.e. cropped to fill). image-placeholder: The default image for items if they have no image.\n\n\n타입 grid 옵션\nmax-items The maximum number of items to include in this listing. image-height The height of the image being displayed. The width is automatically determined and the image will fill the rectangle without scaling (i.e. cropped to fill). image-placeholder The default image for items if they have no image. grid-columns The number of columns in the grid display. Defaults to 3. grid-item-border Whether to display a border around the item card. Defaults to true. grid-item-align Aligns the content within the card (left, right, or center). Defaults to left.\n\n\n타입 table 옵션\nmax-items The maximum number of items to include in this listing. image-height The height of the image being displayed. The width is automatically select and the image will fill the rectangle without scaling (i.e. cropped to fill). image-placeholder The default image for items if they have no image. table-striped Display the table rows with alternating background colors (true or false). Defaults to false table-hover Highlight rows of the table when the user hovers the mouse over them (true or false). Defaults to false. field-links A list of fields that should link to the document in the table (defaults to title).\n\n\n기타 옵션\nfield-display-names A mapping that provides display name for specific fields. For example, to display the title column as ‘Report’ in a table listing you would write:\nlisting:\n  field-display-names:\n    title: \"Report\"\nimage-lazy-loading When true, listing images are loaded only as they come into view. When false, images are automatically loaded. Default: true\nmax-description-length The maximum length of the description displayed in the listing (in characters). Defaults to 175.\ndate-format\nThe date format to use when displaying dates (e.g. d-M-yyyy).\nYou may either provide a date style (full, long, medium, short or iso) or a format string for formatting the date. The behavior of date styles varies depending upon locale, but examples in the en locale are as follows:\n\nfull: Saturday, February 5, 2022\nlong: February 5, 2022\nmedium: Feb 5, 2022\nshort: 2/5/22\niso: 2022-05-22"
   },
   {
     "objectID": "QUARTO/웹사이트/리스팅/fields.html",
     "href": "QUARTO/웹사이트/리스팅/fields.html",
     "title": "리스팅 필드",
     "section": "",
-    "text": "quarto는 리스트의 필드를 문서 프론트메터의 메타데이터에서 읽어들인다.\n\n필드 이름\ntitle The title of the item, read from the title field of the front matter (or the first H1 of the document). subtitle The subtitle of the item, read from the subtitle field of the front matter. author The author of the item, read from the author field of the front matter. description The description of the item, read from the description or abstract field of the front matter or from the first paragraph of the document. date The date of the item, read from the date field of the front matter. image The image for this item, read from the image field of the front matter, or automatically discovered by taking the first of an image of class preview-image, an image with a file name starting with feature, cover, or thumbnail, or the first image to appear in the document. image-alt The alt text for the image for this item. word-count A word count for this item. reading-time An estimate of the reading time for this item, computed by counting the words in the item and assuming a reading speed of 200 words per minute. categories Categories for the item, read from the categories field of the front matter. filename The name of the input file. file-modified The last modified date of this input file.\n\n\n리스팅 타입별 필드 표기\n\ndefault: title, subtitle, author, description, date, image\ntable: title, author, date\ngrid: title, author, description, date, image\n\n\n\n필드 표시 사용자화\n\nfields: 옵션으로 지정\n---\nlisting:\n  type: table\n  contents: posts\n  fields: [image, date, title, author, reading-time]\n---",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Listing",
-      "리스팅 필드"
-    ]
+    "text": "quarto는 리스트의 필드를 문서 프론트메터의 메타데이터에서 읽어들인다.\n\n필드 이름\ntitle The title of the item, read from the title field of the front matter (or the first H1 of the document). subtitle The subtitle of the item, read from the subtitle field of the front matter. author The author of the item, read from the author field of the front matter. description The description of the item, read from the description or abstract field of the front matter or from the first paragraph of the document. date The date of the item, read from the date field of the front matter. image The image for this item, read from the image field of the front matter, or automatically discovered by taking the first of an image of class preview-image, an image with a file name starting with feature, cover, or thumbnail, or the first image to appear in the document. image-alt The alt text for the image for this item. word-count A word count for this item. reading-time An estimate of the reading time for this item, computed by counting the words in the item and assuming a reading speed of 200 words per minute. categories Categories for the item, read from the categories field of the front matter. filename The name of the input file. file-modified The last modified date of this input file.\n\n\n리스팅 타입별 필드 표기\n\ndefault: title, subtitle, author, description, date, image\ntable: title, author, date\ngrid: title, author, description, date, image\n\n\n\n필드 표시 사용자화\n\nfields: 옵션으로 지정\n---\nlisting:\n  type: table\n  contents: posts\n  fields: [image, date, title, author, reading-time]\n---"
   },
   {
     "objectID": "QUARTO/웹사이트/리스팅/listing-usertool.html",
     "href": "QUARTO/웹사이트/리스팅/listing-usertool.html",
     "title": "리스팅 툴",
     "section": "",
-    "text": "리스팅에 추가할 수 있는 사용자 툴\n\n정렬\n\n기본 필드 포함\n\n---\nlisting:\n  sort-ui: false\n---\n\n필드 지정\n\n---\nlisting:\n  sort-ui: [title, date]\n---\n\n\n필터\n\n표시 제거\n\n---\nlisting:\n  filter-ui: false\n---\n\n필드 지정\n\n---\nlisting:\n  filter-ui: [title, date]\n---\n\n\n페이징 관리\n\n기본 페이지\n\ndefault: 25, table: 30, grid: 18\n\n페이징 지정\n\n---\nlisting:\n  page-size: 36\n---",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Listing",
-      "리스팅 툴"
-    ]
+    "text": "리스팅에 추가할 수 있는 사용자 툴\n\n정렬\n\n기본 필드 포함\n\n---\nlisting:\n  sort-ui: false\n---\n\n필드 지정\n\n---\nlisting:\n  sort-ui: [title, date]\n---\n\n\n필터\n\n표시 제거\n\n---\nlisting:\n  filter-ui: false\n---\n\n필드 지정\n\n---\nlisting:\n  filter-ui: [title, date]\n---\n\n\n페이징 관리\n\n기본 페이지\n\ndefault: 25, table: 30, grid: 18\n\n페이징 지정\n\n---\nlisting:\n  page-size: 36\n---"
   },
   {
     "objectID": "QUARTO/웹사이트/리스팅/including-excluding.html",
     "href": "QUARTO/웹사이트/리스팅/including-excluding.html",
     "title": "리스팅 포함 제외",
     "section": "",
-    "text": "리스팅 포함 또는 제외 설정\n\n포함\n---\nlisting:\n  contents: posts\n  type: grid\n  include:\n    author: \"{Harlow,Tristan}*\"\n----\n\n\n제외\n---\nlisting:\n  contents: posts\n  type: grid\n  exclude:\n    author: \"Charles*\"\n---",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Listing",
-      "리스팅 포함 제외"
-    ]
+    "text": "리스팅 포함 또는 제외 설정\n\n포함\n---\nlisting:\n  contents: posts\n  type: grid\n  include:\n    author: \"{Harlow,Tristan}*\"\n----\n\n\n제외\n---\nlisting:\n  contents: posts\n  type: grid\n  exclude:\n    author: \"Charles*\"\n---"
   },
   {
     "objectID": "FILES/DATA/한국부동산원/index.html",
@@ -319,11 +235,7 @@
     "href": "quarto.html",
     "title": "Quarto How-to",
     "section": "",
-    "text": "노트wintree\n\n\n\nQuarto 사용에 필요한 부분을 간단히 정리한 노트 모음\n\n\n\n글 목록\n\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n\n\n\n\n\n404 에러 페이지\n\n\n\n\n\n\n\n\n\nAbout page\n\n\n\n\n\n\n\n\n\nGitHub Link\n\n\n\n\n\n\n\n\n\nRSS 피드\n\n\n\n\n\n\n\n\n\n구독\n\n\n\n\n\n\n\n\n\n꼬리말\n\n\n\n\n\n\n\n\n\n네비게이션 감추기 및 읽기 모드\n\n\n\n\n\n\n\n\n\n다른 페이지로\n\n\n\n\n\n\n\n\n\n리스팅 개요\n\n\n\n\n\n\n\n\n\n리스팅 옵션\n\n\n\n\n\n\n\n\n\n리스팅 위치, 다중 리스팅, YAML 리스팅\n\n\n\n\n\n\n\n\n\n리스팅 툴\n\n\n\n\n\n\n\n\n\n리스팅 포함 제외\n\n\n\n\n\n\n\n\n\n리스팅 필드\n\n\n\n\n\n\n\n\n\n메뉴바(navbar:)\n\n\n\n\n\n\n\n\n\n메뉴바와 사이드바의 결합\n\n\n\n\n\n\n\n\n\n분류 피드\n\n\n\n\n\n\n\n\n\n블로그 테마\n\n\n\n\n\n\n\n\n\n블로그 홈\n\n\n\n\n\n\n\n\n\n사이드바(sidebar:)\n\n\n\n\n\n\n\n\n\n사이트 검색\n\n\n\n\n\n\n\n\n\n웹사이트 초안\n\n\n\n\n\n\n\n\n\n처음으로 이동\n\n\n\n\n\n\n\n\n\n탐색 경로\n\n\n\n\n\n\n\n\n\n페이지 이동\n\n\n\n\n\n\n\n\n\n포스팅 폴더\n\n\n\n\n\n\n\n\n\n일치 없음",
-    "crumbs": [
-      "Home",
-      "Quarto How-to"
-    ]
+    "text": "노트wintree\n\n\n\nQuarto 사용에 필요한 부분을 간단히 정리한 노트 모음\n\n\n\n글 목록\n\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n\n\n\n\n\n404 에러 페이지\n\n\n\n\n\n\n\n\n\nAbout page\n\n\n\n\n\n\n\n\n\nGitHub Link\n\n\n\n\n\n\n\n\n\nRSS 피드\n\n\n\n\n\n\n\n\n\n구독\n\n\n\n\n\n\n\n\n\n꼬리말\n\n\n\n\n\n\n\n\n\n네비게이션 감추기 및 읽기 모드\n\n\n\n\n\n\n\n\n\n다른 페이지로\n\n\n\n\n\n\n\n\n\n리스팅 개요\n\n\n\n\n\n\n\n\n\n리스팅 옵션\n\n\n\n\n\n\n\n\n\n리스팅 위치, 다중 리스팅, YAML 리스팅\n\n\n\n\n\n\n\n\n\n리스팅 툴\n\n\n\n\n\n\n\n\n\n리스팅 포함 제외\n\n\n\n\n\n\n\n\n\n리스팅 필드\n\n\n\n\n\n\n\n\n\n메뉴바(navbar:)\n\n\n\n\n\n\n\n\n\n메뉴바와 사이드바의 결합\n\n\n\n\n\n\n\n\n\n분류 피드\n\n\n\n\n\n\n\n\n\n블로그 테마\n\n\n\n\n\n\n\n\n\n블로그 홈\n\n\n\n\n\n\n\n\n\n사이드바(sidebar:)\n\n\n\n\n\n\n\n\n\n사이트 검색\n\n\n\n\n\n\n\n\n\n웹사이트 초안\n\n\n\n\n\n\n\n\n\n처음으로 이동\n\n\n\n\n\n\n\n\n\n탐색 경로\n\n\n\n\n\n\n\n\n\n페이지 이동\n\n\n\n\n\n\n\n\n\n포스팅 폴더\n\n\n\n\n\n\n\n\n\n일치 없음"
   },
   {
     "objectID": "FILES/KOSIS/보건/index.html",
@@ -435,181 +347,97 @@
     "href": "QUARTO/웹사이트/리스팅/others.html",
     "title": "리스팅 위치, 다중 리스팅, YAML 리스팅",
     "section": "",
-    "text": "리스팅 위치\nid 블록 사용하여 위치 지정\n---\ntitle: \"Listing Example\"\nlisting:\n  id: sample-listings\n  contents: posts\n  sort: \"date desc\"\n  type: table\n---\n\nYou can review the following documents for additional information:\n\n::: {#sample-listings}\n:::\n\nLearn more about Quarto\n\n\n다중 리스팅\n---\ntitle: Team Documents\nlisting: \n  - id: lab-reports\n    contents: \"lab-reports/*.qmd\"\n    type: table\n  - id: meeting-notes\n    contents: \"meeting-notes/*.qmd\"\n    type: table\n---\n\n## Lab Reports\n\n::: {#lab-reports}\n:::\n\n## Meeting Notes\n\n::: {#meeting-notes}\n:::\n\n\nYAML 리스팅\n---\ntitle: \"Listing Example\"\nlisting:\n  id: sample-listings\n  contents: \n    - posts\n    - archived-items.yaml\n  sort: \"date desc\"\n  type: table\n---\n# archived-items.yml\n- title: \"Archived Item 1\"\n  author: Norah Jones\n  date: 2020-01-01\n  path: \"archived/archived-item-.html\"\n  categories: [archived, technology]",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Listing",
-      "리스팅 위치, 다중 리스팅, YAML 리스팅"
-    ]
+    "text": "리스팅 위치\nid 블록 사용하여 위치 지정\n---\ntitle: \"Listing Example\"\nlisting:\n  id: sample-listings\n  contents: posts\n  sort: \"date desc\"\n  type: table\n---\n\nYou can review the following documents for additional information:\n\n::: {#sample-listings}\n:::\n\nLearn more about Quarto\n\n\n다중 리스팅\n---\ntitle: Team Documents\nlisting: \n  - id: lab-reports\n    contents: \"lab-reports/*.qmd\"\n    type: table\n  - id: meeting-notes\n    contents: \"meeting-notes/*.qmd\"\n    type: table\n---\n\n## Lab Reports\n\n::: {#lab-reports}\n:::\n\n## Meeting Notes\n\n::: {#meeting-notes}\n:::\n\n\nYAML 리스팅\n---\ntitle: \"Listing Example\"\nlisting:\n  id: sample-listings\n  contents: \n    - posts\n    - archived-items.yaml\n  sort: \"date desc\"\n  type: table\n---\n# archived-items.yml\n- title: \"Archived Item 1\"\n  author: Norah Jones\n  date: 2020-01-01\n  path: \"archived/archived-item-.html\"\n  categories: [archived, technology]"
   },
   {
     "objectID": "QUARTO/웹사이트/리스팅/categories-feeds.html",
     "href": "QUARTO/웹사이트/리스팅/categories-feeds.html",
     "title": "분류 피드",
     "section": "",
-    "text": "리스팅 분류(Categpries) 및 피드(Feeds)\n\n분류(Categories)\n\n지정\n---\nlisting:\n  categories: true\n---\n\n\n스타일 옵션\n\nnumbered Displays a list of categories in alphabetical order with the number of items in that category displayed next to the category name.\nunnumbered Display a list of categories in alphabetical order.\ncloud Displays a ‘word cloud’ of categories.\n\n\n\n\n피드(Feeds)\n\n설정\n---\nlisting:\n  contents: posts\n  feed: true\n---\n# _quarto.yml\nwebsite:\n  site-url: \"https://www.quarto.org\"\n\n\n피드 옵션\nitems The number of items to include in your feed. Defaults to 20. type full, partial or metadata. full, the default, includes the full contents of each document in the feed. partial includes the description, if available, otherwise the first paragraph in the feed. metadata includes only the title, description, and other document metadata in the feed. title The title for this feed. Defaults to the site title provided in your _quarto.yml file. image The image for this feed. If not specified, the image for the page the listing appears on will be used, otherwise an image will be used if specified for the site in your _quarto.yml file. description The description of this feed. If not specified, the description for the page the listing appears on will be used, otherwise the description of the site will be used if specified in your _quarto.yml file. language The language of the feed. Omitted if not specified. See https://www.rssboard.org/rss-language-codes for a list of valid language codes. categories Generates a separate feed for each of the categories included in this list of category names.",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Listing",
-      "분류 피드"
-    ]
+    "text": "리스팅 분류(Categpries) 및 피드(Feeds)\n\n분류(Categories)\n\n지정\n---\nlisting:\n  categories: true\n---\n\n\n스타일 옵션\n\nnumbered Displays a list of categories in alphabetical order with the number of items in that category displayed next to the category name.\nunnumbered Display a list of categories in alphabetical order.\ncloud Displays a ‘word cloud’ of categories.\n\n\n\n\n피드(Feeds)\n\n설정\n---\nlisting:\n  contents: posts\n  feed: true\n---\n# _quarto.yml\nwebsite:\n  site-url: \"https://www.quarto.org\"\n\n\n피드 옵션\nitems The number of items to include in your feed. Defaults to 20. type full, partial or metadata. full, the default, includes the full contents of each document in the feed. partial includes the description, if available, otherwise the first paragraph in the feed. metadata includes only the title, description, and other document metadata in the feed. title The title for this feed. Defaults to the site title provided in your _quarto.yml file. image The image for this feed. If not specified, the image for the page the listing appears on will be used, otherwise an image will be used if specified for the site in your _quarto.yml file. description The description of this feed. If not specified, the description for the page the listing appears on will be used, otherwise the description of the site will be used if specified in your _quarto.yml file. language The language of the feed. Omitted if not specified. See https://www.rssboard.org/rss-language-codes for a list of valid language codes. categories Generates a separate feed for each of the categories included in this list of category names."
   },
   {
     "objectID": "QUARTO/웹사이트/리스팅/listing-overview.html",
     "href": "QUARTO/웹사이트/리스팅/listing-overview.html",
     "title": "리스팅 개요",
     "section": "",
-    "text": "리스팅 개요(Overview), 콘텐츠(Contents), 타입(Type) 및 정렬(Sorting)\n\n개요(Overview)\n리스팅은 페이지의 내용(또는 특정 부분)을 자동으로 생성할 수 있도록 해 준다.\n---\ntitle: \"리스팅 페이지\"\nlisting: default\n---\n위 문서는 문서가 위치한 디렉토리의 모든 문서(자기 자신은 제외)를 기본형식으로 리스탱해서 보여준다.\n\n\n항목(Contents)\n리스팅에 포함될 문서(최소한 title: 메타데이터를 포함해야 함)를 제한할 수 있다.\ncontents: 리스트는 glob 문법을 따른다.\n\n\n\n\n\n\n중요상대경로\n\n\n\ncontents: 리스트에 지정된 경로는 현재 문서를 기준으로 하는 상대 경로이다.\n\n\n\n폴더 지정\n\n---\ntitle: \"Listing Example\"\nlisting:\n  contents: posts\n---\n\n개별 문서 지정\n\n---\ntitle: \"Listing Example\"\nlisting:\n  contents:\n    - \"reports/*.qmd\"\n    - \"lab-notes/*reports.qmd\"\n\n\n타입(Type)\n\n지정\n문서의 메터데이터에 listing: type: 시용하여 지정\n---\nlisting:\n  contents: posts\n  type: default\n---\n\n\n종류\n\ndefault A blog style list of items.\ntable A table of listings.\ngrid A grid of listing cards.\n\n\n\n\n정렬(Sorting)\n\n기본 정렬은 title: 오름차순이나 sort: 옵션으로 지정할 수 있따.\n오름차순, 내림차순은 asc, desc로 지정한다. = 정렬 없이 물리적으로 저장된 순으로 리스트 하려면 false를 지정한다.\n\n---\nlisting:\n  contents: posts\n  sort: \"date\"\n---\n---\nlisting:\n  contents: posts\n  sort:\n    - \"date\"\n    - \"title desc\"\n---",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Listing",
-      "리스팅 개요"
-    ]
+    "text": "리스팅 개요(Overview), 콘텐츠(Contents), 타입(Type) 및 정렬(Sorting)\n\n개요(Overview)\n리스팅은 페이지의 내용(또는 특정 부분)을 자동으로 생성할 수 있도록 해 준다.\n---\ntitle: \"리스팅 페이지\"\nlisting: default\n---\n위 문서는 문서가 위치한 디렉토리의 모든 문서(자기 자신은 제외)를 기본형식으로 리스탱해서 보여준다.\n\n\n항목(Contents)\n리스팅에 포함될 문서(최소한 title: 메타데이터를 포함해야 함)를 제한할 수 있다.\ncontents: 리스트는 glob 문법을 따른다.\n\n\n\n\n\n\n중요상대경로\n\n\n\ncontents: 리스트에 지정된 경로는 현재 문서를 기준으로 하는 상대 경로이다.\n\n\n\n폴더 지정\n\n---\ntitle: \"Listing Example\"\nlisting:\n  contents: posts\n---\n\n개별 문서 지정\n\n---\ntitle: \"Listing Example\"\nlisting:\n  contents:\n    - \"reports/*.qmd\"\n    - \"lab-notes/*reports.qmd\"\n\n\n타입(Type)\n\n지정\n문서의 메터데이터에 listing: type: 시용하여 지정\n---\nlisting:\n  contents: posts\n  type: default\n---\n\n\n종류\n\ndefault A blog style list of items.\ntable A table of listings.\ngrid A grid of listing cards.\n\n\n\n\n정렬(Sorting)\n\n기본 정렬은 title: 오름차순이나 sort: 옵션으로 지정할 수 있따.\n오름차순, 내림차순은 asc, desc로 지정한다. = 정렬 없이 물리적으로 저장된 순으로 리스트 하려면 false를 지정한다.\n\n---\nlisting:\n  contents: posts\n  sort: \"date\"\n---\n---\nlisting:\n  contents: posts\n  sort:\n    - \"date\"\n    - \"title desc\"\n---"
   },
   {
     "objectID": "QUARTO/웹사이트/초안/website-draft.html",
     "href": "QUARTO/웹사이트/초안/website-draft.html",
     "title": "웹사이트 초안",
     "section": "",
-    "text": "웹사이트의 전체 또는 부분을 초안(draft)으로 설정하여 렌더링 조정\n\n초안 설정\n\n문서 설정\n\n---\ntitle: \"작성 중인 문서\"\ndraft: true\n---\n\n폴더 설정\n\n# _metadata.yml\ndraft: true\n\n프로젝트 설정\n\n# _quarto.yml\nwebsite:\n  drafts:\n    - path/to/draft/document.qmd\n# _quarto.yml\nmetadata-files:\n  - drafts.yml\n# drafts.yml\nwebsite:\n  drafts:\n    - path/to/draft/document.qmd\n\n\n보기 설정\ndraft-mode: 사용하여 gone, unlinked, visible로 지정\n\ngone(default) — Empty and unlinked\nunlinked — Rendered and unlinked\nvisible — Rendered and linked\n\nproject:\n  type: website\n\nwebsite:\n  title: \"Cool Website.\"\n  navbar:\n    left:\n      - stuff/item1.qmd\n      - stuff/item2.qmd\n  drafts:\n    - stuff/item2.qmd\n  draft-mode: unlinked\n\n\n미리보기 모드에서 초안(Draft) 설정\nquarto --preview 에서는 draft-mode: 설정과 관꼐없이 항상 visible로 동작한다.",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Draft",
-      "웹사이트 초안"
-    ]
+    "text": "웹사이트의 전체 또는 부분을 초안(draft)으로 설정하여 렌더링 조정\n\n초안 설정\n\n문서 설정\n\n---\ntitle: \"작성 중인 문서\"\ndraft: true\n---\n\n폴더 설정\n\n# _metadata.yml\ndraft: true\n\n프로젝트 설정\n\n# _quarto.yml\nwebsite:\n  drafts:\n    - path/to/draft/document.qmd\n# _quarto.yml\nmetadata-files:\n  - drafts.yml\n# drafts.yml\nwebsite:\n  drafts:\n    - path/to/draft/document.qmd\n\n\n보기 설정\ndraft-mode: 사용하여 gone, unlinked, visible로 지정\n\ngone(default) — Empty and unlinked\nunlinked — Rendered and unlinked\nvisible — Rendered and linked\n\nproject:\n  type: website\n\nwebsite:\n  title: \"Cool Website.\"\n  navbar:\n    left:\n      - stuff/item1.qmd\n      - stuff/item2.qmd\n  drafts:\n    - stuff/item2.qmd\n  draft-mode: unlinked\n\n\n미리보기 모드에서 초안(Draft) 설정\nquarto --preview 에서는 draft-mode: 설정과 관꼐없이 항상 visible로 동작한다."
   },
   {
     "objectID": "QUARTO/웹사이트/네비게이션/page-navigation.html",
     "href": "QUARTO/웹사이트/네비게이션/page-navigation.html",
     "title": "페이지 이동",
     "section": "",
-    "text": "섹션이나 서브섹션에서 페이지 하부에 이전/이후 링크 표시\n\n\n\n\n\n\n힌트Seperators\n\n\n\n\n\n\nsidebar:하부 섹션(section) 또는 항목(item) 사이에 text: \"---\"가 있는 경우 보이지 않음\n\nwebsite:\n  sidebar:\n    contents:\n      - section: \"section one\"\n        contents:\n          - href: documents.qmd\n          - ...\n      - text: \"---\"\n      - section: \"section two\"\n        contents:\n          - href: ...\n          ...\n\n\n\n\n프로젝트 설정(_quarto.yml)\nwebsite:\n  page-navigation: ture   # or false\n\n\n폴더 설정(_metadata.yml)\npage-navigation: true   # or false\n\n\n문서 설정(yml 헤더)\n---\npage-navigation: false  # or true\n---",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Nevigation",
-      "페이지 이동"
-    ]
+    "text": "섹션이나 서브섹션에서 페이지 하부에 이전/이후 링크 표시\n\n\n\n\n\n\n힌트Seperators\n\n\n\n\n\n\nsidebar:하부 섹션(section) 또는 항목(item) 사이에 text: \"---\"가 있는 경우 보이지 않음\n\nwebsite:\n  sidebar:\n    contents:\n      - section: \"section one\"\n        contents:\n          - href: documents.qmd\n          - ...\n      - text: \"---\"\n      - section: \"section two\"\n        contents:\n          - href: ...\n          ...\n\n\n\n\n프로젝트 설정(_quarto.yml)\nwebsite:\n  page-navigation: ture   # or false\n\n\n폴더 설정(_metadata.yml)\npage-navigation: true   # or false\n\n\n문서 설정(yml 헤더)\n---\npage-navigation: false  # or true\n---"
   },
   {
     "objectID": "QUARTO/웹사이트/네비게이션/hide-navigation.html",
     "href": "QUARTO/웹사이트/네비게이션/hide-navigation.html",
     "title": "네비게이션 감추기 및 읽기 모드",
     "section": "",
-    "text": "메뉴바, 사이드바를 감추거나 사이드바와 목차를 감추는 설정\n\n네비에기션 감추기\n페이지의 yml 헤더에서 설정\n---\n# Hides the sidebar on this page\nsidebar: false\n# Hides the navbar on this page\nnavbar: false\n---\n\n\n읽기 모드\n프로젝트 설정(_quarto.yml) 웹사이트\nwebsite:\n  reader-mode: true",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Nevigation",
-      "네비게이션 감추기 및 읽기 모드"
-    ]
+    "text": "메뉴바, 사이드바를 감추거나 사이드바와 목차를 감추는 설정\n\n네비에기션 감추기\n페이지의 yml 헤더에서 설정\n---\n# Hides the sidebar on this page\nsidebar: false\n# Hides the navbar on this page\nnavbar: false\n---\n\n\n읽기 모드\n프로젝트 설정(_quarto.yml) 웹사이트\nwebsite:\n  reader-mode: true"
   },
   {
     "objectID": "QUARTO/웹사이트/네비게이션/redirects.html",
     "href": "QUARTO/웹사이트/네비게이션/redirects.html",
     "title": "다른 페이지로",
     "section": "",
-    "text": "다른 페이지로 이동 설정: aliases:사용\n\n문서 설정(yml 헤더)\n\n파일 이름 변경\n---\ntitle: \"Renamed Page\"\naliases:\n  - page.html   # pages.qmd를 renamed-page.qmd로 변경 (확장자를 .html 사용해야 함에 주의)\n---\n\n\n폴더 구조 변경\n---\ntitle: \"Reorganized page\"\naliases: \n  - \"/old-directory/index.html\"     # old-directory을 new-directory로 변경 (절대경로 사용해야 함)\n---\n\n\n\n큰 파일을 작은 파일로 분리\n---\ntitle: \"Learning More\"\naliases:\n  - overview.html#learning-more     # overview.qmd의 learning-more 섹션을 분리\n---",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Nevigation",
-      "다른 페이지로"
-    ]
+    "text": "다른 페이지로 이동 설정: aliases:사용\n\n문서 설정(yml 헤더)\n\n파일 이름 변경\n---\ntitle: \"Renamed Page\"\naliases:\n  - page.html   # pages.qmd를 renamed-page.qmd로 변경 (확장자를 .html 사용해야 함에 주의)\n---\n\n\n폴더 구조 변경\n---\ntitle: \"Reorganized page\"\naliases: \n  - \"/old-directory/index.html\"     # old-directory을 new-directory로 변경 (절대경로 사용해야 함)\n---\n\n\n\n큰 파일을 작은 파일로 분리\n---\ntitle: \"Learning More\"\naliases:\n  - overview.html#learning-more     # overview.qmd의 learning-more 섹션을 분리\n---"
   },
   {
     "objectID": "QUARTO/웹사이트/네비게이션/sidebar.html",
     "href": "QUARTO/웹사이트/네비게이션/sidebar.html",
     "title": "사이드바(sidebar:)",
     "section": "",
-    "text": "페이지 왼쪽 메뉴 설정\n\n프로젝트 설정(_quarto.yml)\nwebsite:\n  sidebar:\n    style: \"docked\"\n    search: true\n    contents:\n      - text: \"Introduction\"\n        href: introduction.qmd\n      - section: \"Basics\"\n        href: basics-summary.qmd\n        contents:\n          - index.qmd\n          - basics-knitr.qmd\n          - basics-jupyter.qmd\n      - section: \"Layout\"\n        ...\n      - acknowledgment.qmd\n\n\n사이드바(sidebar:) 옵션\n\nid: Optional identifier (used only for hybrid navigation, described below).\ntitle: Sidebar title (uses the project title if none is specified).\nlogo: Optional logo image. When using a _brand.yml with a logo, the brand logo is automatically displayed. Use logo: false to suppress the brand logo on the sidebar.\nlogo-alt: Alternate text for the logo image.\nlogo-href: Target href from sidebar logo. By default, the logo and title link to the root page of the site (/index.html).\nsearch: Include a search box (true or false). Note that if there is already a search box on the top navigation bar it won’t be displayed on the sidebar.\ntools: List of sidebar tools (e.g., link to github or bluesky, etc.). See the next section for details.\ncontents: List of navigation items to display (typically top level items will in turn have a list of sub-items).\nstyle: “docked” or “floating”.\ntype: “dark” or “light” (hint to make sure the text color is the inverse of the background).\nbackground: Background color (“none”, “primary”, “secondary”, “success”, “danger”, “warning”, “info”, “light”, “dark”, or “white”). Defaults to “light”.\nforeground: Foreground color (“primary”, “secondary”, “success”, “danger”, “warning”, “info”, “light”, “dark”, or hex color). The foreground color will be used to color navigation elements, text and links that appear in the sidebar.\nborder: Whether to show a border on the sidebar. “true” or “false”.\nalignment: Alignment (“left”, “right”, or “center”).\ncollapse-level: Whether to show sidebar navigation collapsed by default. The default is 2, which shows the top and next level fully expanded (but leaves the 3rd and subsequent levels collapsed).\npinned: Always show a title bar that expands to show the sidebar at narrower screen widths (true or false). Defaults to false, and uses headroom.js to automatically show the navigation bar when the user scrolls up on the page.\n\n\n\n\n\n\n\n중요모든 페이지에 표시\n\n\n\n옵션id:나 title:을 지정하지 않은 항목(sidebar items)은 웹사이트 모든 페이지에 표시된다. ### 일부 페이지에 표시 옵션id:나 title:을 지정한 항목(sidebar items)은 사이드바 contents: 리스트에 포함된 페이지들이나, 사이드바 id:를 지정한 폴더(_metadata.yml에서 지정), 페이지(yml 헤더에서 지정)에 표시된다.\n\n\n\n항목 자동 생성\n파일시스템에서 사이드바 항목을 자동으로 생성하는 설정\n\n자동항목 생성 규칙\n\n항목 이름은 문서의 title: 필드에서 읽어온다.\n하부 폴더는 폴더 이름을 사용해 섹션(sections)을 형성한다. 폴더 이름에 포함된 -, _는 섹션 이름에서 빈칸으로 바뀌고, 첫글자가 3.대문자로 바뀐다. 폴더에 title: 필드를 갖는 index.qmd 파일을 형성하면 폴더 이름 대신 지정된 이름으로 섹션이름을 설정한다.\n항목 순서는 파일이름 순으로 정렬된다. (문서 yml 해더에 order: 필드를 지정하면 바꿀 수 있음)\n\n\n\n자동생성 항목 지정\n항목 지동생성은 프로젝트 폴더 내의 모든 파일을 대상으로 한다. 이 기본값과 다르게 항목을 생성하려면 폴더 이름을 지정하거나 glob 패턴을 사용한다.\n\n프로젝트 폴더의 모든 파일(기본값)\n\nwebsite:\n  sidebar:\n    contents: auto\n\n프로젝트 /폴더 안의 파일로 제한\n\nwebsite:\n  sidebar:\n    contents: /*\n\nglob 패턴 사용\n\nsidebar:\n  contents: reports\n\nsidebar:\n  contents: reports/*\n  \nsidebar:\n  contents: \"*.ipynb\"\n\n\n\n\n\n\n중요YAML에서 *로 시작하는 패턴\n\n\n\nYAML에서 *로 시작하는 패턴을 사용할 때 반드시 \" \"를 사용해야 한다.\n\n\n\nsidebar: 안에서 contents:의 위계\n\nwebsite:\n  sidebar:\n    contents:\n      - about.qmd\n      - contributing.qmd\n      - section: Reports\n        contents: reports\n\n일반 항목과 auto:의 사용\n\nwebsite:\n  sidebar:\n    contents:\n      - about.qmd\n      - contributing.qmd\n      - auto: \"*-report.qmd\"\n\n\n\n사이드바 툴(tools:) 리스트\n아이콘 이름(Bootstrap icons), 링크로 구성되며 사이드바 상단에 표시된다.\nwebsite:\n  sidebar:\n    tools:\n      - icon: bluesky\n        href: https://bsky.app\n      - icon: github\n        menu:\n          - text: Source Code\n            href:  https://code.com\n          - text: Report a Bug\n            href:  https://bugs.com",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Nevigation",
-      "사이드바(sidebar:)"
-    ]
+    "text": "페이지 왼쪽 메뉴 설정\n\n프로젝트 설정(_quarto.yml)\nwebsite:\n  sidebar:\n    style: \"docked\"\n    search: true\n    contents:\n      - text: \"Introduction\"\n        href: introduction.qmd\n      - section: \"Basics\"\n        href: basics-summary.qmd\n        contents:\n          - index.qmd\n          - basics-knitr.qmd\n          - basics-jupyter.qmd\n      - section: \"Layout\"\n        ...\n      - acknowledgment.qmd\n\n\n사이드바(sidebar:) 옵션\n\nid: Optional identifier (used only for hybrid navigation, described below).\ntitle: Sidebar title (uses the project title if none is specified).\nlogo: Optional logo image. When using a _brand.yml with a logo, the brand logo is automatically displayed. Use logo: false to suppress the brand logo on the sidebar.\nlogo-alt: Alternate text for the logo image.\nlogo-href: Target href from sidebar logo. By default, the logo and title link to the root page of the site (/index.html).\nsearch: Include a search box (true or false). Note that if there is already a search box on the top navigation bar it won’t be displayed on the sidebar.\ntools: List of sidebar tools (e.g., link to github or bluesky, etc.). See the next section for details.\ncontents: List of navigation items to display (typically top level items will in turn have a list of sub-items).\nstyle: “docked” or “floating”.\ntype: “dark” or “light” (hint to make sure the text color is the inverse of the background).\nbackground: Background color (“none”, “primary”, “secondary”, “success”, “danger”, “warning”, “info”, “light”, “dark”, or “white”). Defaults to “light”.\nforeground: Foreground color (“primary”, “secondary”, “success”, “danger”, “warning”, “info”, “light”, “dark”, or hex color). The foreground color will be used to color navigation elements, text and links that appear in the sidebar.\nborder: Whether to show a border on the sidebar. “true” or “false”.\nalignment: Alignment (“left”, “right”, or “center”).\ncollapse-level: Whether to show sidebar navigation collapsed by default. The default is 2, which shows the top and next level fully expanded (but leaves the 3rd and subsequent levels collapsed).\npinned: Always show a title bar that expands to show the sidebar at narrower screen widths (true or false). Defaults to false, and uses headroom.js to automatically show the navigation bar when the user scrolls up on the page.\n\n\n\n\n\n\n\n중요모든 페이지에 표시\n\n\n\n옵션id:나 title:을 지정하지 않은 항목(sidebar items)은 웹사이트 모든 페이지에 표시된다. ### 일부 페이지에 표시 옵션id:나 title:을 지정한 항목(sidebar items)은 사이드바 contents: 리스트에 포함된 페이지들이나, 사이드바 id:를 지정한 폴더(_metadata.yml에서 지정), 페이지(yml 헤더에서 지정)에 표시된다.\n\n\n\n항목 자동 생성\n파일시스템에서 사이드바 항목을 자동으로 생성하는 설정\n\n자동항목 생성 규칙\n\n항목 이름은 문서의 title: 필드에서 읽어온다.\n하부 폴더는 폴더 이름을 사용해 섹션(sections)을 형성한다. 폴더 이름에 포함된 -, _는 섹션 이름에서 빈칸으로 바뀌고, 첫글자가 3.대문자로 바뀐다. 폴더에 title: 필드를 갖는 index.qmd 파일을 형성하면 폴더 이름 대신 지정된 이름으로 섹션이름을 설정한다.\n항목 순서는 파일이름 순으로 정렬된다. (문서 yml 해더에 order: 필드를 지정하면 바꿀 수 있음)\n\n\n\n자동생성 항목 지정\n항목 지동생성은 프로젝트 폴더 내의 모든 파일을 대상으로 한다. 이 기본값과 다르게 항목을 생성하려면 폴더 이름을 지정하거나 glob 패턴을 사용한다.\n\n프로젝트 폴더의 모든 파일(기본값)\n\nwebsite:\n  sidebar:\n    contents: auto\n\n프로젝트 /폴더 안의 파일로 제한\n\nwebsite:\n  sidebar:\n    contents: /*\n\nglob 패턴 사용\n\nsidebar:\n  contents: reports\n\nsidebar:\n  contents: reports/*\n  \nsidebar:\n  contents: \"*.ipynb\"\n\n\n\n\n\n\n중요YAML에서 *로 시작하는 패턴\n\n\n\nYAML에서 *로 시작하는 패턴을 사용할 때 반드시 \" \"를 사용해야 한다.\n\n\n\nsidebar: 안에서 contents:의 위계\n\nwebsite:\n  sidebar:\n    contents:\n      - about.qmd\n      - contributing.qmd\n      - section: Reports\n        contents: reports\n\n일반 항목과 auto:의 사용\n\nwebsite:\n  sidebar:\n    contents:\n      - about.qmd\n      - contributing.qmd\n      - auto: \"*-report.qmd\"\n\n\n\n사이드바 툴(tools:) 리스트\n아이콘 이름(Bootstrap icons), 링크로 구성되며 사이드바 상단에 표시된다.\nwebsite:\n  sidebar:\n    tools:\n      - icon: bluesky\n        href: https://bsky.app\n      - icon: github\n        menu:\n          - text: Source Code\n            href:  https://code.com\n          - text: Report a Bug\n            href:  https://bugs.com"
   },
   {
     "objectID": "QUARTO/웹사이트/네비게이션/hybrid-navigation.html",
     "href": "QUARTO/웹사이트/네비게이션/hybrid-navigation.html",
     "title": "메뉴바와 사이드바의 결합",
     "section": "",
-    "text": "메뉴바와 사이드바를 통합하여 설정\n\n사이드바의 title: 사용\n사이드바 항목들의 그룹을 title:로 지정하여 이름을 부여하고,\n메뉴바의 text:에서 해당 이름을 사용하고, href:는 그룹의 첫번째 항목을 지정한다.\nwebsite:\n  title: ProjectX\n  navbar:\n    background: primary\n    search: true\n    left:\n      - text: \"Home\"\n        href: index.qmd\n      - text: \"Tutorials\"\n        href: tutorials.qmd\n  sidebar:\n    - title: \"Tutorials\"\n      style: \"docked\"\n      background: light\n      contents:\n        - tutorials.qmd\n        - tutorial-1.qmd\n        - tutorial-2.qmd\n\n\n\n\n\n\n노트사이드바 옵션의 승계\n\n\n\n사이드바에서 title:로 지정된 첫번쩨 그룹에 옵션을 지정하면 나머지 그룹들에도 해당 옵션이 승계하여 적용된다.\n\n\n\n\n사이드바의 id: 사용\ntitle:로 지정한 사이드바 항목 그룹에 id: name를 설정하고,\n메뉴바에서 sidebar:name으로 지정하면 항목 그룹의 드롭다운 메뉴가 구성된다.\nwebsite:\n  title: ProjectX\n  navbar:\n    background: primary\n    search: true\n    left:\n      - text: \"Home\"\n        href: index.qmd\n      - sidebar:tutorials\n  sidebar:\n    - id: tutorials\n      title: \"Tutorials\"\n      style: \"docked\"\n      background: light\n      collapse-level: 2\n      contents: \n        # navigation items",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Nevigation",
-      "메뉴바와 사이드바의 결합"
-    ]
+    "text": "메뉴바와 사이드바를 통합하여 설정\n\n사이드바의 title: 사용\n사이드바 항목들의 그룹을 title:로 지정하여 이름을 부여하고,\n메뉴바의 text:에서 해당 이름을 사용하고, href:는 그룹의 첫번째 항목을 지정한다.\nwebsite:\n  title: ProjectX\n  navbar:\n    background: primary\n    search: true\n    left:\n      - text: \"Home\"\n        href: index.qmd\n      - text: \"Tutorials\"\n        href: tutorials.qmd\n  sidebar:\n    - title: \"Tutorials\"\n      style: \"docked\"\n      background: light\n      contents:\n        - tutorials.qmd\n        - tutorial-1.qmd\n        - tutorial-2.qmd\n\n\n\n\n\n\n노트사이드바 옵션의 승계\n\n\n\n사이드바에서 title:로 지정된 첫번쩨 그룹에 옵션을 지정하면 나머지 그룹들에도 해당 옵션이 승계하여 적용된다.\n\n\n\n\n사이드바의 id: 사용\ntitle:로 지정한 사이드바 항목 그룹에 id: name를 설정하고,\n메뉴바에서 sidebar:name으로 지정하면 항목 그룹의 드롭다운 메뉴가 구성된다.\nwebsite:\n  title: ProjectX\n  navbar:\n    background: primary\n    search: true\n    left:\n      - text: \"Home\"\n        href: index.qmd\n      - sidebar:tutorials\n  sidebar:\n    - id: tutorials\n      title: \"Tutorials\"\n      style: \"docked\"\n      background: light\n      collapse-level: 2\n      contents: \n        # navigation items"
   },
   {
     "objectID": "QUARTO/웹사이트/블로그/theme.html",
     "href": "QUARTO/웹사이트/블로그/theme.html",
     "title": "블로그 테마",
     "section": "",
-    "text": "블로그 테마 설정\n\n테마\n25개의 Bootswatch 테마를 사용하거나 자체 테마를 작성할 수 있다.\ndefault, cerulean, cosmo, cyborg, darkly, flatly, journal, litera, lumen, lux, materia, minty, morph, pulse, quartz, sandstone, simplex, sketchy, slate, solar, spacelab, superhero, united, vapor, yeti, zephyr\n\n프로젝트 설정(_quarto.yml)\nformat:\n  html:\n    theme: cosmo",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Blog",
-      "블로그 테마"
-    ]
+    "text": "블로그 테마 설정\n\n테마\n25개의 Bootswatch 테마를 사용하거나 자체 테마를 작성할 수 있다.\ndefault, cerulean, cosmo, cyborg, darkly, flatly, journal, litera, lumen, lux, materia, minty, morph, pulse, quartz, sandstone, simplex, sketchy, slate, solar, spacelab, superhero, united, vapor, yeti, zephyr\n\n프로젝트 설정(_quarto.yml)\nformat:\n  html:\n    theme: cosmo"
   },
   {
     "objectID": "QUARTO/웹사이트/블로그/post.html",
     "href": "QUARTO/웹사이트/블로그/post.html",
     "title": "포스팅 폴더",
     "section": "",
-    "text": "블로그 글을 저장하는 포스팅 폴더 설정\n\n초안\n프리뷰에서만 보이고, 렌더링에서는 제외되는 섫정\n---\ndraft: true\n---\n\n\n최종 수정일\n---\nlast-modified: \"2026-03-27\"\n---\n\n\n렌더링 결과 보관\n\n폴더 설정(_metadata.yml)\n# freeze computational output\nfreeze: true",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Blog",
-      "포스팅 폴더"
-    ]
+    "text": "블로그 글을 저장하는 포스팅 폴더 설정\n\n초안\n프리뷰에서만 보이고, 렌더링에서는 제외되는 섫정\n---\ndraft: true\n---\n\n\n최종 수정일\n---\nlast-modified: \"2026-03-27\"\n---\n\n\n렌더링 결과 보관\n\n폴더 설정(_metadata.yml)\n# freeze computational output\nfreeze: true"
   },
   {
     "objectID": "QUARTO/웹사이트/블로그/about.html",
     "href": "QUARTO/웹사이트/블로그/about.html",
     "title": "About page",
     "section": "",
-    "text": "블로그와 저자들에 대한 추가 설명을 위한 페이지",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Blog",
-      "About page"
-    ]
+    "text": "블로그와 저자들에 대한 추가 설명을 위한 페이지"
   },
   {
     "objectID": "QUARTO/웹사이트/블로그/about.html#education",
     "href": "QUARTO/웹사이트/블로그/about.html#education",
     "title": "About page",
     "section": "Education",
-    "text": "Education\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul, MN B.A in Economics | Sept 2007 - June 2011",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Blog",
-      "About page"
-    ]
+    "text": "Education\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul, MN B.A in Economics | Sept 2007 - June 2011"
   },
   {
     "objectID": "QUARTO/웹사이트/블로그/about.html#experience",
     "href": "QUARTO/웹사이트/블로그/about.html#experience",
     "title": "About page",
     "section": "Experience",
-    "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018",
-    "crumbs": [
-      "Quarto",
-      "Website",
-      "Blog",
-      "About page"
-    ]
+    "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018"
   }
 ]
