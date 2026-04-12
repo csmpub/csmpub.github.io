@@ -10,8 +10,6 @@ website:
         text: "Home"
       - href: data.qmd
         text: "Data"
-#      - href: quarto.qmd
-#        text: "Quarto"
       - href: about.qmd
         text: "About"
   sidebar:
@@ -19,32 +17,18 @@ website:
       title: "Menu"
       collapse-level: 3
       contents:
-#        - text: "Top Menu"
-#        - text: "---" 
         - index.qmd
         - data.qmd
-#        - quarto.qmd
         - text: "---" 
     - id: data
       title: "Data"
       contents: 
-#        - text: "Top Menu"
-#        - text: "---" 
         - index.qmd
         - data.qmd
-#        - quarto.qmd
         - text: "---"
         - auto: FILES
-#    - id: quarto
-#      title: "Quarto"
-#      contents: 
-#        - text: "Top Menu"
-#        - text: "---" 
-#        - index.qmd
-#        - data.qmd
-#        - quarto.qmd
-#        - text: "---"
-#        - auto: QUARTO
+
+  draft-mode: visible
 
 format:
   html:
@@ -54,4 +38,3 @@ format:
 language: korean.yml
 date-format: iso
 title-block-banner: true
-#toc: true

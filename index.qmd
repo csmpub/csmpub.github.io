@@ -3,9 +3,9 @@ title: "Wintree's Home"
 listing: 
     contents:
         - "POSTS/*.qmd"
-    fields: [title, description, date]
+    fields: [title, description, date-modified]
     type: table
-    sort: "date desc"
+    sort: "date-modified desc"
     sort-ui: true
     filter-ui: true
     categories: true

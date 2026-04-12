@@ -5,6 +5,7 @@ date-modified: "2026-04-07"
 categories: [추계가구, 가구주, 성별, 연령, 혼인상태]
 toc: true
 toc-depth: 4
+draft: true
 ---
 
 가구주의 성/연령/혼인상태별 추계가구-시도 기간: 년, 2000-2052

@@ -1,0 +1,9 @@
+---
+title: "Set draft-mode"
+date: "2026-04-12"
+date-modified: "2026-04-12"
+draft: true
+---
+
+초안도 공개 되도록 설정을 `draft-mode: visible` 바꿈
+
