@@ -4,7 +4,7 @@
     "href": "data.html",
     "title": "Data Repository",
     "section": "",
-    "text": "노트wintree\n\n\n\n공공 데이터 소스 정보, 직접 조사 또는 가공한 데이터, 저작물에 사용한 데이터 등의 보관소\n\n\n\n데이터 폴더로 이동\n\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n\n\n\n\n\n보건 데이터\n\n\n\n\n\n\n\n\n\n인구 데이터\n\n\n\n\n\n\n\n\n\n한국부동산원\n\n\n\n\n\n\n\n\n\n일치 없음",
+    "text": "노트wintree\n\n\n\n공공 데이터 소스 정보, 직접 조사 또는 가공한 데이터, 저작물에 사용한 데이터 등의 보관소\n\n\n\n데이터 폴더로 이동\n\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n\n\n\n\n\n건설\n\n\n\n\n\n\n\n\n\n보건 데이터\n\n\n\n\n\n\n\n\n\n인구 데이터\n\n\n\n\n\n\n\n\n\n한국부동산원\n\n\n\n\n\n\n\n\n\n일치 없음",
     "crumbs": [
       "Home",
       "Data Repository"
@@ -57,99 +57,49 @@
     ]
   },
   {
-    "objectID": "FILES/KOSIS/인구/가구주의_성_연령_혼인상태별_추계가구-시도.html",
-    "href": "FILES/KOSIS/인구/가구주의_성_연령_혼인상태별_추계가구-시도.html",
-    "title": "가구주의 성/연령/혼인상태별 추계가구-시도",
+    "objectID": "FILES/통계누리/건설/index.html",
+    "href": "FILES/통계누리/건설/index.html",
+    "title": "건설",
     "section": "",
-    "text": "가구주의 성/연령/혼인상태별 추계가구-시도 기간: 년, 2000-2052\n파일 위치: 인구-장래가구추계-시도(2022년 기준)\n.xlsx로 다운로드 받아서 정리 후 .csv로 변환하여 저장\n\n데이터\n\n연령별 기대여명\n\n조회조건\n\n항목: 전체(계, 미혼, 유배우, 사별, 이혼) 선택\n행정구역별(시도): 전국, 서울 (개별 선택)\n가구주의 성별: 계, 남자, 여자 선택\n가구주의 연령별: 계, 전체 구간 선택\n시점: 년, 2026년 - 2052년\n\n파일다운로드: 가구주의-성-연령-혼인상태별-추계가구-전국.csv\n파일다운로드: 가구주의-성-연령-혼인상태별-추계가구-서울.csv\n\n\n\n\n통계표\n\n메타자료\n\n통계표ID : DT_1BZ05042\n통계표명 : 가구주의 성/연령/혼인상태별 추계가구-시도\n출처 : KOSIS(「장래가구추계」, 국가데이터처), 2026.04.09 10:12\n문의처 : 042-481-2256\n통계표URL : https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1BZ05042&conn_path=I3\n\nKOSIS 개편 시 통계표 URL은 달라질 수 있음\n\n단위 : 가구",
+    "text": "국토교통부에서 제공하는 건설분야 데이터",
     "crumbs": [
       "데이터 다운로드",
-      "통계포털(KOSIS)",
-      "인구 데이터",
-      "가구주의 성/연령/혼인상태별 추계가구-시도"
+      "국토교통부 통계누리",
+      "건설"
     ]
   },
   {
-    "objectID": "FILES/KOSIS/보건/완전생명표_1세별.html",
-    "href": "FILES/KOSIS/보건/완전생명표_1세별.html",
-    "title": "완전생명표(1세별)",
-    "section": "",
-    "text": "기대여명(전체, 남, 여) 기간: 1970~2024년\n파일 위치: 보건-생명표-완전생명표(1세별)(년 1970-2024)\n.xlsx로 다운로드 받아서 정리 후 .csv로 변환하여 저장\n\n데이터\n\n연령별 기대여명\n\n조회조건\n\n항목: 기대여명(전체, 남자, 여자) 선택\n연령별: 0세 - 100세 이상 전체 선택\n시점: 년, 1970년 - 2024년\n\n파일다운로드: 연령별기대여명.csv\n\n\n\n\n통계표\n\n메타자료\n\n통계표ID : DT_1B42\n통계표명 : 완전생명표(1세별)\n출처 : KOSIS(「생명표」, 국가데이터처), 2026.04.08 22:37\n문의처 : 02-2012-9114, 042-481-2251\n통계표URL : https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1B42&conn_path=I3\nKOSIS 개편 시 통계표 URL은 달라질 수 있음\n\n\n\n주석\n통계표 16.12.2일 생명표 작성방법 개선으로 과거 공표된 ’70-’14년 생명표 수치가 갱신되었으니, 사용에 유의하시기 바랍니다.\n\n’70-’00년 생명표를 대상으로 Brass-logit 모형을 통해 80, 85세 사망확률 재작성, CK 모형 한계연령을 110세로 통일\n’70-’00년 생명표를 대상으로 Spline 내삽법으로 5세별 사망확률을 1세별 사망확률로 확장\n’15년 등록센서스 전환으로 인구통계의 연령자료 정합성 확보를 위해 주민등록 보정계수 적용절차 삭제\n자세한 사항은 온라인 간행물 생명표(1970-2015)의 작성절차 부분 참조",
-    "crumbs": [
-      "데이터 다운로드",
-      "통계포털(KOSIS)",
-      "보건 데이터",
-      "완전생명표(1세별)"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Who is Wintree?",
-    "section": "",
-    "text": "콘텐츠 창작자・개발자\n건설도시연구 대표\n○ 공학사: 연세대학교 건축공학과\n○ 공학박사: 연세대학교 대학원 도시공학과\n○ 대우건설: 상무\n○ 대우에스티: 전무\n○ 겸임교수: 이화여자대학교 엘텍공과대학 미래사회공학부\n○ 집필위원: 대한건축학회 발행 건축기술지침(Rev. 2) 건축 I, 건축 II\n\n\n\n\n주메일\n\n\n부메일"
-  },
-  {
-    "objectID": "POSTS/2026-04-03_월별-평균-분양가.html",
-    "href": "POSTS/2026-04-03_월별-평균-분양가.html",
-    "title": "월별 평균 분양가",
-    "section": "",
-    "text": "한국부동산원(구 한국감정원)의 청약홈에서 제공하는 전국 청약 평균분양가 정보"
-  },
-  {
-    "objectID": "POSTS/2026-04-03_연령별-기대여명.html",
-    "href": "POSTS/2026-04-03_연령별-기대여명.html",
-    "title": "연령별 기대여명",
-    "section": "",
-    "text": "KOSIS 생명표에서 기대여명 추출하여 연령별기대여명 생성"
-  },
-  {
-    "objectID": "POSTS/2026-04-07_가구주의-성-연령-혼인상태별-추계가구.html",
-    "href": "POSTS/2026-04-07_가구주의-성-연령-혼인상태별-추계가구.html",
-    "title": "추계가구(가구주의 성/연령/혼인상태별)",
-    "section": "",
-    "text": "KOSIS 가구주의 성/연령/혼인상태별 추계가구-시도에서 전국 및 서울 데이터 생성"
-  },
-  {
-    "objectID": "POSTS/2026-04-12_초안-설정-visible.html",
-    "href": "POSTS/2026-04-12_초안-설정-visible.html",
-    "title": "Set draft-mode",
-    "section": "",
-    "text": "초안도 공개 되도록 설정을 draft-mode: visible 바꿈"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Wintree’s Home",
-    "section": "",
-    "text": "힌트개인용 데이터 리포지토리\n\n\n\n\n공공 데이터 가공 과정\n기타 이런 저런 생각들…\n\n\n\n\n새 글\n\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n개정\n\n\n\n\n\n\n\n\nSet draft-mode\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n추계가구(가구주의 성/연령/혼인상태별)\n\n\n\n\n\n2026-04-07\n\n\n\n\n\n\n연령별 기대여명\n\n\n\n\n\n2026-04-03\n\n\n\n\n\n\n월별 평균 분양가\n\n\n\n\n\n2026-04-03\n\n\n\n\n\n\n일치 없음",
-    "crumbs": [
-      "Home",
-      "Wintree's Home"
-    ]
-  },
-  {
-    "objectID": "FILES/KOSIS/보건/index.html",
-    "href": "FILES/KOSIS/보건/index.html",
-    "title": "보건 데이터",
-    "section": "",
-    "text": "KOSIS에서 제공하는 통계주제: 보건 데이터",
-    "crumbs": [
-      "데이터 다운로드",
-      "통계포털(KOSIS)",
-      "보건 데이터"
-    ]
-  },
-  {
-    "objectID": "FILES/KOSIS/보건/index.html#데이터-목록",
-    "href": "FILES/KOSIS/보건/index.html#데이터-목록",
-    "title": "보건 데이터",
+    "objectID": "FILES/통계누리/건설/index.html#데이터-목록",
+    "href": "FILES/통계누리/건설/index.html#데이터-목록",
+    "title": "건설",
     "section": "데이터 목록",
     "text": "데이터 목록",
     "crumbs": [
       "데이터 다운로드",
-      "통계포털(KOSIS)",
-      "보건 데이터"
+      "국토교통부 통계누리",
+      "건설"
+    ]
+  },
+  {
+    "objectID": "FILES/KOSIS/index.html",
+    "href": "FILES/KOSIS/index.html",
+    "title": "통계포털(KOSIS)",
+    "section": "",
+    "text": "국가 데이터처 자료를 통계 주제별로 분류",
+    "crumbs": [
+      "데이터 다운로드",
+      "통계포털(KOSIS)"
+    ]
+  },
+  {
+    "objectID": "FILES/KOSIS/index.html#주제별-통계",
+    "href": "FILES/KOSIS/index.html#주제별-통계",
+    "title": "통계포털(KOSIS)",
+    "section": "주제별 통계",
+    "text": "주제별 통계",
+    "crumbs": [
+      "데이터 다운로드",
+      "통계포털(KOSIS)"
     ]
   },
   {
@@ -177,25 +127,141 @@
     ]
   },
   {
-    "objectID": "FILES/KOSIS/index.html",
-    "href": "FILES/KOSIS/index.html",
-    "title": "통계포털(KOSIS)",
+    "objectID": "FILES/KOSIS/보건/index.html",
+    "href": "FILES/KOSIS/보건/index.html",
+    "title": "보건 데이터",
     "section": "",
-    "text": "국가 데이터처 자료를 통계 주제별로 분류",
+    "text": "KOSIS에서 제공하는 통계주제: 보건 데이터",
     "crumbs": [
       "데이터 다운로드",
-      "통계포털(KOSIS)"
+      "통계포털(KOSIS)",
+      "보건 데이터"
     ]
   },
   {
-    "objectID": "FILES/KOSIS/index.html#주제별-통계",
-    "href": "FILES/KOSIS/index.html#주제별-통계",
-    "title": "통계포털(KOSIS)",
-    "section": "주제별 통계",
-    "text": "주제별 통계",
+    "objectID": "FILES/KOSIS/보건/index.html#데이터-목록",
+    "href": "FILES/KOSIS/보건/index.html#데이터-목록",
+    "title": "보건 데이터",
+    "section": "데이터 목록",
+    "text": "데이터 목록",
     "crumbs": [
       "데이터 다운로드",
-      "통계포털(KOSIS)"
+      "통계포털(KOSIS)",
+      "보건 데이터"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Wintree’s Home",
+    "section": "",
+    "text": "힌트개인용 데이터 리포지토리\n\n\n\n\n공공 데이터 가공 과정\n기타 이런 저런 생각들…\n\n\n\n\n새 글\n\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n개정\n\n\n\n\n\n\n\n\n국토교통 통계누리 추가\n\n\n\n\n\n2026-04-13\n\n\n\n\n\n\nSet draft-mode\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n추계가구(가구주의 성/연령/혼인상태별)\n\n\n\n\n\n2026-04-07\n\n\n\n\n\n\n연령별 기대여명\n\n\n\n\n\n2026-04-03\n\n\n\n\n\n\n월별 평균 분양가\n\n\n\n\n\n2026-04-03\n\n\n\n\n\n\n일치 없음",
+    "crumbs": [
+      "Home",
+      "Wintree's Home"
+    ]
+  },
+  {
+    "objectID": "POSTS/2026-04-12_초안-설정-visible.html",
+    "href": "POSTS/2026-04-12_초안-설정-visible.html",
+    "title": "Set draft-mode",
+    "section": "",
+    "text": "초안도 공개 되도록 설정을 draft-mode: visible 바꿈"
+  },
+  {
+    "objectID": "POSTS/2026-04-03_월별-평균-분양가.html",
+    "href": "POSTS/2026-04-03_월별-평균-분양가.html",
+    "title": "월별 평균 분양가",
+    "section": "",
+    "text": "한국부동산원(구 한국감정원)의 청약홈에서 제공하는 전국 청약 평균분양가 정보"
+  },
+  {
+    "objectID": "POSTS/2026-04-03_연령별-기대여명.html",
+    "href": "POSTS/2026-04-03_연령별-기대여명.html",
+    "title": "연령별 기대여명",
+    "section": "",
+    "text": "KOSIS 생명표에서 기대여명 추출하여 연령별기대여명 생성"
+  },
+  {
+    "objectID": "POSTS/2026-04-07_가구주의-성-연령-혼인상태별-추계가구.html",
+    "href": "POSTS/2026-04-07_가구주의-성-연령-혼인상태별-추계가구.html",
+    "title": "추계가구(가구주의 성/연령/혼인상태별)",
+    "section": "",
+    "text": "KOSIS 가구주의 성/연령/혼인상태별 추계가구-시도에서 전국 및 서울 데이터 생성"
+  },
+  {
+    "objectID": "POSTS/2026-04-13_국토교통-통계누리-추가.html",
+    "href": "POSTS/2026-04-13_국토교통-통계누리-추가.html",
+    "title": "국토교통 통계누리 추가",
+    "section": "",
+    "text": "데이터 소스 국토교통부 통계누리 승인통계 추가"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Who is Wintree?",
+    "section": "",
+    "text": "콘텐츠 창작자・개발자\n건설도시연구 대표\n○ 공학사: 연세대학교 건축공학과\n○ 공학박사: 연세대학교 대학원 도시공학과\n○ 대우건설: 상무\n○ 대우에스티: 전무\n○ 겸임교수: 이화여자대학교 엘텍공과대학 미래사회공학부\n○ 집필위원: 대한건축학회 발행 건축기술지침(Rev. 2) 건축 I, 건축 II\n\n\n\n\n주메일\n\n\n부메일"
+  },
+  {
+    "objectID": "FILES/KOSIS/보건/완전생명표_1세별.html",
+    "href": "FILES/KOSIS/보건/완전생명표_1세별.html",
+    "title": "완전생명표(1세별)",
+    "section": "",
+    "text": "기대여명(전체, 남, 여) 기간: 1970~2024년\n파일 위치: 보건-생명표-완전생명표(1세별)(년 1970-2024)\n.xlsx로 다운로드 받아서 정리 후 .csv로 변환하여 저장\n\n데이터\n\n연령별 기대여명\n\n조회조건\n\n항목: 기대여명(전체, 남자, 여자) 선택\n연령별: 0세 - 100세 이상 전체 선택\n시점: 년, 1970년 - 2024년\n\n파일다운로드: 연령별기대여명.csv\n\n\n\n\n통계표\n\n메타자료\n\n통계표ID : DT_1B42\n통계표명 : 완전생명표(1세별)\n출처 : KOSIS(「생명표」, 국가데이터처), 2026.04.08 22:37\n문의처 : 02-2012-9114, 042-481-2251\n통계표URL : https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1B42&conn_path=I3\nKOSIS 개편 시 통계표 URL은 달라질 수 있음\n\n\n\n주석\n통계표 16.12.2일 생명표 작성방법 개선으로 과거 공표된 ’70-’14년 생명표 수치가 갱신되었으니, 사용에 유의하시기 바랍니다.\n\n’70-’00년 생명표를 대상으로 Brass-logit 모형을 통해 80, 85세 사망확률 재작성, CK 모형 한계연령을 110세로 통일\n’70-’00년 생명표를 대상으로 Spline 내삽법으로 5세별 사망확률을 1세별 사망확률로 확장\n’15년 등록센서스 전환으로 인구통계의 연령자료 정합성 확보를 위해 주민등록 보정계수 적용절차 삭제\n자세한 사항은 온라인 간행물 생명표(1970-2015)의 작성절차 부분 참조",
+    "crumbs": [
+      "데이터 다운로드",
+      "통계포털(KOSIS)",
+      "보건 데이터",
+      "완전생명표(1세별)"
+    ]
+  },
+  {
+    "objectID": "FILES/KOSIS/인구/가구주의_성_연령_혼인상태별_추계가구-시도.html",
+    "href": "FILES/KOSIS/인구/가구주의_성_연령_혼인상태별_추계가구-시도.html",
+    "title": "가구주의 성/연령/혼인상태별 추계가구-시도",
+    "section": "",
+    "text": "가구주의 성/연령/혼인상태별 추계가구-시도 기간: 년, 2000-2052\n파일 위치: 인구-장래가구추계-시도(2022년 기준)\n.xlsx로 다운로드 받아서 정리 후 .csv로 변환하여 저장\n\n데이터\n\n연령별 기대여명\n\n조회조건\n\n항목: 전체(계, 미혼, 유배우, 사별, 이혼) 선택\n행정구역별(시도): 전국, 서울 (개별 선택)\n가구주의 성별: 계, 남자, 여자 선택\n가구주의 연령별: 계, 전체 구간 선택\n시점: 년, 2026년 - 2052년\n\n파일다운로드: 가구주의-성-연령-혼인상태별-추계가구-전국.csv\n파일다운로드: 가구주의-성-연령-혼인상태별-추계가구-서울.csv\n\n\n\n\n통계표\n\n메타자료\n\n통계표ID : DT_1BZ05042\n통계표명 : 가구주의 성/연령/혼인상태별 추계가구-시도\n출처 : KOSIS(「장래가구추계」, 국가데이터처), 2026.04.09 10:12\n문의처 : 042-481-2256\n통계표URL : https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1BZ05042&conn_path=I3\n\nKOSIS 개편 시 통계표 URL은 달라질 수 있음\n\n단위 : 가구",
+    "crumbs": [
+      "데이터 다운로드",
+      "통계포털(KOSIS)",
+      "인구 데이터",
+      "가구주의 성/연령/혼인상태별 추계가구-시도"
+    ]
+  },
+  {
+    "objectID": "FILES/통계누리/index.html",
+    "href": "FILES/통계누리/index.html",
+    "title": "국토교통부 통계누리",
+    "section": "",
+    "text": "국토교통부 통계누리 자료를 분야별로 분류",
+    "crumbs": [
+      "데이터 다운로드",
+      "국토교통부 통계누리"
+    ]
+  },
+  {
+    "objectID": "FILES/통계누리/index.html#분야별-통계",
+    "href": "FILES/통계누리/index.html#분야별-통계",
+    "title": "국토교통부 통계누리",
+    "section": "분야별 통계",
+    "text": "분야별 통계",
+    "crumbs": [
+      "데이터 다운로드",
+      "국토교통부 통계누리"
+    ]
+  },
+  {
+    "objectID": "FILES/통계누리/건설/현장소재지별-건설공사계약금액.html",
+    "href": "FILES/통계누리/건설/현장소재지별-건설공사계약금액.html",
+    "title": "현장소재지별 건설공사계약 금액",
+    "section": "",
+    "text": "통계누리 - 승인통계 - 건설 - 건설공사계약통계\n\n\n\n\n\n\n노트문서 개정\n\n\n\n2026-04-13: 건설 - 건설공사계약통계 - 현장소재지별 공사계약 금액 추가\n\n\n\n현장소재지별 건설공사계약 금액\n\n.xlsx로 다운로드(5년씩 가능) 받은 파일을 하나로 통합한 후 .csv로 변환\n“건설공사계약 금액”을 “계약금액(억원)”으로 변경 하고, 해당 값이 텍스트로 입력된 것을 수치로 바꿈\n\n파일 다운로드: 현장소재지별_건설공사계약금액.csv\n\n\n통계정보\n\n작성(조사)주기: 분기\n작성(조사)대상: 종합건설업체 및 전문건설업체 총 58,498개사(종합 11,407개사, 전문 47,091)\n공표주기: 익분기 (3, 6, 9, 12월)\n\n건설공사계약통계 Construction contract statistics",
+    "crumbs": [
+      "데이터 다운로드",
+      "국토교통부 통계누리",
+      "건설",
+      "현장소재지별 건설공사계약 금액"
     ]
   },
   {

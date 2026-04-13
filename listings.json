@@ -2,6 +2,7 @@
   {
     "listing": "/data.html",
     "items": [
+      "/FILES/통계누리/건설/index.html",
       "/FILES/KOSIS/보건/index.html",
       "/FILES/KOSIS/인구/index.html",
       "/FILES/DATA/한국부동산원/index.html"
@@ -18,22 +19,21 @@
     "items": [
       "/FILES/DATA/한국부동산원/전국청약평균분양가.html",
       "/FILES/KOSIS/보건/완전생명표_1세별.html",
+      "/FILES/통계누리/건설/현장소재지별-건설공사계약금액.html",
       "/FILES/KOSIS/인구/가구주의_성_연령_혼인상태별_추계가구-시도.html"
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/FILES/통계누리/건설/index.html",
     "items": [
-      "/POSTS/2026-04-12_초안-설정-visible.html",
-      "/POSTS/2026-04-07_가구주의-성-연령-혼인상태별-추계가구.html",
-      "/POSTS/2026-04-03_연령별-기대여명.html",
-      "/POSTS/2026-04-03_월별-평균-분양가.html"
+      "/FILES/통계누리/건설/현장소재지별-건설공사계약금액.html"
     ]
   },
   {
-    "listing": "/FILES/KOSIS/보건/index.html",
+    "listing": "/FILES/KOSIS/index.html",
     "items": [
-      "/FILES/KOSIS/보건/완전생명표_1세별.html"
+      "/FILES/KOSIS/보건/완전생명표_1세별.html",
+      "/FILES/KOSIS/인구/가구주의_성_연령_혼인상태별_추계가구-시도.html"
     ]
   },
   {
@@ -43,10 +43,25 @@
     ]
   },
   {
-    "listing": "/FILES/KOSIS/index.html",
+    "listing": "/FILES/KOSIS/보건/index.html",
     "items": [
-      "/FILES/KOSIS/보건/완전생명표_1세별.html",
-      "/FILES/KOSIS/인구/가구주의_성_연령_혼인상태별_추계가구-시도.html"
+      "/FILES/KOSIS/보건/완전생명표_1세별.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/POSTS/2026-04-13_국토교통-통계누리-추가.html",
+      "/POSTS/2026-04-12_초안-설정-visible.html",
+      "/POSTS/2026-04-07_가구주의-성-연령-혼인상태별-추계가구.html",
+      "/POSTS/2026-04-03_연령별-기대여명.html",
+      "/POSTS/2026-04-03_월별-평균-분양가.html"
+    ]
+  },
+  {
+    "listing": "/FILES/통계누리/index.html",
+    "items": [
+      "/FILES/통계누리/건설/현장소재지별-건설공사계약금액.html"
     ]
   },
   {
