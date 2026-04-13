@@ -3,9 +3,8 @@ title: "통계포털(KOSIS)"
 listing: 
     contents:
         - 보건
-        - "!보건/index.qmd"
         - 인구
-        - "!인구/index.qmd"
+        - "!index.qmd"
     fields: [title, description, date, date-modified]
     type: table
     sort: "date desc"
