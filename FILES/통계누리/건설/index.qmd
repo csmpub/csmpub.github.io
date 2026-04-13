@@ -1,9 +1,9 @@
 ---
-title: "공공데이터포털(DATA)"
+title: "건설"
+categories: [건설, 통걔누리]
 listing: 
     contents:
-        - "*.qmd"
-        - "!index.qmd"
+      - "*.qmd"
     fields: [title, description, date, date-modified]
     type: table
     sort: "date desc"
@@ -12,7 +12,6 @@ listing:
     categories: true
 ---
 
-공공데이터포털 자료를 제공기관별로 분류
+국토교통부에서 제공하는 건설분야 데이터
 
-## 기관별 통계
-
+## 데이터 목록

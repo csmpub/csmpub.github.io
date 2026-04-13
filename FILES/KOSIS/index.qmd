@@ -2,8 +2,7 @@
 title: "통계포털(KOSIS)"
 listing: 
     contents:
-        - 보건
-        - 인구
+        - "*.qmd"
         - "!index.qmd"
     fields: [title, description, date, date-modified]
     type: table

@@ -1,5 +1,5 @@
 ---
-title: "공공데이터포털(DATA)"
+title: "국토교통부 통계누리"
 listing: 
     contents:
         - "*.qmd"
@@ -12,7 +12,7 @@ listing:
     categories: true
 ---
 
-공공데이터포털 자료를 제공기관별로 분류
+국토교통부 통계누리 자료를 분야별로 분류
 
-## 기관별 통계
+## 분야별 통계
 
