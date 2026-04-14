@@ -1,0 +1,74 @@
+---
+title: "메뉴바(navbar)"
+date: "2026-04-12"
+date-modified: "2026-04-15"
+categories: [quarto, website, navbar]
+toc: true
+---
+
+웹 페이지 상부 메뉴바 설정
+
+#### 프로젝트 설정(_quarto.yml)
+
+```yml
+website:
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - about.qmd
+```
+
+#### 메뉴바(navbar) 옵션
+
+- `title` 메뉴바 제목(지정하지 않으면 `site: title:` 사용). 메뉴바에 타이틀을 표시하지 않으려면 `title: false` 지정.
+- `logo` 로고 이미지(옵션). 로고가 있는 `_brand.yml`을 사용하면 로고가 자동으로 표시됨(브랜드 로고를 사용하지 않게 하려면 `logo: false` 지정).
+- `logo-alt` 로고 이미지르 대신할 텍스트.
+- `logo-href` 사이드바 로고의 타깃 주소(`href`). 로고와 타이틀의 링크 기본값은 사이트의 루트 페이지(`/index.html`).
+- `background` 베경색(“primary”, “secondary”, “success”, “danger”, “warning”, “info”, “light”, “dark”, 또는 hex color).
+- `foreground` 전경색(“primary”, “secondary”, “success”, “danger”, “warning”, “info”, “light”, “dark”, or hex color). 메뉴바에 보이는 네비게이션 항목, 텍스트 또는 링크의 색상으로 쓰인다.
+- `search` 탐색 박스를 표시할 지 여부(true 또는 false).
+- `tools` 사이드바 툴의 리스트(`github` 이나 `bluesky` 연결 등).
+- `left`, `right` 메뉴바 왼쪽, 오른쪽에 표시할 네비게이션 항목(nevigation items) 리스트.
+- `pinned` 메뉴바를 항상 보여줄지 여부(true 또는 false). 기본값은 "false" 이고 사용자가 화면을 위로 스크롤 했을 때 메뉴바를 자동으로 보여주는  `headroom.js`를 사용한다.
+- `collapse` 화면 폭이 좁아질 때 메뉴바 항목을 햄버거 메뉴로 넣을지 여부(기본값 "true").
+- `collapse-below` 메뉴바가 햄버거 메뉴로 들어갈 때 위치 (“sm”, “md”, “lg”, “xl”, 또는 “xxl”, 기본값 “lg”).
+- `toggle-position` 반응형 모드에서 메뉴바 햄버거 메뉴의 위치 (“left” - 기본값 또는 “right”).
+- `tools-collapse` 화면이 좁아질 때 메뉴바로 넣을 툴
+
+##### 메뉴바 네니베이션 항목(navigation items) 리스트
+
+- `href` 프로젝트내 파일이나 외부 URL 링크.
+- `text` 네비게이션 항목 텍스트(기본값 문서 title).
+- `icon` 표준 Bootstrap 5 아이콘 이름(예, “github”, “bluesky”, “share” 등).
+- `aria-label` 네이게이션 항목 접근 라벨
+- `rel` "rel 속성값". 다중 빈칸 값 허용.
+- `target` 태깃 속성. (예, _blank 새로운 탭으로 열기)
+- `menu` 드롭다운 메뉴로 펼쳐질 네비게이션 항목 리스트
+
+##### 메뉴바 툴(tools) 리스트
+
+아이콘 이름(Bootstrap icons), 링크로 구성되며 메뉴바 오른쪽에 표시된다.
+
+```yml
+website:
+  navbar:
+    tools:
+      - icon: bluesky
+        href: https://bsky.app
+      - icon: github
+        menu:
+          - text: Source Code
+            href:  https://code.com
+          - text: Report a Bug
+            href:  https://bugs.com
+```
+
+#### 메뉴바 감추기
+
+```yml
+---
+# Hides the navbar on this page
+navbar: false
+---
+```

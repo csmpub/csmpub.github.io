@@ -1,0 +1,79 @@
+---
+title: "위치, 다중리스트, YAML리스트"
+categories: [웹사이트, 리스팅, 위치, 다중리스팅]
+date: "2026-04-01"
+date-modified: "2026-04-12"
+---
+
+리스팅 위치, 다중 리스팅, YAML 리스팅
+
+#### 리스팅 위치
+
+`id` 블록 사용하여 위치 지정
+
+```yml
+---
+title: "Listing Example"
+listing:
+  id: sample-listings
+  contents: posts
+  sort: "date desc"
+  type: table
+---
+
+You can review the following documents for additional information:
+
+::: {#sample-listings}
+:::
+
+Learn more about Quarto
+```
+
+#### 다중 리스팅
+
+```yml
+---
+title: Team Documents
+listing: 
+  - id: lab-reports
+    contents: "lab-reports/*.qmd"
+    type: table
+  - id: meeting-notes
+    contents: "meeting-notes/*.qmd"
+    type: table
+---
+
+## Lab Reports
+
+::: {#lab-reports}
+:::
+
+## Meeting Notes
+
+::: {#meeting-notes}
+:::
+```
+
+#### YAML 리스팅
+
+```yml
+---
+title: "Listing Example"
+listing:
+  id: sample-listings
+  contents: 
+    - posts
+    - archived-items.yaml
+  sort: "date desc"
+  type: table
+---
+```
+
+```yml
+# archived-items.yml
+- title: "Archived Item 1"
+  author: Norah Jones
+  date: 2020-01-01
+  path: "archived/archived-item-.html"
+  categories: [archived, technology]
+```

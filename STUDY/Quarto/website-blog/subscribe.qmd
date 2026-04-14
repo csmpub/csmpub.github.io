@@ -1,0 +1,21 @@
+---
+title: "구독"
+categories: [웹사이트, 블로그, 구독]
+date: "2026-04-01"
+date-modified: "2026-04-12"
+---
+
+이메일로 블로그 구독 설정
+
+#### 구독 설정
+
+1. 이메일 서비스에서 제공하는 구독 위젯을 위한 HTML 생성
+
+2. 생성된 HTML을 프로젝트 루트 폴더에 `subscrive.html`로 저장
+
+3. `_quarto.yml` 파일의 `margin-header:`에 위 파일 지정
+
+```yml
+website:
+  margin-header: subscribe.html
+```

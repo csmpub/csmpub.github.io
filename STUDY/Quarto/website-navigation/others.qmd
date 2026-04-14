@@ -1,0 +1,62 @@
+---
+title: "기타 설정"
+date: "2026-04-12"
+date-modified: "2026-04-15"
+categories: [quarto, website, E404, reader-mode]
+toc: true
+---
+
+파일을 찾지 못한 에러 발생시 보여질 페이지 사용자 설정
+
+#### 404에러 페이지
+
+- 프로젝트 폴더에 404.qmd 배치 (404.html 같이 배치할 수 있음)
+- 사이트 경로가 도메인 루트가 아닌 경우 `site-url: ` 이나 `site-path: ` 설정
+
+```yml
+website:
+  title: "My Site"
+  site-path: "/mysite/"
+```
+
+```yml
+website:
+  title: "My Site"
+  site-url: "https://example.com/mysite/"
+```
+
+#### 읽기모드 설정
+
+```yml
+website:
+  reader-mode: true
+```
+
+#### GitHub Link 설정
+
+##### 프로젝트 설정(_quarto.yml)
+
+```yml
+website:
+  repo-url: https://github.com/quarto-dev/quarto-demo
+  repo-actions: [edit, source, issue]
+```
+
+##### 문서 설정(yml 헤더)
+
+특정 페이지에서 GutHub 액션 중지 설정
+
+```yml
+---
+repo-actions: false
+---
+```
+
+##### 추가 옵션
+
+- `repo-subdir` 소스 파일이 있는 리포지토리 폴더 (기본값 루트 폴더)
+- `repo-branch` 소스 파일이 있는 리포지토리 브랜치 (기본값 main 브렌치)
+- `issue-url` 문제 리포트(Report an Issue) 클릭시 연결될 URL
+- `repo-link-target` 리포지토리 실행 링크(repo action links)의 타깃 속성 (예, “_blank” 설정시 새로운 탭이나 창이 열림)
+- `repo-link-rel` 리포지토리 실행 링크(repo action links)의 `rel` 속성
+

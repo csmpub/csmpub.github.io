@@ -1,0 +1,32 @@
+---
+title: "포함, 제외"
+categories: [웹사이트, 리스팅, 포함, 제외]
+date: "2026-04-01"
+date-modified: "2026-04-12"
+---
+
+리스팅 포함 또는 제외 설정
+
+#### 포함(Including)
+
+```yml
+---
+listing:
+  contents: posts
+  type: grid
+  include:
+    author: "{Harlow,Tristan}*"
+----
+```
+
+#### 제외(Excluding)
+
+```yml
+---
+listing:
+  contents: posts
+  type: grid
+  exclude:
+    author: "Charles*"
+---
+```

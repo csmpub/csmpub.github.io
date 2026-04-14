@@ -1,0 +1,58 @@
+---
+title: "옵션"
+categories: [웹사이트, 리스팅, 옵션]
+date: "2026-04-01"
+date-modified: "2026-04-12"
+---
+
+리스팅 타입별 옵션, 기타 옵션
+
+#### 타입 default 옵션
+
+- `max-items` 리스트 항목의 최대 갯수.
+- `image-align` 이미지를 포스팅 내용의 어느쪽으로 정렬할 것인지(right - 기본값, left)
+- `image-height` 이미지의 높이. 넓이는 정사각형으로 잘라지는 방식으로 결정된다.
+- `image-placeholder` 리스팅 문서가 이미지를 갖고 있지 않을 때 사용할 기본 이미지.
+
+#### 타입 grid 옵션
+
+- `max-items` 리스트 항목의 최대 갯수.
+- `image-height` 이미지의 높이. 넓이는 정사각형으로 잘라지는 방식으로 결정된다.
+- `image-placeholder`	리스팅 문서가 이미지를 갖고 있지 않을 때 사용할 기본 이미지.
+- `grid-columns` 그리드 표시의 칼럼 숫자(기본값 3).
+- `grid-item-border` 리스트 항목 카드의 가장자리 표시 여부(기본값 true).
+- `grid-item-align` 리스트 항목 카드의 정렬(left - 기본값, right, 또는 center)
+
+#### 타입 table 옵션
+
+- `max-items`	리스트 항목의 최대 갯수.
+- `image-height` 이미지의 높이. 넓이는 정사각형으로 잘라지는 방식으로 결정된다.
+- `image-placeholder`	리스팅 문서가 이미지를 갖고 있지 않을 때 사용할 기본 이미지.
+- `table-striped`	테이블 행의 배경색을 변경할지 여부(true 또는 false - 기본값)
+- `table-hover`	사용자가 마우스를 올려 놓았을 때 해당 행을 강조할지 여부(true 또는 false - 기본값).
+- `field-links`	문서에 링크할 필드 리스트(기본값 - title).
+
+#### 기타 옵션
+
+- `field-display-names` 특정 필드를 리스트에서 표시할 이름
+
+```yml
+listing:
+  field-display-names:
+    title: "Report"
+```
+
+- `image-lazy-loading` 리스트가 보일 때 이미지를 로드할지 여부(기본값 - true).
+- `max-description-length` 리스트에 표시할 `deacription` 문자열의 최대 길이(기본값 175).
+- `date-format` 날짜 표현 양식. 스타일(full, long, medium, short 또는 iso)로 지정하거나 형식 문자열로 지장.
+
+::: {.callout-tip}
+### date-format 스타일
+- full: Saturday, February 5, 2022
+- long: February 5, 2022
+- medium: Feb 5, 2022
+- short: 2/5/22
+- iso: 2022-05-22
+### date-format 형식 문자열
+
+:::

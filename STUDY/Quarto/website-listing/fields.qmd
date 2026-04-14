@@ -1,0 +1,42 @@
+---
+title: "필드"
+categories: [웹사이트, 리스팅, 필드]
+date: "2026-04-01"
+date-modified: "2026-04-12"
+---
+
+quarto는 리스트의 필드를 문서 프론트메터의 메타데이터에서 읽어들인다.
+
+#### 필드 이름
+
+- `title`	리스트 항목의 제목, 문서 프론트 메터 "title" 필드 에서 읽어 오거나 문서의 첫번째 `H1`을 사용한다.
+- `subtitle` 리스트 항목의 부제목, 문서 프론트 메터 "subtitle" 필드 에서 읽어 들인다.
+- `author` 리스트 항목의 저자, 문서 프론트 메터 "author" 필드 에서 읽어 들인다.
+- `description` 리스트 항목의 설명, 문서 프론트 메터 "description" 이나 "abstract" 필드에서 읽어 오거나 문서의 첫번쩨 문단을 사용한다.
+- `date` 리스트 항목의 날짜, 문서 프론트 메터 "date" 필드 에서 읽어 들인다.
+- `image` 리스트 항목의 이미지, 문서 프론트 메터 "image" 필드에서 지정된 이미지를 사용한다. 지정되어 있지 않으면 `preview-image` 클래스의 첫번째 이미지, 이미지 파일 이름이 "feature", "cover", "thumbnail"로 시작하거나, 문서에 처음으로 나타나는 이미지를 사용한다.
+- `image-alt` 리스트 항목의 이미지를 대체할 텍스트.
+- `word-count` 리스트 항목의 단어 수.
+- `reading-time` 리스트 항목의 읽기 소요 시간(분당 200단어 기준으로 계산).
+- `categories` 리스트 항목의 분류, 문서 프론트 메터 "categories" 필드에서 읽어 들인다.
+- `filename` 렌더링 입력 파일(문서 파일) 이름.
+- `file-modified` 위 파일의 마지막 수정일.
+
+#### 리스팅 타입별 필드 표기
+
+- `default` 타입: `title`, `subtitle`, `author`, `description`, `date`, `image` 표시
+- `table` 타입: `title`, `author`, `date` 표시
+- `grid` 타입: `title`, `author`, `description`, `date`, `image` 표시
+
+#### 필드 표시 사용자화
+
+- `fields:` 옵션으로 지정한다.
+
+```yml
+---
+listing:
+  type: table
+  contents: posts
+  fields: [image, date, title, author, reading-time]
+---
+```

@@ -1,0 +1,53 @@
+---
+title: "분류, 피드"
+categories: [웹사이트, 리스팅, 범주, 분류]
+date: "2026-04-01"
+date-modified: "2026-04-12"
+---
+
+리스팅 분류(Categpries) 및 피드(Feeds)
+
+#### 분류(Categories)
+
+##### 지정
+
+```yml
+---
+listing:
+  categories: true
+---
+```
+
+##### 스타일 옵션
+
+- `numbered`	분류를 알파벳 순으로 숫자와 함께 보여줌.
+- `unnumbered`	분류을 알파벳 순으로 보여줌.
+- `cloud`	분류를 ‘word cloud’ 형태로 보여줌.
+
+#### 피드(Feeds)
+
+##### 설정
+
+```yml
+---
+listing:
+  contents: posts
+  feed: true
+---
+```
+
+```yml
+# _quarto.yml
+website:
+  site-url: "https://www.quarto.org"
+```
+
+##### 피드 옵션
+
+- `items`	피드에 포함할 아이템 갯수. 기본값은 20.
+- `type`	"full", "partial" 또는 "metadata". 기본값인 "full"은 문서의 모든 내용을 피드에 포함한다. "partial"은 `description`(정의되지 않으면 첫번 째 문단)을 피드에 포함한다. "metadata"는 `title`, `description`, `문서의 metadata`를 피드에 포함한다.
+- `title`	피드의 제목. 기본값은 `_quarto.yml` 파일에 포함된 사이트 제목.
+- `image`	피드의 이미지. 지정되지 않으면 리스트 페이지가 있는 페이지의 이미지가 쓰이거나 `_quarto.yml` 파일에 포함된 사이트의 이미지 사용.
+- `description`	이 피드의 설명. 지정되지 않으면 리스트 페이지가 있는 페이지의 설명이 쓰이거나 `_quarto.yml` 파일에 포함된 사이트의 설명 사용.
+- `language`	피드의 언어. 지정되지 않으면 생략됨. 언어 코드는 https://www.rssboard.org/rss-language-codes 참조.
+- `categories`	이 리스트에 포함된 분류별로 별도 피드 생성.

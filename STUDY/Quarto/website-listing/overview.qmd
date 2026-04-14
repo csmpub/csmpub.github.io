@@ -1,0 +1,51 @@
+---
+title: "개요, 항목"
+categories: [웹사이트, 리스팅, 콘텐츠]
+date: "2026-04-01"
+date-modified: "2026-04-12"
+---
+
+리스팅 개요(Overview), 콘텐츠(Contents), 타입(Type) 및 정렬(Sorting)
+
+#### 개요(Overview)
+
+리스팅은 페이지의 내용(또는 특정 부분)을 자동으로 생성할 수 있도록 해 준다.
+
+```yml
+---
+title: "리스팅 페이지"
+listing: default
+---
+```
+위 문서는 문서가 위치한 디렉토리의 모든 문서(자기 자신은 제외)를 기본형식으로 리스탱해서 보여준다.
+
+#### 항목(Contents)
+
+리스팅에 포함될 문서(최소한 `title:` 메타데이터를 포함해야 함)를 제한할 수 있다.\
+`contents:` 리스트는 glob 문법을 따른다.
+
+::: {.callout-important}
+### 상대경로
+`contents:` 리스트에 지정된 경로는 현재 문서를 기준으로 하는 상대 경로이다.
+:::
+
+- 폴더 지정
+
+```yml
+---
+title: "Listing Example"
+listing:
+  contents: posts
+---
+```
+
+- 개별 문서 지정
+
+```yml
+---
+title: "Listing Example"
+listing:
+  contents:
+    - "reports/*.qmd"
+    - "lab-notes/*reports.qmd"
+```

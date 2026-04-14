@@ -11,7 +11,7 @@ listing:
     sort: "date-modified desc"
     sort-ui: true
     filter-ui: true
-    categories: true
+    categories: cloud
 sidebar: menu
 ---
 
