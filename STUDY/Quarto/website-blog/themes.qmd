@@ -3,6 +3,7 @@ title: "블로그 테마"
 categories: [웹사이트, 블로그, 테마]
 date: "2026-04-01"
 date-modified: "2026-04-12"
+toc: true
 ---
 
 블로그 테마 설정

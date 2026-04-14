@@ -3,6 +3,7 @@ title: "웹사이트 초안"
 categories: [웹사이트, 초안, Draft]
 date: "2026-04-01"
 date-modified: "2026-04-12"
+toc: true
 ---
 
 웹사이트의 전체 또는 부분을 초안(draft)으로 설정하여 렌더링 조정

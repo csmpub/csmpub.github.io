@@ -3,6 +3,7 @@ title: "블로그 홈"
 categories: [웹사이트, 블로그, 리스팅]
 date: "2026-04-01"
 date-modified: "2026-04-12"
+toc: true
 ---
 
 리스팅 페이지로 설정

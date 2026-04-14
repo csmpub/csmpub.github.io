@@ -1,5 +1,6 @@
 ---
 title: "Shell Commands"
+categories: [Linux, macOS, shell]
 listing: 
     contents:
         - "*.qmd"

@@ -1,5 +1,6 @@
 ---
 title: "Visual Studio Code"
+categories: [VScode, code]
 listing: 
     contents:
         - "*.qmd"

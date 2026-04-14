@@ -1,5 +1,6 @@
 ---
 title: "Github"
+categories: [Git, GitHub]
 listing: 
     contents:
         - "*.qmd"

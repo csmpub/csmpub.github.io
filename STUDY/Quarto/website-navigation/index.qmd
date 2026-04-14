@@ -1,5 +1,6 @@
 ---
 title: "website navigation"
+categories: [website, navigation]
 listing: 
     contents:
         - "*.qmd"

@@ -1,5 +1,6 @@
 ---
 title: "Quarto"
+categories: [quarto]
 listing: 
     contents:
         - "*.qmd"

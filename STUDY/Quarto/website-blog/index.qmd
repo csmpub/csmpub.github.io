@@ -1,5 +1,6 @@
 ---
 title: "website bolg"
+categories: [website, blog]
 listing: 
     contents:
         - "*.qmd"

@@ -1,5 +1,6 @@
 ---
 title: "Base R"
+categories: [R, base]
 listing: 
     contents:
         - "*.qmd"

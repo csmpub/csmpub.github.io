@@ -1,5 +1,6 @@
 ---
 title: "컴퓨터 기초"
+categories: [basics, computer]
 listing: 
     contents:
         - "*.qmd"

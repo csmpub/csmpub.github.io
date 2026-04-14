@@ -3,6 +3,7 @@ title: "About page"
 categories: [웹사이트, 블로그, About, 템플릿]
 date: "2026-04-01"
 date-modified: "2026-04-12"
+toc: true
 ---
 
 블로그와 저자들에 대한 추가 설명을 위한 페이지

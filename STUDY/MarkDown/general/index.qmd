@@ -1,5 +1,6 @@
 ---
 title: "Mark Down"
+categories: [markdown]
 listing: 
     contents:
         - "*.qmd"

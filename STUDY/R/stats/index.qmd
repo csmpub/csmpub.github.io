@@ -1,5 +1,6 @@
 ---
 title: "Stats"
+categories: [R, basem stats]
 listing: 
     contents:
         - "*.qmd"

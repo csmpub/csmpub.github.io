@@ -3,6 +3,7 @@ title: "포스팅 폴더"
 categories: [웹사이트, 블로그, 포스팅폴더]
 date: "2026-04-01"
 date-modified: "2026-04-12"
+toc: true
 ---
 
 블로그 글을 저장하는 포스팅 폴더 설정

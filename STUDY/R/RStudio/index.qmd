@@ -1,5 +1,6 @@
 ---
 title: "R Studio"
+categories: [RStudio]
 listing: 
     contents:
         - "*.qmd"

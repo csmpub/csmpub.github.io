@@ -1,5 +1,6 @@
 ---
 title: "website draft"
+categories: [website, draft]
 listing: 
     contents:
         - "*.qmd"

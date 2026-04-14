@@ -1,5 +1,6 @@
 ---
 title: "Obsidian flavored"
+categories: [markdown, obsidian]
 listing: 
     contents:
         - "*.qmd"

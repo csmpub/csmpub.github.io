@@ -4,7 +4,7 @@ listing:
     contents:
         - "*.qmd"
         - "!index.qmd"
-    fields: [title, description, date, date-modified]
+    fields: [title, description, date-modified]
     type: table
     sort: "date-modified desc"
     sort-ui: true

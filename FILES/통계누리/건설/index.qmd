@@ -1,6 +1,6 @@
 ---
 title: "건설 분야"
-categories: [건설, 통걔누리]
+categories: [건설, 통계누리]
 listing: 
     contents:
       - "*.qmd"

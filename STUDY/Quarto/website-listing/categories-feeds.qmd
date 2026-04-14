@@ -3,6 +3,7 @@ title: "분류, 피드"
 categories: [웹사이트, 리스팅, 범주, 분류]
 date: "2026-04-01"
 date-modified: "2026-04-12"
+toc: true
 ---
 
 리스팅 분류(Categpries) 및 피드(Feeds)

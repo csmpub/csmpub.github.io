@@ -3,6 +3,7 @@ title: "구독"
 categories: [웹사이트, 블로그, 구독]
 date: "2026-04-01"
 date-modified: "2026-04-12"
+toc: true
 ---
 
 이메일로 블로그 구독 설정

@@ -1,5 +1,6 @@
 ---
 title: "website listing"
+categories: [website, listing]
 listing: 
     contents:
         - "*.qmd"

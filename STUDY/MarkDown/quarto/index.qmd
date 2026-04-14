@@ -1,5 +1,6 @@
 ---
 title: "Quarto flavored"
+categories: [markdown, quarto]
 listing: 
     contents:
         - "*.qmd"
