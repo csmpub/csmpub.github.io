@@ -102,10 +102,21 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link active" href="../../../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../../data.html"> 
-<span class="menu-text">Data</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-data" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Data</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-data">    
+        <li>
+    <a class="dropdown-item" href="../../../note.html">
+ <span class="dropdown-text">Science</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../../../data.html">
+ <span class="dropdown-text">Repository</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="../../../about.html"> 
 <span class="menu-text">About</span></a>
@@ -133,6 +144,8 @@ ul.task-list li input[type="checkbox"] {
     <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../FILES/index.html">데이터 다운로드</a></li><li class="breadcrumb-item"><a href="../../../FILES/KOSIS/index.html">통계포털(KOSIS)</a></li><li class="breadcrumb-item"><a href="../../../FILES/KOSIS/인구/index.html">인구 데이터</a></li><li class="breadcrumb-item"><a href="../../../FILES/KOSIS/인구/가구주의_성_연령_혼인상태별_추계가구-시도.html">가구주의 성/연령/혼인상태별 추계가구-시도</a></li></ol></nav>
       <h1 class="title">가구주의 성/연령/혼인상태별 추계가구-시도</h1>
                                 <div class="quarto-categories">
+                <div class="quarto-category">KOSIS</div>
+                <div class="quarto-category">인구</div>
                 <div class="quarto-category">추계가구</div>
                 <div class="quarto-category">가구주</div>
                 <div class="quarto-category">성별</div>
@@ -176,6 +189,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../../note.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Science</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../../data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Repository</span></a>
   </div>
@@ -210,8 +229,8 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../FILES/KOSIS/보건/완전생명표_1세별.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">완전생명표(1세별)</span></a>
+  <a href="../../../FILES/KOSIS/보건/완전생명표_1세별-기대여명.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">연령별 기대여명</span></a>
   </div>
 </li>
       </ul>
@@ -247,7 +266,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../FILES/통계누리/건설/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">건설</span></a>
+ <span class="menu-text">건설 분야</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 

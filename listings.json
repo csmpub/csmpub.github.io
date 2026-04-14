@@ -18,7 +18,7 @@
     "listing": "/FILES/index.html",
     "items": [
       "/FILES/DATA/한국부동산원/전국청약평균분양가.html",
-      "/FILES/KOSIS/보건/완전생명표_1세별.html",
+      "/FILES/KOSIS/보건/완전생명표_1세별-기대여명.html",
       "/FILES/통계누리/건설/현장소재지별-건설공사계약금액.html",
       "/FILES/KOSIS/인구/가구주의_성_연령_혼인상태별_추계가구-시도.html"
     ]
@@ -32,7 +32,7 @@
   {
     "listing": "/FILES/KOSIS/index.html",
     "items": [
-      "/FILES/KOSIS/보건/완전생명표_1세별.html",
+      "/FILES/KOSIS/보건/완전생명표_1세별-기대여명.html",
       "/FILES/KOSIS/인구/가구주의_성_연령_혼인상태별_추계가구-시도.html"
     ]
   },
@@ -43,19 +43,92 @@
     ]
   },
   {
-    "listing": "/FILES/KOSIS/보건/index.html",
+    "listing": "/note.html",
     "items": [
-      "/FILES/KOSIS/보건/완전생명표_1세별.html"
+      "/STUDY/R/index.html",
+      "/STUDY/MarkDown/index.html",
+      "/STUDY/Computer/index.html"
     ]
+  },
+  {
+    "listing": "/STUDY/Computer/SSH/index.html",
+    "items": []
+  },
+  {
+    "listing": "/STUDY/Computer/index.html",
+    "items": []
+  },
+  {
+    "listing": "/STUDY/Computer/GitGithub/index.html",
+    "items": []
+  },
+  {
+    "listing": "/STUDY/R/stats/index.html",
+    "items": []
+  },
+  {
+    "listing": "/STUDY/R/index.html",
+    "items": []
+  },
+  {
+    "listing": "/STUDY/MarkDown/quarto/index.html",
+    "items": []
+  },
+  {
+    "listing": "/STUDY/MarkDown/github/index.html",
+    "items": []
+  },
+  {
+    "listing": "/STUDY/MarkDown/general/index.html",
+    "items": []
+  },
+  {
+    "listing": "/STUDY/MarkDown/index.html",
+    "items": []
+  },
+  {
+    "listing": "/STUDY/MarkDown/obsidian/index.html",
+    "items": []
+  },
+  {
+    "listing": "/STUDY/R/RStudio/index.html",
+    "items": []
+  },
+  {
+    "listing": "/STUDY/R/base/index.html",
+    "items": []
+  },
+  {
+    "listing": "/STUDY/index.html",
+    "items": []
+  },
+  {
+    "listing": "/STUDY/Computer/Shell/index.html",
+    "items": []
+  },
+  {
+    "listing": "/STUDY/Computer/Powershell/index.html",
+    "items": []
+  },
+  {
+    "listing": "/STUDY/Computer/VSCode/index.html",
+    "items": []
   },
   {
     "listing": "/index.html",
     "items": [
-      "/POSTS/2026-04-13_국토교통-통계누리-추가.html",
-      "/POSTS/2026-04-12_초안-설정-visible.html",
-      "/POSTS/2026-04-07_가구주의-성-연령-혼인상태별-추계가구.html",
-      "/POSTS/2026-04-03_연령별-기대여명.html",
-      "/POSTS/2026-04-03_월별-평균-분양가.html"
+      "/FILES/통계누리/건설/현장소재지별-건설공사계약금액.html",
+      "/POSTS/2026-04-12_데이터사이언스-추가.html",
+      "/FILES/KOSIS/인구/가구주의_성_연령_혼인상태별_추계가구-시도.html",
+      "/FILES/KOSIS/보건/완전생명표_1세별-기대여명.html",
+      "/FILES/DATA/한국부동산원/전국청약평균분양가.html",
+      "/POSTS/2026-04-01_리포지토리-시작.html"
+    ]
+  },
+  {
+    "listing": "/FILES/KOSIS/보건/index.html",
+    "items": [
+      "/FILES/KOSIS/보건/완전생명표_1세별-기대여명.html"
     ]
   },
   {
