@@ -2,7 +2,7 @@
 title: "가구주의 성/연령/혼인상태별 추계가구-시도"
 date: "2024-12-12"
 date-modified: "2026-04-07"
-categories: [추계가구, 가구주, 성별, 연령, 혼인상태]
+categories: [KOSIS, 인구, 추계가구, 가구주, 성별, 연령, 혼인상태]
 toc: true
 toc-depth: 4
 draft: true

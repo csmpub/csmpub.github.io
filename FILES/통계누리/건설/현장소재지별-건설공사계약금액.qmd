@@ -2,7 +2,7 @@
 title: "현장소재지별 건설공사계약 금액"
 date: "2025-12-03"
 date-modified: "2026-04-13"
-categories: [건설공사계약, 현장소재지]
+categories: [통계누리, 건설공사계약, 현장소재지]
 toc: true 
 ---
 

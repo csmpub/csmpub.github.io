@@ -2,7 +2,9 @@
 title: "Wintree's Home"
 listing: 
     contents:
-        - "*/*.qmd"
+        - POSTS
+        - FILES
+        - STUDY
         - "!index.qmd"
     fields: [title, description, date-modified]
     type: table

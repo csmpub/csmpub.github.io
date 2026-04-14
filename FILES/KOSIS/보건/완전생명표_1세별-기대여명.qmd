@@ -2,7 +2,7 @@
 title: "연령별 기대여명"
 date: "2025-12-03"
 date-modified: "2026-04-03"
-categories: [기대여명, 생명표]
+categories: [KOSIS, 보건, 기대여명, 생명표]
 toc: true
 toc-depth: 4
 ---

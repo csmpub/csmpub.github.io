@@ -2,7 +2,7 @@
 title: "전국 청약 평균 분양가"
 date: "2026-03-23"
 date-modified: "2026-04-03"
-categories: [청약, 분양가]
+categories: [부동산원, 청약, 분양가]
 toc: true
 toc-depth: 4
 ---
