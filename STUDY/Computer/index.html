@@ -82,9 +82,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-description','listing-date-modified',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-title','listing-description','listing-date-modified',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -168,11 +168,11 @@ window.Quarto = {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-data">    
         <li>
     <a class="dropdown-item" href="../../note.html">
- <span class="dropdown-text">Science</span></a>
+ <span class="dropdown-text">Data Science</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../data.html">
- <span class="dropdown-text">Repository</span></a>
+ <span class="dropdown-text">Data Repository</span></a>
   </li>  
     </ul>
   </li>
@@ -191,7 +191,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../STUDY/index.html">데이터 과학 기초</a></li><li class="breadcrumb-item"><a href="../../STUDY/Computer/index.html">컴퓨터 기초</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../STUDY/index.html">데이터 과학</a></li><li class="breadcrumb-item"><a href="../../STUDY/Computer/index.html">컴퓨터 기초</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -200,7 +200,7 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../STUDY/index.html">데이터 과학 기초</a></li><li class="breadcrumb-item"><a href="../../STUDY/Computer/index.html">컴퓨터 기초</a></li></ol></nav>
+    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../STUDY/index.html">데이터 과학</a></li><li class="breadcrumb-item"><a href="../../STUDY/Computer/index.html">컴퓨터 기초</a></li></ol></nav>
       <h1 class="title">컴퓨터 기초</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">basics</div>
@@ -245,7 +245,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../STUDY/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">데이터 과학 기초</span></a>
+ <span class="menu-text">데이터 과학</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -255,11 +255,11 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../STUDY/MarkDown/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">마크다운(MarkDown)</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../STUDY/MarkDown/general/index.html" class="sidebar-item-text sidebar-link">
@@ -290,11 +290,11 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../STUDY/R/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">R and RStudio</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../STUDY/R/RStudio/index.html" class="sidebar-item-text sidebar-link">
@@ -337,20 +337,14 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../STUDY/Computer/Vim/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Vi Improved</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../STUDY/Computer/GitGithub/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Github</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Computer/Shell/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Shell Commands</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Computer/Powershell/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Powershell</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -365,26 +359,49 @@ window.Quarto = {
  <span class="menu-text">Visual Studio Code</span></a>
   </div>
 </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../STUDY/Computer/Shell/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Shell Commands</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../STUDY/Computer/Shell/Linux-Connands.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">리눅스 명령어</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../STUDY/Computer/Shell/powershell.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">파워쉘(Powershell)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../STUDY/Quarto/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Quarto</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="토글 섹션">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 show">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../STUDY/Quarto/website-navigation/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">website navigation</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../STUDY/Quarto/website-navigation/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">website navigation</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="토글 섹션">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../STUDY/Quarto/website-navigation/navbar.html" class="sidebar-item-text sidebar-link">
@@ -433,11 +450,11 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../STUDY/Quarto/website-listing/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">website listing</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="토글 섹션">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../STUDY/Quarto/website-listing/categories-feeds.html" class="sidebar-item-text sidebar-link">
@@ -492,11 +509,11 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../STUDY/Quarto/website-draft/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">website draft</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="토글 섹션">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../STUDY/Quarto/website-draft/draft.html" class="sidebar-item-text sidebar-link">
@@ -509,11 +526,11 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../STUDY/Quarto/website-blog/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">website bolg</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="토글 섹션">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../STUDY/Quarto/website-blog/about.html" class="sidebar-item-text sidebar-link">
@@ -563,7 +580,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">분류</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">전체 <span class="quarto-category-count">(0)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">분류</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">전체 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Q29tbWFuZA==">Command <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TGludXg=">Linux <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UG93ZXJzaGVsbA==">Powershell <span class="quarto-category-count">(1)</span></div><div class="category" data-category="V2luZG93cw==">Windows <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -578,20 +595,67 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-table" id="listing-listing">
 <div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-listing-sort" class="form-select" aria-label="정렬" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">정렬</option>
+      <option value="index" data-direction="asc">기본</option>
+      <option value="listing-title-sort" data-direction="asc">
+        제목
+      </option>
+    </select>
+  </div>
     <div class="input-group input-group-sm quarto-listing-filter">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
       <input type="text" class="search form-control" placeholder="필터">
     </div>
 </div>
-<table class="quarto-listing-table table caption-top">
+<table class="quarto-listing-table table">
 <thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">제목</th>
-<th data-quarto-table-cell-role="th">설명</th>
-<th data-quarto-table-cell-role="th">개정</th>
+<tr>
+
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">제목</a>
+</th>
+
+<th>
+설명
+</th>
+
+<th>
+개정
+</th>
+
 </tr>
 </thead>
 <tbody class="list">
+
+<tr data-index="0" data-categories="TGludXglMkNDb21tYW5k" data-listing-date-sort="1776178800000" data-listing-file-modified-sort="1776193315734" data-listing-date-modified-sort="1776178800000" data-listing-reading-time-sort="5" data-listing-word-count-sort="995" data-listing-title-sort="리눅스 명령어" data-listing-filename-sort="Linux-Connands.qmd">
+<td>
+<a href="../../STUDY/Computer/Shell/Linux-Connands.html" class="title listing-title">리눅스 명령어</a>
+</td>
+<td>
+<span class="listing-description">자주 쓰는 리눅스 명령어</span>
+</td>
+<td>
+<span class="listing-date-modified">2026-04-15</span>
+</td>
+
+</tr>
+
+<tr data-index="1" data-categories="V2luZG93cyUyQ1Bvd2Vyc2hlbGw=" data-listing-date-sort="1776178800000" data-listing-file-modified-sort="1776193760722" data-listing-date-modified-sort="1776178800000" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="파워쉘(Powershell)" data-listing-filename-sort="powershell.qmd">
+<td>
+<a href="../../STUDY/Computer/Shell/powershell.html" class="title listing-title">파워쉘(Powershell)</a>
+</td>
+<td>
+<span class="listing-description">Windows powershell</span>
+</td>
+<td>
+<span class="listing-date-modified">2026-04-15</span>
+</td>
+
+</tr>
+
 </tbody>
 </table>
 <div class="listing-no-matching d-none">일치 없음</div>
