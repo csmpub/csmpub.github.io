@@ -1,0 +1,331 @@
+---
+title: "리눅스 명령어"
+date: "2026-04-15"
+date-modified: "2026-04-15"
+categories: [Linux, Command]
+toc: true
+toc-depth: 5
+---
+
+자주 쓰는 리눅스 명령어
+
+##### man
+
+명령어 메뉴얼 보기 (display online manual documentation pages)
+
+- 인수로 입력하는 명령어의 도움말을 화면에 출력
+- 간단한 사용법 위주로 보려면 [[tldr]] 사용(별도 설치 필요)
+
+```sh
+$ man <command>
+```
+
+##### ls
+
+폴더의 내용 보기 (list directory contents)
+
+- 인수로 입력하는 폴더의 내용 보기(인수를 생략하면 현재 폴더)
+- `-a`: 숨김 파일 포함, `-l`: 자세히 보기, `-h`: 파일크기를 읽기 쉽게(KiB, MiB, GiB)
+
+```sh
+$ ls -alh [folder|file]
+```
+
+##### cd
+현재(작업) 폴더 변경 (shell built-in command)
+
+- 인수로 입력하는 폴더로 이동(인수를 생략하면 사용자 폴더로 이동)
+- `/`: 루트 폴더, `.`: 현재 폴더, `..`: 상위 폴더, `-`: 이전 폴더, ~`: 사용자 폴더
+
+```sh
+$ cd [path_to_move]
+```
+
+##### pwd
+
+현재(작업) 폴더 보기 (return working directory name)
+
+```sh
+$ pwd
+```
+
+##### mkdir
+
+폴더 생성 (make directories)
+
+- 인수로 입력하는 이름으로 폴더 생성(한번에 여러개의 폴더를 만들 수 있음)
+- `-p`: 경로의 중간 폴더가 필요하면 생성
+
+```sh
+$ mkdir <folder1> <folder2>
+$ mkdir -p <folder/subfolder>
+```
+
+##### rmdir
+
+폴더 삭제 (remove directories)
+
+- 인수로 입력하는 폴더 삭제(한번에 여러 폴더 삭제 가능, 폴더가 비어있지 않으면 삭제되지 않음)
+- `-p`: 경로의 중간 폴더까지 모두 삭제(비어 있지 않은 폴더에서 작업 중지)
+
+```sh
+$ rmdir <folder1> <folder2>
+$ rmdir -p <folder/subfolder>
+```
+
+##### rm
+
+파일(폴더) 삭제 (remove directory entries)
+
+- 인수로 입력하는 파일이나 폴더 삭제(한번에 여러 파일/폴더 삭제 가능)
+- `-r`: 폴더 포함하여 삭제, `-f`: 삭제 여부를 묻지 않음(폴더가 비어있지 않아도 삭제 가능)
+
+```sh
+$ rm -rf <file> <folder>
+```
+
+##### mv
+
+파일 이동 (move files)
+
+- 첫번째 인수의 파일을 두번째 인수의 폴더(파일)로 이동(두번째 인수가 파일인 경우 이름 변경)
+
+```sh
+$ mv <source> <target>
+```
+
+##### cp
+
+파일(폴더) 복사 (copy files)
+
+- 첫번째 인수의 파일(폴더)을 두번째 인수에서 주어진 이름으로 복사
+- `-r`: 폴더의 모든 내용을 복사(하위 폴더 포함)
+
+```sh
+$ cp <source_file> <target_file>
+$ cp -r <source_folder> <target_folder>
+```
+
+##### touch
+
+빈파일 생성 (change file access and modification times)
+
+- 파일 생성 혹은 수정 날짜(시간)을 설정하는 명령어이나 주로 빈 파일을 만들 때 옵션없이 사용
+
+```sh
+$ touch <path/to/file1> <path/to/file2>
+```
+
+##### find
+
+특정한 패턴과 일치하는 파일 또는 폴더 찾기 (walk a file hierarchy)
+
+- 패턴과 일치하는 파일 또는 폴더를 디렉토리 트리를 따라 하위 폴더까지 찾음
+- `-name`, `-iname`: 이름 (대소문자 구분, 무시), `-path`: 경로
+- `-or`, `-not`: 조건 연결, `-maxdepth`: 하위 폴더 단계 지정
+- `-type f`, `-type d`, `-type l`: 파일, 디렉토리, 심볼릭 링크
+- `-size`: 크기 지정 (복수 조건 가능) `+|-`: 이상|이하, `c|k|M`: 글자, 킬로바이트, 메가바이트
+- `-mtime`: 수정 시간(날짜 days)  `+|-`: 이상|이하
+- `-delete`: 파일 삭제, `-exec`: 명령어 실행 (명령어 인수로 `{}`, 명령 종료는 `\;` 사용)
+
+```sh
+# 현재 폴더 이하에서 확장자를 갖는 파일들(와일드 캐릭터는 인용부호 사용)
+$ find . -name '*.ext'
+# 현재 폴더 이하에서 folder_name 디렉토리(일반 문자는 인용부호 불필요)
+$ find . -type d -name folder_name
+# 경로나 이름이 일치하는 조건
+$ find root_path -path '*/path/*/*.ext' -or -name '*pattern*'
+# 주어진 하위 폴더 단계 안에서 크기 범위 안에 해당하는 파일
+$ find root_path -maxdepth 1 -size +500k -size -10M
+# 특정 경로 제외
+$ find . -type f -name '*.md' -not -path '*excluded_path*'
+# 1일 이내에 수정된 파일들 삭제
+$ find root_path -type f -mtime -1 -delete
+# 특정 확장자를 갖는 파일들의 내용을 화면에 출력
+$ find . -type f -name '*.rc' -exec cat {} \;
+```
+
+##### ln
+
+파일(폴더) 연결 (link files)
+
+- 링크로 연결된 파일들은 둘 중 어느 파일을 수정해도 링크된 파일에 반영되나 다음 차이가 있음.
+- 하드 링크: 폴더나 외부 파일시스템(디스크)과 연결할 수 없고, 원본이 삭제되도 링크된 파일은 삭제되지 않음. 링크된 파일을 구분할 수 없음.
+- 소프트 링크: 폴더나 외부 파일시스템(디스크)과 연결할 수 있으나 원본 파일을 삭제하면 링크가 끊어져 접근할 수 없음. 링크된 파일은 이름 뒤에 `@`가 붙고 `ls -l`로 보면 파일 속성 맨 앞에 `l` 표기.
+
+```sh
+# 옵션 '-s' 를 사용하면 소프트(심볼릭) 링크 생성
+ln [-s] <original> <link>
+```
+
+##### gzip, gunzip
+
+파일 압축 및 해제 (compression/decompression tool)
+
+- 인수로 입력하는 단일 파일, 파일들 혹은 폴더를 압축하여 `.gz` 파일을 생성하고 원본은 삭제
+- `-k`: 원본 파일 유지 (`-c` 옵션으로 표준출력 사용 후 `.gz`  파일로 전환하는 것과 같음)
+- `-1`, `-2`, ... , `-9`: 압축율 지정(숫자가 높을수록 압축율은 높고, 속도는 느림, 기본값: 6)
+- `-v`: 압축율 정보 보기, 일반적으로 `-k` 옵션과 함께 사용
+- `-r`: 폴더 전체 압축하는 경우 사용
+- `-d`: 압축 해제, `gunzip`과 같음
+- `gunzip`: `-c` 옵션과 출력 재지정(`>`)으로 원본파일 유지할 수 있음 
+
+```sh
+# file.gz로 압축하고 file 삭제
+$ gzip file
+# file 유지하는 두 가지 방법
+$ gzip -k file
+$ gzip -c file > file.gz
+# 여러 파일 압축
+$ gzip file1 file2
+# 폴더 전체 압축
+$ gzip -r folder
+# 가장 높은 압축율로 압축
+$ gzip -9 file
+# 압축율 보기
+$ gzip -kv log_file
+# 압축 풀기(압축파일 삭제)
+$ gzip -d file.gz
+$ gunzip file.gz
+# 압축 풀기(압축파일 유지하고 다른 파일이름으로)
+$ gunzip -c file.gz > newfile
+```
+
+##### tar
+
+여러 파일들 아카이브 (manipulate tape archives)
+
+- 테이프 저장장치 때부터 전통적으로 쓰인 아카이빙 툴
+- `-cf`: 아카이브 생성, `-czf`: `gzip`으로 압축한 아카이브 생성
+- `-tf`: 아카이브 리스트 보기, `-xf`: 아카이브 풀기(압축 아카이브 인식)
+- `-C`: 아카이브를 풀 폴더 지정
+
+```sh
+$ tar -czf archive.tar.gz file1 file2 file3
+$ tar -tf archive.tar
+$ tar -xf archive.tar.gz -C directory
+```
+
+##### alias
+
+명령어 별칭 지정 (shell built-in command)
+
+- 자주 사용하는 옵션을 포함 하거나 명령어를 짧게 정의하는 경우 등에 주로 쓰임
+- 계속 사용하는 별칭들은 "Bash shell"을 사용하는 경우 `~/.bashrc`, `~/.profile`, 또는 `~/.bash_profile`에 등록
+- 명령어에 변수를 사용하는 경우 `""`는 정의 되는 시점에, `''`는 호출 되는 시점에 해석되는 차이가 있어 주의 필요함 
+
+```sh
+# 등록된 alias 리스트
+$ alias
+# alias 지정
+$ alias ll='ls -al'
+# ""와 ''간의 차이: 다음과 같이 `~/.bashrc`에 설정하고 폴더를 바꾸면서 둘을 비교
+alias epset="echo $PWD"
+alias epnow='echo $PWD'
+```
+
+##### echo
+
+##### chown 
+
+##### chmod
+
+change mode 파일이나 디렉토리 접근권한 변경
+
+- 숫자로 권한 지정: 4(읽기 Read, r), 2(쓰기 Write, w), 1(실행 Execute, x), 0(권한 없음)
+- 7(4+2+1): 읽기+쓰기+실행, rwx
+- 6(4+2): 읽기+쓰기, rw-
+- 5(4+1): 읽기+실행, r-x
+- 4: 읽기전용, r--
+- 문자로 권한 지정(symbolic 방식)
+- 대상: u(user), g(group), o(others), a(all)
+- 연산자: +(권한 추가), -(권한 제거), =(권한 설정)
+- 권한: r(읽기), w(쓰기), x(실행)
+
+```sh
+# 소유자: 모든 권한, 나머지: 읽기 및 실행 (주로 디렉토리나 스크립트 파일)
+$ chmod 755 filename
+# 소유자: 읽기 및 쓰기, 나머지: 읽기 전용 (주로 일반 파일)
+$ chmod 644 filename
+# 소유자만 읽기/쓰기
+$ chmod 600 private.key
+# 읽기 전용 으로 설정
+$ chmod 444 filename
+# 소유자에 실행 권한 추가
+$ chmod u+x filename
+# 그룹의 쓰기 권한 제거
+$ chmod g-w filename
+# 모든 사용자에게 읽기 권한 추가
+$ chmod a+r filename
+# 다른(other) 사용자에게 그룹(group)과 동일한 권한 부여
+$ chmod o=g /path/to/file
+# 다른(other) 사용자의 모든 권한 제거
+$ chmod o= /path/to/file
+```
+
+- 옵션: -R, --recursive (하위 디렉토리까지 모두 적용)
+- 권한 확인: ls -l 
+
+```sh
+# directory 및 하부까지 일괄로 권한 설정
+$ chmod -R 755 /path/to/directory
+# 그룹(group) 및 다른(other) 사용자에게 쓰기 권한 재귀적으로 설정
+$ chmod -R g+w,o+w /path/to/directory
+# 모든 사용자에게 파일에 대한 읽기(w) 권한과 디렉토리에 대한 실행(X) 권한 재귀적으로 설정
+$ chmod --recursive a+rX /path/to/directory
+# 권한확인: 구분[usr][grp][oth]
+$ ls -l filename
+-rwxr-xr--
+# user: rwx (7)
+# group: r-x (5)
+# others: r-- (4)
+```
+
+##### umask
+
+##### du
+
+##### df
+
+##### ps
+
+##### top
+
+##### kill
+
+##### killall
+
+##### jobs
+
+##### bg
+
+##### fg
+
+##### which
+
+##### xargs
+
+##### whoami
+
+##### who
+
+##### su
+
+##### sudo
+
+##### passwd
+
+##### clear
+
+##### history
+
+##### export
+
+##### crontab
+
+##### uname
+
+##### env
+
+##### printenv
+

@@ -1,0 +1,9 @@
+---
+title: "파워쉘(Powershell)"
+date: "2026-04-15"
+date-modified: "2026-04-15"
+categories: [Windows, Powershell]
+toc: true
+---
+
+Windows powershell

@@ -11,15 +11,14 @@ website:
       - text: "Data"
         menu: 
         - href: note.qmd
-          text: "Science"
+          text: "Data Science"
         - href: data.qmd
-          text: "Repository"
+          text: "Data Repository"
       - href: about.qmd
         text: "About"
   sidebar:
     - id: menu
       title: "Menu"
-      collapse-level: 3
       contents:
         - index.qmd
         - note.qmd
