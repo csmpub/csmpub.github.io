@@ -1,5 +1,5 @@
 ---
-title: "건설"
+title: "건설 분야"
 categories: [건설, 통걔누리]
 listing: 
     contents:

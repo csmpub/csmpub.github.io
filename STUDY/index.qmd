@@ -1,23 +1,23 @@
 ---
-title: "데이터 다운로드"
+title: "데이터 과학 기초"
 listing: 
     contents:
         - "*.qmd"
         - "!index.qmd"
     fields: [title, description, date, date-modified]
     type: table
-    sort: "date desc"
+    sort: "date-modified desc"
     sort-ui: true
     filter-ui: true
     categories: true
     date-format: iso
-sidebar: data
+sidebar: note
 ---
 
 ::: {.callout-note}
-### 자료 출처
-통계포털(KOSIS), 공공데이터포털(DATA), 국토교통부 통계누리
+### 주제
+R, 마크다운, 컴퓨터 기초
 :::
 
-## 데이터 목록
+### 노트로 이동
 

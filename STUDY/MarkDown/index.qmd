@@ -1,0 +1,16 @@
+---
+title: "마크다운(MarkDown)"
+listing: 
+    contents:
+        - "*.qmd"
+        - "!index.qmd"
+    fields: [title, description, date-modified]
+    type: table
+    sort: "date-modified desc"
+    sort-ui: true
+    filter-ui: true
+    categories: true
+sidebar: note
+---
+
+Markdown 공통 및 GitHub, Quarto, Obsidian 지원 문법

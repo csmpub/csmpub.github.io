@@ -8,8 +8,12 @@ website:
     right:
       - href: index.qmd
         text: "Home"
-      - href: data.qmd
-        text: "Data"
+      - text: "Data"
+        menu: 
+        - href: note.qmd
+          text: "Science"
+        - href: data.qmd
+          text: "Repository"
       - href: about.qmd
         text: "About"
   sidebar:
@@ -18,15 +22,25 @@ website:
       collapse-level: 3
       contents:
         - index.qmd
+        - note.qmd
         - data.qmd
         - text: "---" 
     - id: data
       title: "Data"
       contents: 
         - index.qmd
+        - note.qmd
         - data.qmd
         - text: "---"
         - auto: FILES
+    - id: note
+      title: "Note"
+      contents: 
+        - index.qmd
+        - data.qmd
+        - note.qmd
+        - text: "---"
+        - auto: STUDY
 
   draft-mode: visible
 

@@ -1,0 +1,16 @@
+---
+title: "컴퓨터 기초"
+listing: 
+    contents:
+        - "*.qmd"
+        - "!index.qmd"
+    fields: [title, description, date-modified]
+    type: table
+    sort: "date-modified desc"
+    sort-ui: true
+    filter-ui: true
+    categories: true
+sidebar: note
+---
+
+Shell commands, SSH, VSCode, Vim 등
