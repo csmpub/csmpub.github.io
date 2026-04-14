@@ -144,7 +144,7 @@
     "href": "note.html",
     "title": "Data Science",
     "section": "",
-    "text": "노트wintree\n\n\n\n데이터 과학에 필요한 기본 지식들\n\n\n\n주제별 폴더로 이동\n\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n\n\n\n\n\nR and RStudio\n\n\n\n\n\n\n\n\n\n마크다운(MarkDown)\n\n\n\n\n\n\n\n\n\n컴퓨터 기초\n\n\n\n\n\n\n\n\n\n일치 없음",
+    "text": "노트wintree\n\n\n\n데이터 과학에 필요한 기본 지식들\n\n\n\n주제별 폴더로 이동\n\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n\n\n\n\n\nQuarto\n\n\n\n\n\n\n\n\n\nR and RStudio\n\n\n\n\n\n\n\n\n\n마크다운(MarkDown)\n\n\n\n\n\n\n\n\n\n컴퓨터 기초\n\n\n\n\n\n\n\n\n\n일치 없음",
     "crumbs": [
       "Home",
       "Data Science"
@@ -158,54 +158,221 @@
     "text": "데이터 소스 및 가공 과정을 정리할 필요가 있어서 리포지토리 만듬"
   },
   {
-    "objectID": "STUDY/Computer/SSH/index.html",
-    "href": "STUDY/Computer/SSH/index.html",
-    "title": "SSH",
+    "objectID": "STUDY/Quarto/website-blog/index.html",
+    "href": "STUDY/Quarto/website-blog/index.html",
+    "title": "website bolg",
+    "section": "",
+    "text": "정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n개정\n\n\n\n\n\n\n\n\nAbout page\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n블로그 홈\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n포스팅 폴더\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\nRSS 피드\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n구독\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n블로그 테마\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n일치 없음",
+    "crumbs": [
+      "Home",
+      "데이터 과학 기초",
+      "Quarto",
+      "website bolg"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/website-blog/themes.html",
+    "href": "STUDY/Quarto/website-blog/themes.html",
+    "title": "블로그 테마",
+    "section": "",
+    "text": "블로그 테마 설정\n\n테마\n25개의 Bootswatch 테마를 사용하거나 자체 테마를 작성할 수 있다.\ndefault, cerulean, cosmo, cyborg, darkly, flatly, journal, litera, lumen, lux, materia, minty, morph, pulse, quartz, sandstone, simplex, sketchy, slate, solar, spacelab, superhero, united, vapor, yeti, zephyr\n\n프로젝트 설정(_quarto.yml)\nformat:\n  html:\n    theme: cosmo",
+    "crumbs": [
+      "데이터 과학 기초",
+      "Quarto",
+      "website bolg",
+      "블로그 테마"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/website-blog/home.html",
+    "href": "STUDY/Quarto/website-blog/home.html",
+    "title": "블로그 홈",
+    "section": "",
+    "text": "리스팅 페이지로 설정\n\n리스팅 페이지\n---\ntitle: \"myblog\"\nlisting:\n  contents: posts\n  sort: \"date desc\"\n  type: default\n  categories: true\n---\n\n\n카테고리\n카테고리는 포스팅 되는 글의 프폰트 메터에서 읽어들여 분류한다.\n---\ntitle: \"Post With Code\"\ndescription: \"Post description\"\nauthor: \"Fizz McPhee\"\ndate: \"5/22/2021\"\ncategories:\n  - news\n  - code\n  - analysis\n---",
+    "crumbs": [
+      "데이터 과학 기초",
+      "Quarto",
+      "website bolg",
+      "블로그 홈"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/website-draft/draft.html",
+    "href": "STUDY/Quarto/website-draft/draft.html",
+    "title": "웹사이트 초안",
+    "section": "",
+    "text": "웹사이트의 전체 또는 부분을 초안(draft)으로 설정하여 렌더링 조정\n\n초안 설정\n\n문서 설정\n\n---\ntitle: \"작성 중인 문서\"\ndraft: true\n---\n\n폴더 설정\n\n# _metadata.yml\ndraft: true\n\n프로젝트 설정\n\n# _quarto.yml\nwebsite:\n  drafts:\n    - path/to/draft/document.qmd\n# _quarto.yml\nmetadata-files:\n  - drafts.yml\n# drafts.yml\nwebsite:\n  drafts:\n    - path/to/draft/document.qmd\n\n\n보기 설정\ndraft-mode: 사용하여 gone, unlinked, visible로 지정\n\ngone(default) — Empty and unlinked\nunlinked — Rendered and unlinked\nvisible — Rendered and linked\n\nproject:\n  type: website\n\nwebsite:\n  title: \"Cool Website.\"\n  navbar:\n    left:\n      - stuff/item1.qmd\n      - stuff/item2.qmd\n  drafts:\n    - stuff/item2.qmd\n  draft-mode: unlinked\n\n\n미리보기 모드에서 초안(Draft) 설정\nquarto --preview 에서는 draft-mode: 설정과 관꼐없이 항상 visible로 동작한다.",
+    "crumbs": [
+      "데이터 과학 기초",
+      "Quarto",
+      "website draft",
+      "웹사이트 초안"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/index.html",
+    "href": "STUDY/Quarto/index.html",
+    "title": "Quarto",
+    "section": "",
+    "text": "Quarto 사용법\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n개정\n\n\n\n\n\n\n\n\n메뉴바(navbar)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n연결메뉴(hybrid navigation)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n기타 설정\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n페이지 설정\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n다른 페이지로(redirect)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n검색(search)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n메뉴목록(sidebar)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\nAbout page\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n블로그 홈\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n포스팅 폴더\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\nRSS 피드\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n구독\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n블로그 테마\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n웹사이트 초안\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n분류, 피드\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n필드\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n포함, 제외\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n옵션\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n위치, 다중리스트, YAML리스트\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n개요, 항목\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n타입, 정렬\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n사용자 툴\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n일치 없음",
+    "crumbs": [
+      "Home",
+      "데이터 과학 기초",
+      "Quarto"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/website-listing/options.html",
+    "href": "STUDY/Quarto/website-listing/options.html",
+    "title": "옵션",
+    "section": "",
+    "text": "리스팅 타입별 옵션, 기타 옵션\n\n타입 default 옵션\n\nmax-items 리스트 항목의 최대 갯수.\nimage-align 이미지를 포스팅 내용의 어느쪽으로 정렬할 것인지(right - 기본값, left)\nimage-height 이미지의 높이. 넓이는 정사각형으로 잘라지는 방식으로 결정된다.\nimage-placeholder 리스팅 문서가 이미지를 갖고 있지 않을 때 사용할 기본 이미지.\n\n\n\n타입 grid 옵션\n\nmax-items 리스트 항목의 최대 갯수.\nimage-height 이미지의 높이. 넓이는 정사각형으로 잘라지는 방식으로 결정된다.\nimage-placeholder 리스팅 문서가 이미지를 갖고 있지 않을 때 사용할 기본 이미지.\ngrid-columns 그리드 표시의 칼럼 숫자(기본값 3).\ngrid-item-border 리스트 항목 카드의 가장자리 표시 여부(기본값 true).\ngrid-item-align 리스트 항목 카드의 정렬(left - 기본값, right, 또는 center)\n\n\n\n타입 table 옵션\n\nmax-items 리스트 항목의 최대 갯수.\nimage-height 이미지의 높이. 넓이는 정사각형으로 잘라지는 방식으로 결정된다.\nimage-placeholder 리스팅 문서가 이미지를 갖고 있지 않을 때 사용할 기본 이미지.\ntable-striped 테이블 행의 배경색을 변경할지 여부(true 또는 false - 기본값)\ntable-hover 사용자가 마우스를 올려 놓았을 때 해당 행을 강조할지 여부(true 또는 false - 기본값).\nfield-links 문서에 링크할 필드 리스트(기본값 - title).\n\n\n\n기타 옵션\n\nfield-display-names 특정 필드를 리스트에서 표시할 이름\n\nlisting:\n  field-display-names:\n    title: \"Report\"\n\nimage-lazy-loading 리스트가 보일 때 이미지를 로드할지 여부(기본값 - true).\nmax-description-length 리스트에 표시할 deacription 문자열의 최대 길이(기본값 175).\ndate-format 날짜 표현 양식. 스타일(full, long, medium, short 또는 iso)로 지정하거나 형식 문자열로 지장.\n\n\n\n\n\n\n\n힌트date-format 스타일\n\n\n\n\nfull: Saturday, February 5, 2022\nlong: February 5, 2022\nmedium: Feb 5, 2022\nshort: 2/5/22\niso: 2022-05-22 ### date-format 형식 문자열",
+    "crumbs": [
+      "데이터 과학 기초",
+      "Quarto",
+      "website listing",
+      "옵션"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/website-listing/fields.html",
+    "href": "STUDY/Quarto/website-listing/fields.html",
+    "title": "필드",
+    "section": "",
+    "text": "quarto는 리스트의 필드를 문서 프론트메터의 메타데이터에서 읽어들인다.\n\n필드 이름\n\ntitle 리스트 항목의 제목, 문서 프론트 메터 “title” 필드 에서 읽어 오거나 문서의 첫번째 H1을 사용한다.\nsubtitle 리스트 항목의 부제목, 문서 프론트 메터 “subtitle” 필드 에서 읽어 들인다.\nauthor 리스트 항목의 저자, 문서 프론트 메터 “author” 필드 에서 읽어 들인다.\ndescription 리스트 항목의 설명, 문서 프론트 메터 “description” 이나 “abstract” 필드에서 읽어 오거나 문서의 첫번쩨 문단을 사용한다.\ndate 리스트 항목의 날짜, 문서 프론트 메터 “date” 필드 에서 읽어 들인다.\nimage 리스트 항목의 이미지, 문서 프론트 메터 “image” 필드에서 지정된 이미지를 사용한다. 지정되어 있지 않으면 preview-image 클래스의 첫번째 이미지, 이미지 파일 이름이 “feature”, “cover”, “thumbnail”로 시작하거나, 문서에 처음으로 나타나는 이미지를 사용한다.\nimage-alt 리스트 항목의 이미지를 대체할 텍스트.\nword-count 리스트 항목의 단어 수.\nreading-time 리스트 항목의 읽기 소요 시간(분당 200단어 기준으로 계산).\ncategories 리스트 항목의 분류, 문서 프론트 메터 “categories” 필드에서 읽어 들인다.\nfilename 렌더링 입력 파일(문서 파일) 이름.\nfile-modified 위 파일의 마지막 수정일.\n\n\n\n리스팅 타입별 필드 표기\n\ndefault 타입: title, subtitle, author, description, date, image 표시\ntable 타입: title, author, date 표시\ngrid 타입: title, author, description, date, image 표시\n\n\n\n필드 표시 사용자화\n\nfields: 옵션으로 지정한다.\n\n---\nlisting:\n  type: table\n  contents: posts\n  fields: [image, date, title, author, reading-time]\n---",
+    "crumbs": [
+      "데이터 과학 기초",
+      "Quarto",
+      "website listing",
+      "필드"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/website-listing/categories-feeds.html",
+    "href": "STUDY/Quarto/website-listing/categories-feeds.html",
+    "title": "분류, 피드",
+    "section": "",
+    "text": "리스팅 분류(Categpries) 및 피드(Feeds)\n\n분류(Categories)\n\n지정\n---\nlisting:\n  categories: true\n---\n\n\n스타일 옵션\n\nnumbered 분류를 알파벳 순으로 숫자와 함께 보여줌.\nunnumbered 분류을 알파벳 순으로 보여줌.\ncloud 분류를 ‘word cloud’ 형태로 보여줌.\n\n\n\n\n피드(Feeds)\n\n설정\n---\nlisting:\n  contents: posts\n  feed: true\n---\n# _quarto.yml\nwebsite:\n  site-url: \"https://www.quarto.org\"\n\n\n피드 옵션\n\nitems 피드에 포함할 아이템 갯수. 기본값은 20.\ntype “full”, “partial” 또는 “metadata”. 기본값인 “full”은 문서의 모든 내용을 피드에 포함한다. “partial”은 description(정의되지 않으면 첫번 째 문단)을 피드에 포함한다. “metadata”는 title, description, 문서의 metadata를 피드에 포함한다.\ntitle 피드의 제목. 기본값은 _quarto.yml 파일에 포함된 사이트 제목.\nimage 피드의 이미지. 지정되지 않으면 리스트 페이지가 있는 페이지의 이미지가 쓰이거나 _quarto.yml 파일에 포함된 사이트의 이미지 사용.\ndescription 이 피드의 설명. 지정되지 않으면 리스트 페이지가 있는 페이지의 설명이 쓰이거나 _quarto.yml 파일에 포함된 사이트의 설명 사용.\nlanguage 피드의 언어. 지정되지 않으면 생략됨. 언어 코드는 https://www.rssboard.org/rss-language-codes 참조.\ncategories 이 리스트에 포함된 분류별로 별도 피드 생성.",
+    "crumbs": [
+      "데이터 과학 기초",
+      "Quarto",
+      "website listing",
+      "분류, 피드"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/website-listing/overview.html",
+    "href": "STUDY/Quarto/website-listing/overview.html",
+    "title": "개요, 항목",
+    "section": "",
+    "text": "리스팅 개요(Overview), 콘텐츠(Contents), 타입(Type) 및 정렬(Sorting)\n\n개요(Overview)\n리스팅은 페이지의 내용(또는 특정 부분)을 자동으로 생성할 수 있도록 해 준다.\n---\ntitle: \"리스팅 페이지\"\nlisting: default\n---\n위 문서는 문서가 위치한 디렉토리의 모든 문서(자기 자신은 제외)를 기본형식으로 리스탱해서 보여준다.\n\n\n항목(Contents)\n리스팅에 포함될 문서(최소한 title: 메타데이터를 포함해야 함)를 제한할 수 있다.\ncontents: 리스트는 glob 문법을 따른다.\n\n\n\n\n\n\n중요상대경로\n\n\n\ncontents: 리스트에 지정된 경로는 현재 문서를 기준으로 하는 상대 경로이다.\n\n\n\n폴더 지정\n\n---\ntitle: \"Listing Example\"\nlisting:\n  contents: posts\n---\n\n개별 문서 지정\n\n---\ntitle: \"Listing Example\"\nlisting:\n  contents:\n    - \"reports/*.qmd\"\n    - \"lab-notes/*reports.qmd\"",
+    "crumbs": [
+      "데이터 과학 기초",
+      "Quarto",
+      "website listing",
+      "개요, 항목"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/website-navigation/navhybrid.html",
+    "href": "STUDY/Quarto/website-navigation/navhybrid.html",
+    "title": "연결메뉴(hybrid navigation)",
+    "section": "",
+    "text": "웹 페이지 상부 메뉴바와 좌측 메뉴목록의 연결\n\n사이드바의 title 사용\n사이드바 항목들의 그룹을 title로 지정하여 이름을 부여하고,\n메뉴바의 text에서 해당 이름을 사용하고, href는 그룹의 첫번째 항목을 지정한다.\nwebsite:\n  title: ProjectX\n  navbar:\n    background: primary\n    search: true\n    left:\n      - text: \"Home\"\n        href: index.qmd\n      - text: \"Tutorials\"\n        href: tutorials.qmd\n  sidebar:\n    - title: \"Tutorials\"\n      style: \"docked\"\n      background: light\n      contents:\n        - tutorials.qmd\n        - tutorial-1.qmd\n        - tutorial-2.qmd\n\n\n\n\n\n\n노트사이드바 옵션의 승계\n\n\n\n사이드바에서 title로 지정된 첫번쩨 그룹에 옵션을 지정하면 나머지 그룹들에도 해당 옵션이 승계하여 적용된다.\n\n\n\n\n사이드바의 id 사용\ntitle로 지정한 사이드바 항목 그룹에 id: name를 설정하고,\n메뉴바에서 sidebar:name으로 지정하면 항목 그룹의 드롭다운 메뉴가 구성된다.\nwebsite:\n  title: ProjectX\n  navbar:\n    background: primary\n    search: true\n    left:\n      - text: \"Home\"\n        href: index.qmd\n      - sidebar:tutorials\n  sidebar:\n    - id: tutorials\n      title: \"Tutorials\"\n      style: \"docked\"\n      background: light\n      collapse-level: 2\n      contents: \n        # navigation items",
+    "crumbs": [
+      "데이터 과학 기초",
+      "Quarto",
+      "website navigation",
+      "연결메뉴(hybrid navigation)"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/website-navigation/redirect.html",
+    "href": "STUDY/Quarto/website-navigation/redirect.html",
+    "title": "다른 페이지로(redirect)",
+    "section": "",
+    "text": "웹 페이지를 다른 페이지로 전환: aliases 사용\n\n파일 이름 변경\n---\ntitle: \"Renamed Page\"\naliases:\n  - page.html   # pages.qmd를 renamed-page.qmd로 변경 (확장자를 .html 사용해야 함에 주의)\n---\n\n\n폴더 구조 변경\n---\ntitle: \"Reorganized page\"\naliases: \n  - \"/old-directory/index.html\"     # old-directory을 new-directory로 변경 (절대경로 사용해야 함)\n---\n\n\n큰 파일을 작은 파일로 분리\n---\ntitle: \"Learning More\"\naliases:\n  - overview.html#learning-more     # overview.qmd의 learning-more 섹션을 분리\n---",
+    "crumbs": [
+      "데이터 과학 기초",
+      "Quarto",
+      "website navigation",
+      "다른 페이지로(redirect)"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/website-navigation/navbar.html",
+    "href": "STUDY/Quarto/website-navigation/navbar.html",
+    "title": "메뉴바(navbar)",
+    "section": "",
+    "text": "웹 페이지 상부 메뉴바 설정\n\n프로젝트 설정(_quarto.yml)\nwebsite:\n  navbar:\n    left:\n      - text: \"Home\"\n        href: index.qmd\n      - about.qmd\n\n\n메뉴바(navbar) 옵션\n\ntitle 메뉴바 제목(지정하지 않으면 site: title: 사용). 메뉴바에 타이틀을 표시하지 않으려면 title: false 지정.\nlogo 로고 이미지(옵션). 로고가 있는 _brand.yml을 사용하면 로고가 자동으로 표시됨(브랜드 로고를 사용하지 않게 하려면 logo: false 지정).\nlogo-alt 로고 이미지르 대신할 텍스트.\nlogo-href 사이드바 로고의 타깃 주소(href). 로고와 타이틀의 링크 기본값은 사이트의 루트 페이지(/index.html).\nbackground 베경색(“primary”, “secondary”, “success”, “danger”, “warning”, “info”, “light”, “dark”, 또는 hex color).\nforeground 전경색(“primary”, “secondary”, “success”, “danger”, “warning”, “info”, “light”, “dark”, or hex color). 메뉴바에 보이는 네비게이션 항목, 텍스트 또는 링크의 색상으로 쓰인다.\nsearch 탐색 박스를 표시할 지 여부(true 또는 false).\ntools 사이드바 툴의 리스트(github 이나 bluesky 연결 등).\nleft, right 메뉴바 왼쪽, 오른쪽에 표시할 네비게이션 항목(nevigation items) 리스트.\npinned 메뉴바를 항상 보여줄지 여부(true 또는 false). 기본값은 “false” 이고 사용자가 화면을 위로 스크롤 했을 때 메뉴바를 자동으로 보여주는 headroom.js를 사용한다.\ncollapse 화면 폭이 좁아질 때 메뉴바 항목을 햄버거 메뉴로 넣을지 여부(기본값 “true”).\ncollapse-below 메뉴바가 햄버거 메뉴로 들어갈 때 위치 (“sm”, “md”, “lg”, “xl”, 또는 “xxl”, 기본값 “lg”).\ntoggle-position 반응형 모드에서 메뉴바 햄버거 메뉴의 위치 (“left” - 기본값 또는 “right”).\ntools-collapse 화면이 좁아질 때 메뉴바로 넣을 툴\n\n\n메뉴바 네니베이션 항목(navigation items) 리스트\n\nhref 프로젝트내 파일이나 외부 URL 링크.\ntext 네비게이션 항목 텍스트(기본값 문서 title).\nicon 표준 Bootstrap 5 아이콘 이름(예, “github”, “bluesky”, “share” 등).\naria-label 네이게이션 항목 접근 라벨\nrel “rel 속성값”. 다중 빈칸 값 허용.\ntarget 태깃 속성. (예, _blank 새로운 탭으로 열기)\nmenu 드롭다운 메뉴로 펼쳐질 네비게이션 항목 리스트\n\n\n\n메뉴바 툴(tools) 리스트\n아이콘 이름(Bootstrap icons), 링크로 구성되며 메뉴바 오른쪽에 표시된다.\nwebsite:\n  navbar:\n    tools:\n      - icon: bluesky\n        href: https://bsky.app\n      - icon: github\n        menu:\n          - text: Source Code\n            href:  https://code.com\n          - text: Report a Bug\n            href:  https://bugs.com\n\n\n\n메뉴바 감추기\n---\n# Hides the navbar on this page\nnavbar: false\n---",
+    "crumbs": [
+      "데이터 과학 기초",
+      "Quarto",
+      "website navigation",
+      "메뉴바(navbar)"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/website-navigation/search.html",
+    "href": "STUDY/Quarto/website-navigation/search.html",
+    "title": "검색(search)",
+    "section": "",
+    "text": "웹 페이지 검색 단추 추가\n\n검색 단추\nnavbar 또는 sidebar 하부에 search: true 추가 (한쪽만 설정 가능)\nwebsite:\n    navbar:\n        search: true\nwebsite:\n    sidebar:\n        search: true",
+    "crumbs": [
+      "데이터 과학 기초",
+      "Quarto",
+      "website navigation",
+      "검색(search)"
+    ]
+  },
+  {
+    "objectID": "STUDY/Computer/VSCode/index.html",
+    "href": "STUDY/Computer/VSCode/index.html",
+    "title": "Visual Studio Code",
     "section": "",
     "text": "제목\n설명\n개정\n\n\n\n\n\n일치 없음",
     "crumbs": [
       "Home",
       "데이터 과학 기초",
       "컴퓨터 기초",
-      "SSH"
+      "Visual Studio Code"
     ]
   },
   {
-    "objectID": "STUDY/Computer/index.html",
-    "href": "STUDY/Computer/index.html",
-    "title": "컴퓨터 기초",
-    "section": "",
-    "text": "Shell commands, SSH, VSCode, Vim 등\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n제목\n설명\n개정\n\n\n\n\n\n일치 없음",
-    "crumbs": [
-      "Home",
-      "데이터 과학 기초",
-      "컴퓨터 기초"
-    ]
-  },
-  {
-    "objectID": "STUDY/Computer/GitGithub/index.html",
-    "href": "STUDY/Computer/GitGithub/index.html",
-    "title": "Github",
+    "objectID": "STUDY/Computer/Powershell/index.html",
+    "href": "STUDY/Computer/Powershell/index.html",
+    "title": "Powershell",
     "section": "",
     "text": "제목\n설명\n개정\n\n\n\n\n\n일치 없음",
     "crumbs": [
       "Home",
       "데이터 과학 기초",
       "컴퓨터 기초",
-      "Github"
+      "Powershell"
     ]
   },
   {
-    "objectID": "STUDY/R/stats/index.html",
-    "href": "STUDY/R/stats/index.html",
-    "title": "Stats",
+    "objectID": "STUDY/Computer/Shell/index.html",
+    "href": "STUDY/Computer/Shell/index.html",
+    "title": "Shell Commands",
     "section": "",
     "text": "제목\n설명\n개정\n\n\n\n\n\n일치 없음",
     "crumbs": [
       "Home",
       "데이터 과학 기초",
-      "R and RStudio",
-      "Stats"
+      "컴퓨터 기초",
+      "Shell Commands"
+    ]
+  },
+  {
+    "objectID": "STUDY/index.html",
+    "href": "STUDY/index.html",
+    "title": "데이터 과학 기초",
+    "section": "",
+    "text": "노트주제\n\n\n\nR, 마크다운, 컴퓨터 기초\n\n\n\n노트로 이동\n\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n개정\n\n\n\n\n\n\n\n\n메뉴바(navbar)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n연결메뉴(hybrid navigation)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n기타 설정\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n페이지 설정\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n다른 페이지로(redirect)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n검색(search)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n메뉴목록(sidebar)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\nR의 연산자\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\nAbout page\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n블로그 홈\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n포스팅 폴더\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\nRSS 피드\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n구독\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n블로그 테마\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n웹사이트 초안\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n분류, 피드\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n필드\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n포함, 제외\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n옵션\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n위치, 다중리스트, YAML리스트\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n개요, 항목\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n타입, 정렬\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n사용자 툴\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n일치 없음",
+    "crumbs": [
+      "Home",
+      "데이터 과학 기초"
     ]
   },
   {
@@ -213,7 +380,7 @@
     "href": "STUDY/R/index.html",
     "title": "R and RStudio",
     "section": "",
-    "text": "R 기본 문법 및 확장 패키지, RStudio IDE\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n제목\n설명\n개정\n\n\n\n\n\n일치 없음",
+    "text": "R 기본 문법 및 확장 패키지, RStudio IDE\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n개정\n\n\n\n\n\n\n\n\nR의 연산자\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n일치 없음",
     "crumbs": [
       "Home",
       "데이터 과학 기초",
@@ -302,7 +469,7 @@
     "href": "STUDY/R/base/index.html",
     "title": "Base R",
     "section": "",
-    "text": "제목\n설명\n개정\n\n\n\n\n\n일치 없음",
+    "text": "정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n개정\n\n\n\n\n\n\n\n\nR의 연산자\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n일치 없음",
     "crumbs": [
       "Home",
       "데이터 과학 기초",
@@ -311,53 +478,236 @@
     ]
   },
   {
-    "objectID": "STUDY/index.html",
-    "href": "STUDY/index.html",
-    "title": "데이터 과학 기초",
+    "objectID": "STUDY/R/stats/index.html",
+    "href": "STUDY/R/stats/index.html",
+    "title": "Stats",
     "section": "",
-    "text": "노트주제\n\n\n\nR, 마크다운, 컴퓨터 기초\n\n\n\n노트로 이동\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n제목\n설명\n날짜\n개정\n\n\n\n\n\n일치 없음",
+    "text": "제목\n설명\n개정\n\n\n\n\n\n일치 없음",
     "crumbs": [
       "Home",
-      "데이터 과학 기초"
+      "데이터 과학 기초",
+      "R and RStudio",
+      "Stats"
     ]
   },
   {
-    "objectID": "STUDY/Computer/Shell/index.html",
-    "href": "STUDY/Computer/Shell/index.html",
-    "title": "Shell Commands",
+    "objectID": "STUDY/Computer/GitGithub/index.html",
+    "href": "STUDY/Computer/GitGithub/index.html",
+    "title": "Github",
     "section": "",
     "text": "제목\n설명\n개정\n\n\n\n\n\n일치 없음",
     "crumbs": [
       "Home",
       "데이터 과학 기초",
       "컴퓨터 기초",
-      "Shell Commands"
+      "Github"
     ]
   },
   {
-    "objectID": "STUDY/Computer/Powershell/index.html",
-    "href": "STUDY/Computer/Powershell/index.html",
-    "title": "Powershell",
+    "objectID": "STUDY/Computer/index.html",
+    "href": "STUDY/Computer/index.html",
+    "title": "컴퓨터 기초",
+    "section": "",
+    "text": "Shell commands, SSH, VSCode, Vim 등\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n제목\n설명\n개정\n\n\n\n\n\n일치 없음",
+    "crumbs": [
+      "Home",
+      "데이터 과학 기초",
+      "컴퓨터 기초"
+    ]
+  },
+  {
+    "objectID": "STUDY/Computer/SSH/index.html",
+    "href": "STUDY/Computer/SSH/index.html",
+    "title": "SSH",
     "section": "",
     "text": "제목\n설명\n개정\n\n\n\n\n\n일치 없음",
     "crumbs": [
       "Home",
       "데이터 과학 기초",
       "컴퓨터 기초",
-      "Powershell"
+      "SSH"
     ]
   },
   {
-    "objectID": "STUDY/Computer/VSCode/index.html",
-    "href": "STUDY/Computer/VSCode/index.html",
-    "title": "Visual Studio Code",
+    "objectID": "STUDY/Quarto/website-navigation/others.html",
+    "href": "STUDY/Quarto/website-navigation/others.html",
+    "title": "기타 설정",
     "section": "",
-    "text": "제목\n설명\n개정\n\n\n\n\n\n일치 없음",
+    "text": "파일을 찾지 못한 에러 발생시 보여질 페이지 사용자 설정\n\n404에러 페이지\n\n프로젝트 폴더에 404.qmd 배치 (404.html 같이 배치할 수 있음)\n사이트 경로가 도메인 루트가 아닌 경우 site-url: 이나 site-path: 설정\n\nwebsite:\n  title: \"My Site\"\n  site-path: \"/mysite/\"\nwebsite:\n  title: \"My Site\"\n  site-url: \"https://example.com/mysite/\"\n\n\n읽기모드 설정\nwebsite:\n  reader-mode: true\n\n\nGitHub Link 설정\n\n프로젝트 설정(_quarto.yml)\nwebsite:\n  repo-url: https://github.com/quarto-dev/quarto-demo\n  repo-actions: [edit, source, issue]\n\n\n문서 설정(yml 헤더)\n특정 페이지에서 GutHub 액션 중지 설정\n---\nrepo-actions: false\n---\n\n\n추가 옵션\n\nrepo-subdir 소스 파일이 있는 리포지토리 폴더 (기본값 루트 폴더)\nrepo-branch 소스 파일이 있는 리포지토리 브랜치 (기본값 main 브렌치)\nissue-url 문제 리포트(Report an Issue) 클릭시 연결될 URL\nrepo-link-target 리포지토리 실행 링크(repo action links)의 타깃 속성 (예, “_blank” 설정시 새로운 탭이나 창이 열림)\nrepo-link-rel 리포지토리 실행 링크(repo action links)의 rel 속성",
+    "crumbs": [
+      "데이터 과학 기초",
+      "Quarto",
+      "website navigation",
+      "기타 설정"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/website-navigation/index.html",
+    "href": "STUDY/Quarto/website-navigation/index.html",
+    "title": "website navigation",
+    "section": "",
+    "text": "정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n개정\n\n\n\n\n\n\n\n\n메뉴바(navbar)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n연결메뉴(hybrid navigation)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n기타 설정\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n페이지 설정\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n다른 페이지로(redirect)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n검색(search)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n메뉴목록(sidebar)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n일치 없음",
     "crumbs": [
       "Home",
       "데이터 과학 기초",
-      "컴퓨터 기초",
-      "Visual Studio Code"
+      "Quarto",
+      "website navigation"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/website-navigation/page.html",
+    "href": "STUDY/Quarto/website-navigation/page.html",
+    "title": "페이지 설정",
+    "section": "",
+    "text": "페이지 이동, 경로 등 설정\n\n페이지 이동 설정\n\n\n\n\n\n\n힌트Seperators\n\n\n\n\n\n\nsidebar:하부 섹션(section) 또는 항목(item) 사이에 text: \"---\"가 있는 경우 보이지 않음\n\nwebsite:\n  sidebar:\n    contents:\n      - section: \"section one\"\n        contents:\n          - href: documents.qmd\n          - ...\n      - text: \"---\"\n      - section: \"section two\"\n        contents:\n          - href: ...\n          ...\n\n\n\n\n프로젝트 설정(_quarto.yml)\nwebsite:\n  page-navigation: ture   # or false\n\n\n폴더 설정(_metadata.yml)\npage-navigation: true   # or false\n\n\n문서 설정(yml 헤더)\n---\npage-navigation: false  # or true\n---\n\n\n\n페이지 경로 설정\n\n프로젝트 설정(_quarto.yml)\nwebsite:\n  bread-crumbs: false\n\n\n문서 설정(yml 헤더)\n---\ntitle: Page without breadcrumbs\nbread-crumbs: false\n---\n\n\n\n페이지 꼬리말 설정\n\n프로젝트 설정(_quarto.yml)\nwebsite:\n  page-footer:\n    left: \"단순 텍스트 문자열\"\n    center: ...\n    right:\n      - icon: github\n        href: https://github.com\n\n\npage-footer 옵션\nbackground foreground border\nwebsite:\n  page-footer:\n    border: flase   # default - true\n    background: light   # default - no background color\n\n\n\n\n\n\n힌트foreground color\n\n\n\n지정하지 않으면 background와 대비되는 색으로 자동 지정됨\n\n\n\n\n\n처음으로 설정\n\n프로젝트 설정(_quarto.yml)\nwebsite:\n  back-to-top-navigation: ture   # or false\n\n\n문서 설정(yml 헤더)\n---\npage-navigation: false  # or true\n---",
+    "crumbs": [
+      "데이터 과학 기초",
+      "Quarto",
+      "website navigation",
+      "페이지 설정"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/website-navigation/sidebar.html",
+    "href": "STUDY/Quarto/website-navigation/sidebar.html",
+    "title": "메뉴목록(sidebar)",
+    "section": "",
+    "text": "웹 페이지 좌측 메뉴목록 설정\n\n프로젝트 설정(_quarto.yml)\nwebsite:\n  sidebar:\n    style: \"docked\"\n    search: true\n    contents:\n      - text: \"Introduction\"\n        href: introduction.qmd\n      - section: \"Basics\"\n        href: basics-summary.qmd\n        contents:\n          - index.qmd\n          - basics-knitr.qmd\n          - basics-jupyter.qmd\n      - section: \"Layout\"\n        ...\n      - acknowledgment.qmd\n\n\n사이드바(sidebar) 옵션\n\nid 지정자(이름, 메뉴바와 사이드메뉴의 결합에 사용).\ntitle 제목 (지정하지 않으면 프로젝트 제목 사용).\nlogo 로고 이미지(옵션). 로고가 있는 _brand.yml을 사용하면 로고가 자동으로 표시됨(브랜드 로고를 사용하지 않게 하려면 logo: false 지정).\nlogo-alt 로고 이미지르 대신할 텍스트.\nlogo-href 사이드바 로고의 타깃 주소(href). 로고와 타이틀의 링크 기본값은 사이트의 루트 페이지(/index.html).\nsearch 탐색 박스를 표시할 지 여부(true 또는 false). 메뉴바에 탐색 박스가 표시되는 것으로 설정되어 있으면 사이드바에는 나타나지 않는다.\ntools 사이드바 툴의 리스트(github 이나 bluesky 연결 등).\ncontents 네비게이션 항목(navigation items) 리스트. 상위 레벨의 항목들은 하위 레벨 항목에도 리스트 된다.\nstyle “docked” 또는 “floating”.\ntype “dark” 또는 “light” (텍스트 색상을 배경색의 반대색으로).\nbackground 배경색 (“none”, “primary”, “secondary”, “success”, “danger”, “warning”, “info”, “light”, “dark”, or “white”). 기본값 “light”.\nforeground 전경색 (“primary”, “secondary”, “success”, “danger”, “warning”, “info”, “light”, “dark”, or hex color). 전경색은 사이드바에 표시되는 네비게이션 항목, 텍스트와 링크에 사용된다.\nborder 사이드바 가장자리를 표시할지 여부. “true” 또는 “false”.\nalignment 정렬 (“left”, “right”, 또는 “center”).\ncollapse-level 사이드바가 보일 때 자동으로 펼처질 단계. 기본값은 2.\npinned 화면 폭이 좁을 때 사이드바를 펼쳐 주는 타이틀바를 항상 보여줄지 여부(“true” 또는 “false”). 기본값은 “false” 이고 사용자가 화면을 위로 스크롤 했을 때 네비게이션 바를 자동으로 보여주는 headroom.js를 사용한다.\n\n\n\n\n\n\n\n중요모든 페이지에 표시\n\n\n\n옵션id:나 title:을 지정하지 않은 항목(sidebar items)은 웹사이트 모든 페이지에 표시된다. ### 일부 페이지에 표시 옵션id:나 title:을 지정한 항목(sidebar items)은 사이드바 contents: 리스트에 포함된 페이지들이나, 사이드바 id:를 지정한 폴더(_metadata.yml에서 지정), 페이지(yml 헤더에서 지정)에 표시된다.\n\n\n\n\n항목 자동 생성\n파일시스템에서 사이드바 항목을 자동으로 생성하는 설정\n\n자동항목 생성 규칙\n\n항목 이름은 문서의 title: 필드에서 읽어온다.\n하부 폴더는 폴더 이름을 사용해 섹션(sections)을 형성한다. 폴더 이름에 포함된 -, _는 섹션 이름에서 빈칸으로 바뀌고, 첫글자가 3.대문자로 바뀐다. 폴더에 title: 필드를 갖는 index.qmd 파일을 형성하면 폴더 이름 대신 지정된 이름으로 섹션이름을 설정한다.\n항목 순서는 파일이름 순으로 정렬된다. (문서 yml 해더에 order: 필드를 지정하면 바꿀 수 있음)\n\n\n\n자동생성 항목 지정\n항목 지동생성은 프로젝트 폴더 내의 모든 파일을 대상으로 한다. 이 기본값과 다르게 항목을 생성하려면 폴더 이름을 지정하거나 glob 패턴을 사용한다.\n\n프로젝트 폴더의 모든 파일(기본값)\n\nwebsite:\n  sidebar:\n    contents: auto\n\n프로젝트 /폴더 안의 파일로 제한\n\nwebsite:\n  sidebar:\n    contents: /*\n\nglob 패턴 사용\n\nsidebar:\n  contents: reports\n\nsidebar:\n  contents: reports/*\n  \nsidebar:\n  contents: \"*.ipynb\"\n\n\n\n\n\n\n중요YAML에서 *로 시작하는 패턴\n\n\n\nYAML에서 *로 시작하는 패턴을 사용할 때 반드시 \" \"를 사용해야 한다.\n\n\n\nsidebar: 안에서 contents:의 위계\n\nwebsite:\n  sidebar:\n    contents:\n      - about.qmd\n      - contributing.qmd\n      - section: Reports\n        contents: reports\n\n일반 항목과 auto:의 사용\n\nwebsite:\n  sidebar:\n    contents:\n      - about.qmd\n      - contributing.qmd\n      - auto: \"*-report.qmd\"\n\n\n\n사이드바 툴(tools) 리스트\n아이콘 이름(Bootstrap icons), 링크로 구성되며 사이드바 상단에 표시된다.\nwebsite:\n  sidebar:\n    tools:\n      - icon: bluesky\n        href: https://bsky.app\n      - icon: github\n        menu:\n          - text: Source Code\n            href:  https://code.com\n          - text: Report a Bug\n            href:  https://bugs.com\n\n\n사이드바 감추기\n---\n# Hides the sidebar on this page\nsidebar: false\n---",
+    "crumbs": [
+      "데이터 과학 기초",
+      "Quarto",
+      "website navigation",
+      "메뉴목록(sidebar)"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/website-listing/others.html",
+    "href": "STUDY/Quarto/website-listing/others.html",
+    "title": "위치, 다중리스트, YAML리스트",
+    "section": "",
+    "text": "리스팅 위치, 다중 리스팅, YAML 리스팅\n\n리스팅 위치\nid 블록 사용하여 위치 지정\n---\ntitle: \"Listing Example\"\nlisting:\n  id: sample-listings\n  contents: posts\n  sort: \"date desc\"\n  type: table\n---\n\nYou can review the following documents for additional information:\n\n::: {#sample-listings}\n:::\n\nLearn more about Quarto\n\n\n다중 리스팅\n---\ntitle: Team Documents\nlisting: \n  - id: lab-reports\n    contents: \"lab-reports/*.qmd\"\n    type: table\n  - id: meeting-notes\n    contents: \"meeting-notes/*.qmd\"\n    type: table\n---\n\n## Lab Reports\n\n::: {#lab-reports}\n:::\n\n## Meeting Notes\n\n::: {#meeting-notes}\n:::\n\n\nYAML 리스팅\n---\ntitle: \"Listing Example\"\nlisting:\n  id: sample-listings\n  contents: \n    - posts\n    - archived-items.yaml\n  sort: \"date desc\"\n  type: table\n---\n# archived-items.yml\n- title: \"Archived Item 1\"\n  author: Norah Jones\n  date: 2020-01-01\n  path: \"archived/archived-item-.html\"\n  categories: [archived, technology]",
+    "crumbs": [
+      "데이터 과학 기초",
+      "Quarto",
+      "website listing",
+      "위치, 다중리스트, YAML리스트"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/website-listing/including-excluding.html",
+    "href": "STUDY/Quarto/website-listing/including-excluding.html",
+    "title": "포함, 제외",
+    "section": "",
+    "text": "리스팅 포함 또는 제외 설정\n\n포함(Including)\n---\nlisting:\n  contents: posts\n  type: grid\n  include:\n    author: \"{Harlow,Tristan}*\"\n----\n\n\n제외(Excluding)\n---\nlisting:\n  contents: posts\n  type: grid\n  exclude:\n    author: \"Charles*\"\n---",
+    "crumbs": [
+      "데이터 과학 기초",
+      "Quarto",
+      "website listing",
+      "포함, 제외"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/website-listing/index.html",
+    "href": "STUDY/Quarto/website-listing/index.html",
+    "title": "website listing",
+    "section": "",
+    "text": "정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n개정\n\n\n\n\n\n\n\n\n분류, 피드\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n필드\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n포함, 제외\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n옵션\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n위치, 다중리스트, YAML리스트\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n개요, 항목\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n타입, 정렬\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n사용자 툴\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n일치 없음",
+    "crumbs": [
+      "Home",
+      "데이터 과학 기초",
+      "Quarto",
+      "website listing"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/website-listing/types-sort.html",
+    "href": "STUDY/Quarto/website-listing/types-sort.html",
+    "title": "타입, 정렬",
+    "section": "",
+    "text": "리스팅 타입(Type) 및 정렬(Sorting)\n\n타입(Type)\n\n지정\n문서의 메터데이터에 listing: type: 시용하여 지정\n---\nlisting:\n  contents: posts\n  type: default\n---\n\n\n종류\n\ndefault A blog style list of items.\ntable A table of listings.\ngrid A grid of listing cards.\n\n\n\n\n정렬(Sorting)\n\n기본 정렬은 title: 오름차순이나 sort: 옵션으로 지정할 수 있따.\n오름차순, 내림차순은 asc, desc로 지정한다.\n정렬 없이 물리적으로 저장된 순으로 리스트 하려면 false를 지정한다.\n\n---\nlisting:\n  contents: posts\n  sort: \"date\"\n---\n---\nlisting:\n  contents: posts\n  sort:\n    - \"date\"\n    - \"title desc\"\n---",
+    "crumbs": [
+      "데이터 과학 기초",
+      "Quarto",
+      "website listing",
+      "타입, 정렬"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/website-listing/usertools.html",
+    "href": "STUDY/Quarto/website-listing/usertools.html",
+    "title": "사용자 툴",
+    "section": "",
+    "text": "리스팅에 추가할 수 있는 사용자 툴\n\n정렬\n\n기본 필드 포함\n\n---\nlisting:\n  sort-ui: false\n---\n\n필드 지정\n\n---\nlisting:\n  sort-ui: [title, date]\n---\n\n\n필터\n\n표시 제거\n\n---\nlisting:\n  filter-ui: false\n---\n\n필드 지정\n\n---\nlisting:\n  filter-ui: [title, date]\n---\n\n\n페이징 관리\n\n기본 페이지\n\ndefault: 25, table: 30, grid: 18\n\n페이징 지정\n\n---\nlisting:\n  page-size: 36\n---",
+    "crumbs": [
+      "데이터 과학 기초",
+      "Quarto",
+      "website listing",
+      "사용자 툴"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/website-draft/index.html",
+    "href": "STUDY/Quarto/website-draft/index.html",
+    "title": "website draft",
+    "section": "",
+    "text": "정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n개정\n\n\n\n\n\n\n\n\n웹사이트 초안\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n일치 없음",
+    "crumbs": [
+      "Home",
+      "데이터 과학 기초",
+      "Quarto",
+      "website draft"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/website-blog/rssfeed.html",
+    "href": "STUDY/Quarto/website-blog/rssfeed.html",
+    "title": "RSS 피드",
+    "section": "",
+    "text": "블로그의 RSS 피드 활성화\n\nRSS 활성화 설정\n\n_quarto.yml website: 아래 site-url:, description: 설정\n\nwebsite:\n  title: \"myblog\"\n  site-url: https://www.myblogexample.io\n  description: \"A great sample blog\"\n\n블로그 홈 index.qmd 문서 yml 헤더 listing: 아래 feed: true 설정\n\n---\ntitle: \"myblog\"\nlisting:\n  contents: posts\n  sort: \"date desc\"\n  type: default\n  categories: true\n  feed: true\n---\n\n\n\n\n\n\n힌트메뉴바(navbar)에 RSS 링크 추가\n\n\n\n_quarto.yml\nwebsite:\n  title: \"myblog\"\n  site-url: https://www.myblogexample.io\n  description: \"A great sample blog\"\n  navbar:\n    right:\n      - icon: rss\n        href: index.xml\n\n\n\n특정 분류만 RSS 피드\nfeed: 아래 categories: 리스트 지정\n---\ntitle: \"myblog\"\nlisting:\n  contents: posts\n  sort: \"date desc\"\n  type: default\n  categories: true\n  feed:\n    categories: [news, posts]\n---",
+    "crumbs": [
+      "데이터 과학 기초",
+      "Quarto",
+      "website bolg",
+      "RSS 피드"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/website-blog/post.html",
+    "href": "STUDY/Quarto/website-blog/post.html",
+    "title": "포스팅 폴더",
+    "section": "",
+    "text": "블로그 글을 저장하는 포스팅 폴더 설정\n\n초안\n프리뷰에서만 보이고, 렌더링에서는 제외되는 섫정\n---\ndraft: true\n---\n\n\n최종 수정일\n---\nlast-modified: \"2026-03-27\"\n---\n\n\n렌더링 결과 보관\n\n폴더 설정(_metadata.yml)\n# freeze computational output\nfreeze: true",
+    "crumbs": [
+      "데이터 과학 기초",
+      "Quarto",
+      "website bolg",
+      "포스팅 폴더"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/website-blog/subscribe.html",
+    "href": "STUDY/Quarto/website-blog/subscribe.html",
+    "title": "구독",
+    "section": "",
+    "text": "이메일로 블로그 구독 설정\n\n구독 설정\n\n이메일 서비스에서 제공하는 구독 위젯을 위한 HTML 생성\n생성된 HTML을 프로젝트 루트 폴더에 subscrive.html로 저장\n_quarto.yml 파일의 margin-header:에 위 파일 지정\n\nwebsite:\n  margin-header: subscribe.html",
+    "crumbs": [
+      "데이터 과학 기초",
+      "Quarto",
+      "website bolg",
+      "구독"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/website-blog/about.html",
+    "href": "STUDY/Quarto/website-blog/about.html",
+    "title": "About page",
+    "section": "",
+    "text": "블로그와 저자들에 대한 추가 설명을 위한 페이지\n\nabout 옵션\n---\ntitle: \"Blog title\"\nabout:\n  template:\n  image:\n    links:\n      - icon: github\n        text: GutHub\n        href: https://github.com\n---\n\ntemplate\n블로그 소개 페이지를 위해 jolla, trestles, solana, marquee, broadside 템플릿을 사용할 수 있다.\n\n\nimage 사용자화\ntitle: Finley Malloc\nimage: profile.png\nabout:\n  template: trestles\n  image-width: 10em\n  image-shape: round\n\nimage-width 이미지의 CSS width\nimage-shape 이미지 모양(rectangle, round, rounded(jolla, solana, trestles 템플릿에서만))\nimage-alt 이미지의 대체 문자열\nimage-title 이미지 제목\n\n\n\n링크\n\nhref 프로젝트 내부 파일이나 외부 URL.\ntext 네비게이션 항목에 표시될 텍스트 (기본값은 문서의 title).\nicon 표준 Bootstrap 5 아이콘 이름(예, “github”, “twitter”, “share” 등).\naria-label 네이게이션 항목에 접근할 이름.\n\n\n\n\nabout 페이지의 템플릿의 부분만 사용\nid:를 지정하고, 페이지에 삽입할 위치에 지정된 id를 사용한 블록으로 삽입\n---\ntitle: \"Finley Malloc\"\nabout:\n  id: hero-heading\n  template: jolla\n  image: profile.jpg\n  links:\n    - icon: bluesky\n      text: Bluesky\n      href: https://bsky.app\n    - icon: github\n      text: Github\n      href: https://github.com\n---",
+    "crumbs": [
+      "데이터 과학 기초",
+      "Quarto",
+      "website bolg",
+      "About page"
     ]
   },
   {
@@ -372,7 +722,7 @@
     "href": "index.html",
     "title": "Wintree’s Home",
     "section": "",
-    "text": "힌트개인용 데이터 리포지토리\n\n\n\n\n데이터과학에 필요한 지식노트\n공공 사이트에서 데이터 얻기\n기타 이런 저런 생각들…\n\n\n\n\n새 글\n\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n개정\n\n\n\n\n\n\n\n\n현장소재지별 건설공사계약 금액\n\n\n\n\n\n2026-04-13\n\n\n\n\n\n\n데이터 사이언스 추가\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n가구주의 성/연령/혼인상태별 추계가구-시도\n\n\n\n\n\n2026-04-07\n\n\n\n\n\n\n연령별 기대여명\n\n\n\n\n\n2026-04-03\n\n\n\n\n\n\n전국 청약 평균 분양가\n\n\n\n\n\n2026-04-03\n\n\n\n\n\n\n리포지토리 생성\n\n\n\n\n\n2026-04-01\n\n\n\n\n\n\n일치 없음",
+    "text": "힌트개인용 데이터 리포지토리\n\n\n\n\n데이터과학에 필요한 지식노트\n공공 사이트에서 데이터 얻기\n기타 이런 저런 생각들…\n\n\n\n\n새 글\n\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n개정\n\n\n\n\n\n\n\n\nR의 연산자\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n기타 설정\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n검색(search)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n메뉴바(navbar)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n페이지 설정\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n다른 페이지로(redirect)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n메뉴목록(sidebar)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n연결메뉴(hybrid navigation)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n현장소재지별 건설공사계약 금액\n\n\n\n\n\n2026-04-13\n\n\n\n\n\n\n데이터 사이언스 추가\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n위치, 다중리스트, YAML리스트\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n개요, 항목\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n포함, 제외\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n분류, 피드\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n필드\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n타입, 정렬\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n옵션\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n사용자 툴\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n웹사이트 초안\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\nRSS 피드\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n블로그 홈\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n포스팅 폴더\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n블로그 테마\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n구독\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\nAbout page\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n가구주의 성/연령/혼인상태별 추계가구-시도\n\n\n\n\n\n2026-04-07\n\n\n\n\n\n\n연령별 기대여명\n\n\n\n\n\n2026-04-03\n\n\n\n\n\n\n전국 청약 평균 분양가\n\n\n\n\n\n2026-04-03\n\n\n\n\n\n\n리포지토리 생성\n\n\n\n\n\n2026-04-01\n\n\n\n\n\n\n일치 없음",
     "crumbs": [
       "Home",
       "Wintree's Home"

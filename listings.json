@@ -45,30 +45,95 @@
   {
     "listing": "/note.html",
     "items": [
+      "/STUDY/Quarto/index.html",
       "/STUDY/R/index.html",
       "/STUDY/MarkDown/index.html",
       "/STUDY/Computer/index.html"
     ]
   },
   {
-    "listing": "/STUDY/Computer/SSH/index.html",
+    "listing": "/STUDY/Quarto/website-blog/index.html",
+    "items": [
+      "/STUDY/Quarto/website-blog/about.html",
+      "/STUDY/Quarto/website-blog/home.html",
+      "/STUDY/Quarto/website-blog/post.html",
+      "/STUDY/Quarto/website-blog/rssfeed.html",
+      "/STUDY/Quarto/website-blog/subscribe.html",
+      "/STUDY/Quarto/website-blog/themes.html"
+    ]
+  },
+  {
+    "listing": "/STUDY/Quarto/index.html",
+    "items": [
+      "/STUDY/Quarto/website-navigation/navbar.html",
+      "/STUDY/Quarto/website-navigation/navhybrid.html",
+      "/STUDY/Quarto/website-navigation/others.html",
+      "/STUDY/Quarto/website-navigation/page.html",
+      "/STUDY/Quarto/website-navigation/redirect.html",
+      "/STUDY/Quarto/website-navigation/search.html",
+      "/STUDY/Quarto/website-navigation/sidebar.html",
+      "/STUDY/Quarto/website-blog/about.html",
+      "/STUDY/Quarto/website-blog/home.html",
+      "/STUDY/Quarto/website-blog/post.html",
+      "/STUDY/Quarto/website-blog/rssfeed.html",
+      "/STUDY/Quarto/website-blog/subscribe.html",
+      "/STUDY/Quarto/website-blog/themes.html",
+      "/STUDY/Quarto/website-draft/draft.html",
+      "/STUDY/Quarto/website-listing/categories-feeds.html",
+      "/STUDY/Quarto/website-listing/fields.html",
+      "/STUDY/Quarto/website-listing/including-excluding.html",
+      "/STUDY/Quarto/website-listing/options.html",
+      "/STUDY/Quarto/website-listing/others.html",
+      "/STUDY/Quarto/website-listing/overview.html",
+      "/STUDY/Quarto/website-listing/types-sort.html",
+      "/STUDY/Quarto/website-listing/usertools.html"
+    ]
+  },
+  {
+    "listing": "/STUDY/Computer/VSCode/index.html",
     "items": []
   },
   {
-    "listing": "/STUDY/Computer/index.html",
+    "listing": "/STUDY/Computer/Powershell/index.html",
     "items": []
   },
   {
-    "listing": "/STUDY/Computer/GitGithub/index.html",
+    "listing": "/STUDY/Computer/Shell/index.html",
     "items": []
   },
   {
-    "listing": "/STUDY/R/stats/index.html",
-    "items": []
+    "listing": "/STUDY/index.html",
+    "items": [
+      "/STUDY/Quarto/website-navigation/navbar.html",
+      "/STUDY/Quarto/website-navigation/navhybrid.html",
+      "/STUDY/Quarto/website-navigation/others.html",
+      "/STUDY/Quarto/website-navigation/page.html",
+      "/STUDY/Quarto/website-navigation/redirect.html",
+      "/STUDY/Quarto/website-navigation/search.html",
+      "/STUDY/Quarto/website-navigation/sidebar.html",
+      "/STUDY/R/base/연산자.html",
+      "/STUDY/Quarto/website-blog/about.html",
+      "/STUDY/Quarto/website-blog/home.html",
+      "/STUDY/Quarto/website-blog/post.html",
+      "/STUDY/Quarto/website-blog/rssfeed.html",
+      "/STUDY/Quarto/website-blog/subscribe.html",
+      "/STUDY/Quarto/website-blog/themes.html",
+      "/STUDY/Quarto/website-draft/draft.html",
+      "/STUDY/Quarto/website-listing/categories-feeds.html",
+      "/STUDY/Quarto/website-listing/fields.html",
+      "/STUDY/Quarto/website-listing/including-excluding.html",
+      "/STUDY/Quarto/website-listing/options.html",
+      "/STUDY/Quarto/website-listing/others.html",
+      "/STUDY/Quarto/website-listing/overview.html",
+      "/STUDY/Quarto/website-listing/types-sort.html",
+      "/STUDY/Quarto/website-listing/usertools.html"
+    ]
   },
   {
     "listing": "/STUDY/R/index.html",
-    "items": []
+    "items": [
+      "/STUDY/R/base/연산자.html"
+    ]
   },
   {
     "listing": "/STUDY/MarkDown/quarto/index.html",
@@ -96,29 +161,85 @@
   },
   {
     "listing": "/STUDY/R/base/index.html",
+    "items": [
+      "/STUDY/R/base/연산자.html"
+    ]
+  },
+  {
+    "listing": "/STUDY/R/stats/index.html",
     "items": []
   },
   {
-    "listing": "/STUDY/index.html",
+    "listing": "/STUDY/Computer/GitGithub/index.html",
     "items": []
   },
   {
-    "listing": "/STUDY/Computer/Shell/index.html",
+    "listing": "/STUDY/Computer/index.html",
     "items": []
   },
   {
-    "listing": "/STUDY/Computer/Powershell/index.html",
+    "listing": "/STUDY/Computer/SSH/index.html",
     "items": []
   },
   {
-    "listing": "/STUDY/Computer/VSCode/index.html",
-    "items": []
+    "listing": "/STUDY/Quarto/website-navigation/index.html",
+    "items": [
+      "/STUDY/Quarto/website-navigation/navbar.html",
+      "/STUDY/Quarto/website-navigation/navhybrid.html",
+      "/STUDY/Quarto/website-navigation/others.html",
+      "/STUDY/Quarto/website-navigation/page.html",
+      "/STUDY/Quarto/website-navigation/redirect.html",
+      "/STUDY/Quarto/website-navigation/search.html",
+      "/STUDY/Quarto/website-navigation/sidebar.html"
+    ]
+  },
+  {
+    "listing": "/STUDY/Quarto/website-listing/index.html",
+    "items": [
+      "/STUDY/Quarto/website-listing/categories-feeds.html",
+      "/STUDY/Quarto/website-listing/fields.html",
+      "/STUDY/Quarto/website-listing/including-excluding.html",
+      "/STUDY/Quarto/website-listing/options.html",
+      "/STUDY/Quarto/website-listing/others.html",
+      "/STUDY/Quarto/website-listing/overview.html",
+      "/STUDY/Quarto/website-listing/types-sort.html",
+      "/STUDY/Quarto/website-listing/usertools.html"
+    ]
+  },
+  {
+    "listing": "/STUDY/Quarto/website-draft/index.html",
+    "items": [
+      "/STUDY/Quarto/website-draft/draft.html"
+    ]
   },
   {
     "listing": "/index.html",
     "items": [
+      "/STUDY/R/base/연산자.html",
+      "/STUDY/Quarto/website-navigation/others.html",
+      "/STUDY/Quarto/website-navigation/search.html",
+      "/STUDY/Quarto/website-navigation/navbar.html",
+      "/STUDY/Quarto/website-navigation/page.html",
+      "/STUDY/Quarto/website-navigation/redirect.html",
+      "/STUDY/Quarto/website-navigation/sidebar.html",
+      "/STUDY/Quarto/website-navigation/navhybrid.html",
       "/FILES/통계누리/건설/현장소재지별-건설공사계약금액.html",
       "/POSTS/2026-04-12_데이터사이언스-추가.html",
+      "/STUDY/Quarto/website-listing/others.html",
+      "/STUDY/Quarto/website-listing/overview.html",
+      "/STUDY/Quarto/website-listing/including-excluding.html",
+      "/STUDY/Quarto/website-listing/categories-feeds.html",
+      "/STUDY/Quarto/website-listing/fields.html",
+      "/STUDY/Quarto/website-listing/types-sort.html",
+      "/STUDY/Quarto/website-listing/options.html",
+      "/STUDY/Quarto/website-listing/usertools.html",
+      "/STUDY/Quarto/website-draft/draft.html",
+      "/STUDY/Quarto/website-blog/rssfeed.html",
+      "/STUDY/Quarto/website-blog/home.html",
+      "/STUDY/Quarto/website-blog/post.html",
+      "/STUDY/Quarto/website-blog/themes.html",
+      "/STUDY/Quarto/website-blog/subscribe.html",
+      "/STUDY/Quarto/website-blog/about.html",
       "/FILES/KOSIS/인구/가구주의_성_연령_혼인상태별_추계가구-시도.html",
       "/FILES/KOSIS/보건/완전생명표_1세별-기대여명.html",
       "/FILES/DATA/한국부동산원/전국청약평균분양가.html",
