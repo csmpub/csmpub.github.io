@@ -53,8 +53,16 @@
     <lastmod>2026-04-14T17:00:09.591Z</lastmod>
   </url>
   <url>
+    <loc>git@icloud:csmpub/csmpub.github.io.git/STUDY/Quarto/Code-Cells/index.html</loc>
+    <lastmod>2026-04-15T06:54:53.552Z</lastmod>
+  </url>
+  <url>
     <loc>git@icloud:csmpub/csmpub.github.io.git/STUDY/Quarto/website-draft/index.html</loc>
     <lastmod>2026-04-14T16:48:13.559Z</lastmod>
+  </url>
+  <url>
+    <loc>git@icloud:csmpub/csmpub.github.io.git/STUDY/Quarto/html/index.html</loc>
+    <lastmod>2026-04-15T08:35:19.759Z</lastmod>
   </url>
   <url>
     <loc>git@icloud:csmpub/csmpub.github.io.git/STUDY/Quarto/website-listing/usertools.html</loc>
@@ -121,6 +129,10 @@
     <lastmod>2026-04-14T16:49:37.226Z</lastmod>
   </url>
   <url>
+    <loc>git@icloud:csmpub/csmpub.github.io.git/STUDY/R/tibble/티블개요.html</loc>
+    <lastmod>2026-04-15T08:28:10.782Z</lastmod>
+  </url>
+  <url>
     <loc>git@icloud:csmpub/csmpub.github.io.git/STUDY/MarkDown/obsidian/index.html</loc>
     <lastmod>2026-04-14T16:46:51.295Z</lastmod>
   </url>
@@ -139,6 +151,10 @@
   <url>
     <loc>git@icloud:csmpub/csmpub.github.io.git/STUDY/MarkDown/quarto/index.html</loc>
     <lastmod>2026-04-14T16:47:13.816Z</lastmod>
+  </url>
+  <url>
+    <loc>git@icloud:csmpub/csmpub.github.io.git/STUDY/R/tibble/index.html</loc>
+    <lastmod>2026-04-15T05:48:04.051Z</lastmod>
   </url>
   <url>
     <loc>git@icloud:csmpub/csmpub.github.io.git/STUDY/R/index.html</loc>
@@ -201,12 +217,20 @@
     <lastmod>2026-04-14T16:58:37.570Z</lastmod>
   </url>
   <url>
+    <loc>git@icloud:csmpub/csmpub.github.io.git/STUDY/Quarto/html/code-blocks.html</loc>
+    <lastmod>2026-04-15T09:08:32.437Z</lastmod>
+  </url>
+  <url>
     <loc>git@icloud:csmpub/csmpub.github.io.git/STUDY/Quarto/index.html</loc>
     <lastmod>2026-04-14T17:02:02.238Z</lastmod>
   </url>
   <url>
     <loc>git@icloud:csmpub/csmpub.github.io.git/STUDY/Quarto/website-draft/draft.html</loc>
     <lastmod>2026-04-14T16:59:34.058Z</lastmod>
+  </url>
+  <url>
+    <loc>git@icloud:csmpub/csmpub.github.io.git/STUDY/Quarto/Code-Cells/knitr.html</loc>
+    <lastmod>2026-04-15T08:23:22.701Z</lastmod>
   </url>
   <url>
     <loc>git@icloud:csmpub/csmpub.github.io.git/STUDY/Quarto/website-blog/home.html</loc>
@@ -230,7 +254,7 @@
   </url>
   <url>
     <loc>git@icloud:csmpub/csmpub.github.io.git/index.html</loc>
-    <lastmod>2026-04-14T19:17:11.818Z</lastmod>
+    <lastmod>2026-04-15T09:10:48.201Z</lastmod>
   </url>
   <url>
     <loc>git@icloud:csmpub/csmpub.github.io.git/about.html</loc>

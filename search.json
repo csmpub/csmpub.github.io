@@ -210,6 +210,19 @@
     ]
   },
   {
+    "objectID": "STUDY/Quarto/Code-Cells/index.html",
+    "href": "STUDY/Quarto/Code-Cells/index.html",
+    "title": "Code Cells",
+    "section": "",
+    "text": "정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n개정\n\n\n\n\n\n\n\n\nKnitr\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n일치 없음",
+    "crumbs": [
+      "Home",
+      "데이터 과학",
+      "Quarto",
+      "Code Cells"
+    ]
+  },
+  {
     "objectID": "STUDY/Quarto/website-draft/index.html",
     "href": "STUDY/Quarto/website-draft/index.html",
     "title": "website draft",
@@ -220,6 +233,19 @@
       "데이터 과학",
       "Quarto",
       "website draft"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/html/index.html",
+    "href": "STUDY/Quarto/html/index.html",
+    "title": "HTML",
+    "section": "",
+    "text": "정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n개정\n\n\n\n\n\n\n\n\nCode Blocks\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n일치 없음",
+    "crumbs": [
+      "Home",
+      "데이터 과학",
+      "Quarto",
+      "HTML"
     ]
   },
   {
@@ -431,6 +457,19 @@
     ]
   },
   {
+    "objectID": "STUDY/R/tibble/티블개요.html",
+    "href": "STUDY/R/tibble/티블개요.html",
+    "title": "티블 개요",
+    "section": "",
+    "text": "데이터 프레임의 현대적 재해석 tibble, tbl_df\n\n티블 설치\n\n# 패키지 모음 tidyverse의 구성 요소로서 설치\ninstall.packages(\"tidyverse\")\n# 티블 패키지만 단독으로 설치\ninstall.packages(\"tibble\")\n# 깃헙에서 개발자 버전 설치\npak::pak(\"tidyverse/tibble\")\n\n\n\n티블 객체 생성\n\n데이터프레임을 as_tibble()로 변환\n\nlibrary(tibble)\nhead(datasets::women, 3)\n##   height weight\n## 1     58    115\n## 2     59    117\n## 3     60    120\nhead(as_tibble(women), 3)\n## # A tibble: 3 × 2\n##   height weight\n##    &lt;dbl&gt;  &lt;dbl&gt;\n## 1     58    115\n## 2     59    117\n## 3     60    120\n\n\n\n열벡터에 tibble() 사용\n\ntibble(x = 2:4, y = 7, z = x^2 + y)\n## # A tibble: 3 × 3\n##       x     y     z\n##   &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;\n## 1     2     7    11\n## 2     3     7    16\n## 3     4     7    23\n\n\n\n\n\n\n\n중요tibble()\n\n\n\n\n입력 값의 형식을 변경없이 그대로(예, 리스트 형식의 열) 사용한다.\n압력 값의 재사용 규칙은 길이가 1인 경우에만 적용된다.\n변수 이름을 변경하지 않는다. (row_names()도 만들지 않음)\n\n\n\n\n\n행별 입력값에 tribble() 사용\n\ntribble(\n    ~코드, ~시군구, ~영문,\n    \"11\", \"서울특별시\", \"Seoul\",\n    \"11110\", \"종로구\", \"Jongno-gu\",\n    \"11140\", \"중구\", \"Jung-gu\"\n)\n## # A tibble: 3 × 3\n##   코드  시군구     영문     \n##   &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt;    \n## 1 11    서울특별시 Seoul    \n## 2 11110 종로구     Jongno-gu\n## 3 11140 중구       Jung-gu",
+    "crumbs": [
+      "데이터 과학",
+      "R and RStudio",
+      "tibble",
+      "티블 개요"
+    ]
+  },
+  {
     "objectID": "STUDY/MarkDown/obsidian/index.html",
     "href": "STUDY/MarkDown/obsidian/index.html",
     "title": "Obsidian flavored",
@@ -495,11 +534,24 @@
     ]
   },
   {
+    "objectID": "STUDY/R/tibble/index.html",
+    "href": "STUDY/R/tibble/index.html",
+    "title": "tibble",
+    "section": "",
+    "text": "정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n개정\n\n\n\n\n\n\n\n\n티블 개요\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n일치 없음",
+    "crumbs": [
+      "Home",
+      "데이터 과학",
+      "R and RStudio",
+      "tibble"
+    ]
+  },
+  {
     "objectID": "STUDY/R/index.html",
     "href": "STUDY/R/index.html",
     "title": "R and RStudio",
     "section": "",
-    "text": "R 기본 문법 및 확장 패키지, RStudio IDE\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n개정\n\n\n\n\n\n\n\n\nR의 연산자\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n일치 없음",
+    "text": "R 기본 문법 및 확장 패키지, RStudio IDE\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n개정\n\n\n\n\n\n\n\n\nR의 연산자\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n티블 개요\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n일치 없음",
     "crumbs": [
       "Home",
       "데이터 과학",
@@ -511,7 +563,7 @@
     "href": "STUDY/index.html",
     "title": "데이터 과학",
     "section": "",
-    "text": "노트주제\n\n\n\nR, 마크다운, 컴퓨터 기초\n\n\n\n노트로 이동\n\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n개정\n\n\n\n\n\n\n\n\n리눅스 명령어\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n파워쉘(Powershell)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n메뉴바(navbar)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n연결메뉴(hybrid navigation)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n기타 설정\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n페이지 설정\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n다른 페이지로(redirect)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n검색(search)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n메뉴목록(sidebar)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\nR의 연산자\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\nAbout page\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n블로그 홈\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n포스팅 폴더\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\nRSS 피드\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n구독\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n블로그 테마\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n웹사이트 초안\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n분류, 피드\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n필드\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n포함, 제외\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n옵션\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n위치, 다중리스트, YAML리스트\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n개요, 항목\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n타입, 정렬\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n사용자 툴\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n일치 없음",
+    "text": "노트주제\n\n\n\nR, 마크다운, 컴퓨터 기초\n\n\n\n노트로 이동\n\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n개정\n\n\n\n\n\n\n\n\n리눅스 명령어\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n파워쉘(Powershell)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\nKnitr\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\nCode Blocks\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n메뉴바(navbar)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n연결메뉴(hybrid navigation)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n기타 설정\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n페이지 설정\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n다른 페이지로(redirect)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n검색(search)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n메뉴목록(sidebar)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\nR의 연산자\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n티블 개요\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\nAbout page\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n블로그 홈\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n포스팅 폴더\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\nRSS 피드\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n구독\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n블로그 테마\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n웹사이트 초안\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n분류, 피드\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n필드\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n포함, 제외\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n옵션\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n위치, 다중리스트, YAML리스트\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n개요, 항목\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n타입, 정렬\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n사용자 툴\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n일치 없음",
     "crumbs": [
       "Home",
       "데이터 과학"
@@ -673,11 +725,24 @@
     ]
   },
   {
+    "objectID": "STUDY/Quarto/html/code-blocks.html",
+    "href": "STUDY/Quarto/html/code-blocks.html",
+    "title": "Code Blocks",
+    "section": "",
+    "text": "HTML 문서 안에서 Code Block 설정\n\n코드 숨기기\n\n문서 옵션 설정\n---\nexecute:\n    echo: false\n---\n\n\n코드 블록 설정\n#| echo: true\n\n\n\n코드 접기\n\ncode-fold 옵션\n\nfalse: 접지 않음\ntrue: 코드 접음(가리고 시작)\nshow: 코드 접음(보이면서 시작)\n\n\n\nhtml 기본 설정\nformat:\n    html:\n        code-fold: true\n        code-summary: \"코드 보기\"\n\n\n코드블록 설정\n#| code-fold: true\n#| code-summary: \"코드 보기\"\n\n\n\n긴 코드 줄넘기기\n\n\ncode-overflow 옵션\n\nscroll: 좌/우로 스크롤\nwrap: 줄 넘기기\n\n\nhtml 기본 설정\nformat:\n    html:\n        code-overflow: scroll\n\n\n코드블록 설정\n#| code-overflow: wrap",
+    "crumbs": [
+      "데이터 과학",
+      "Quarto",
+      "HTML",
+      "Code Blocks"
+    ]
+  },
+  {
     "objectID": "STUDY/Quarto/index.html",
     "href": "STUDY/Quarto/index.html",
     "title": "Quarto",
     "section": "",
-    "text": "Quarto 사용법\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n개정\n\n\n\n\n\n\n\n\n메뉴바(navbar)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n연결메뉴(hybrid navigation)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n기타 설정\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n페이지 설정\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n다른 페이지로(redirect)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n검색(search)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n메뉴목록(sidebar)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\nAbout page\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n블로그 홈\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n포스팅 폴더\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\nRSS 피드\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n구독\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n블로그 테마\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n웹사이트 초안\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n분류, 피드\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n필드\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n포함, 제외\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n옵션\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n위치, 다중리스트, YAML리스트\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n개요, 항목\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n타입, 정렬\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n사용자 툴\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n일치 없음",
+    "text": "Quarto 사용법\n\n\n\n\n\n\n   \n    \n    \n      정렬\n      기본\n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n제목\n\n\n\n설명\n\n\n\n개정\n\n\n\n\n\n\n\n\nKnitr\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\nCode Blocks\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n메뉴바(navbar)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n연결메뉴(hybrid navigation)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n기타 설정\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n페이지 설정\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n다른 페이지로(redirect)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n검색(search)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\n메뉴목록(sidebar)\n\n\n\n\n\n2026-04-15\n\n\n\n\n\n\nAbout page\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n블로그 홈\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n포스팅 폴더\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\nRSS 피드\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n구독\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n블로그 테마\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n웹사이트 초안\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n분류, 피드\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n필드\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n포함, 제외\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n옵션\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n위치, 다중리스트, YAML리스트\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n개요, 항목\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n타입, 정렬\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n사용자 툴\n\n\n\n\n\n2026-04-12\n\n\n\n\n\n\n일치 없음",
     "crumbs": [
       "Home",
       "데이터 과학",
@@ -695,6 +760,19 @@
       "Quarto",
       "website draft",
       "웹사이트 초안"
+    ]
+  },
+  {
+    "objectID": "STUDY/Quarto/Code-Cells/knitr.html",
+    "href": "STUDY/Quarto/Code-Cells/knitr.html",
+    "title": "Knitr",
+    "section": "",
+    "text": "동적 문서 생성을 위한 R 패키지 Knitr\n\n코드 정크 옵션(Cell Options)\n실행할 수 있는 프로그램 코드의 실행과 출력 관련한 설정을 제어하는 옵션으로 라인 맨 앞에 #|를 사용하여 지정한다.\n\n속성(Attriutes)\n\nlabel\n코드쎌의 유일한 이름. 코드쎌을 fig-samples, tbl-summary 등에서 상호참조할 때 사용한다.\n\n\nclasses\n코드쎌에 적용할 클라스.\n\n\nrenderings\n렌더링 이름들의 배열(예시, [light, dark])\n\n\n\n코드 출력(Code Output)\n\neval\n코드쎌 실행 여부.\n\ntrue (기본값): 실행\nfalse: 실행하지 않음(코드 자체는 출력에 표시)\n\n\n\n\necho\n소스코드를 렌더링 결과에 포함시킬지 여부.\n\ntrue (대부분 포멧의 기본값): 포함\nfalse (beamer, revealjs, pptx 포멧 등의 기본값): 제외\nfenced: echo 옵션에 추가하여, 코드쎌 구분자(delimiter)를 출력에 포함.\n\n\n\n\ncode-fold\n사용자가 필요할 때 펼처 볼 수 있또록 코드를 HTML\n\n태그 안으로 펼쳐 넣을지 여부.\n\ntrue: 펼쳐 넣음\nfalse (기본값): 펼처 넣지 않음\nshow: 처음에 코드를 펼친 상태로 HTML\n\n태그 사용.\n\n\n\ncode-summary\ncode-fold를 사용한 경우 표시할 요약 문자열\n\n\ncode-overflow\n코드가 길어서 코드쎌 폭을 넘어갈 때 처리 방법.\n\nscroll: 좌/우 스크롤\nwrap: 줄바꿈\n\n\n\ncode-line-numbers\n코드블록 출력에 라인 번호 표시 여부 (true 또는 false).\n\n\n\n\n\n\n힌트\n\n\n\nrevealjs 출력에서만 특정 라인을 강조(에니메이션 포함)할 수 있음.\n\n여러 줄은 콤마(commas)로 표시:\n\n3,4,5\n1,10,12\n\n\n\n범위는 대시(dashes)로 표시하고 콤마(commas)로 결함:\n\n1-3,5\n5-10,12,14\n\n\n\n애니메이션 단계는 |로 분리:\n\n1-3|1-3,5 처음에 1-3, 그 다음에 1-3,5 라인\n|5|5-10,12 처음에 번호 없음, 다음에 5, 그리고 나서 5-10 and 12 라인\n\n\n\n\n\n\nlst-label\n상호참조에 쓰이는 코드리스팅의 유일한 이름.\n\n\nlst-cap\n코드리스팅의 캡션\n\n\ntidy\nR 코드를 재정렬 할 지 여부.\n\n\ntidy-opts\n정렬 툴에 전달해 줄 옵션 리스트.\n\n\ncollapse\n모든 소스와 출력 블록을 하나의 블록으로.\n\n\nprompt\nR 코드에 프롬프트를 포함할 지 여부.\n\n\nclass-source\n소스코드 블록의 클라스 이름\n\n\nattr-source\n소스코드 블록의 속성\n\n\n\n실행 결과 출력(Cell Output)\n\noutput\n코드실행의 결과를 포함할 지 여부.\n\ntrue: 포함\nfalse: 제외\nasis: 출력을 마크다운으로 간주(블록안에 별도로 취급하지 않음)\n\n\n\nwarning\n실행 결과의 경고 포함 여부.\n\n\nerror\n실행결과의 에러 포함 여부 (이 옵션 사용시 에러가 발생해도 코드 실행이 중지되지 않음).\n\n\ninclude\n모든 출력(코드 또는 실행결과) 포함 여부.\n\n\npanel\n출력 패널의 형식(tabset, input, sidebar, fill, center)\n\n\noutput-location\n출력을 생성한 코드에 대한 출력 결과의 상대적인 위치. (revealjs에만 적용)\n\ndefault: 코드 다음에 표시\nfragment: In a fragment (not visible until you advance)\nslide: 새로운 슬리이드\ncolumn: 인접한 칼럼\ncolumn-fragment: In an adjacent column (not visible until you advance)\n\n\n\nmessage\n메지지을 출력에 포함할 지 여부.\n\ntrue: 포함.\nfalse: 제외.\nNA: 출력에 포함되지 않음(knitr 로그 콘솔에는 포함).\n\n\n\nresults\n텍스트 (warnings, messages, errors 아닌 일반 텍스트) 결과 표시 지정.\n\nmarkup: 출력 결과를 코드블록 안에 표시\n\n[1] 1 2 3\n\nasis: 출력 결과를 다른 마크업 없이 문서로 바로 출력\n\ncat(\"I'm raw **Markdown** content.\\n\")\nI’m raw Markdown content.\n\nhold: Hold all pieces of text output in a chunk and flush them to the end of the chunk.\nhide (or false): Hide text output.\n\n\n\ncomment\n텍스트 출력물 앞에 표시할 코멘트 문자. (기본값 ##)\n\n\nclass-output\nClass name(s) for text/console output\n\n\nattr-output\nAttribute(s) for text/console output\n\n\nclass-warning\nClass name(s) for warning output\n\n\nattr-warning\nAttribute(s) for warning output\n\n\nclass-message\nClass name(s) for message output\n\n\nattr-message\nAttribute(s) for message output\n\n\nclass-error\nClass name(s) for error output\n\n\nattr-error\nAttribute(s) for error output\n\n\n\n그림(Figures)\n\n\n표(Tables)\n\n\n패널 배열(Panel Layout)\n\n\n페이지 열(Page Columns)\n\n\n캐시(Cache)\n\n\n포함(Include)",
+    "crumbs": [
+      "데이터 과학",
+      "Quarto",
+      "Code Cells",
+      "Knitr"
     ]
   },
   {

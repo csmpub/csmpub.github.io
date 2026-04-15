@@ -52,9 +52,21 @@
     ]
   },
   {
+    "listing": "/STUDY/Quarto/Code-Cells/index.html",
+    "items": [
+      "/STUDY/Quarto/Code-Cells/knitr.html"
+    ]
+  },
+  {
     "listing": "/STUDY/Quarto/website-draft/index.html",
     "items": [
       "/STUDY/Quarto/website-draft/draft.html"
+    ]
+  },
+  {
+    "listing": "/STUDY/Quarto/html/index.html",
+    "items": [
+      "/STUDY/Quarto/html/code-blocks.html"
     ]
   },
   {
@@ -125,9 +137,16 @@
     "items": []
   },
   {
+    "listing": "/STUDY/R/tibble/index.html",
+    "items": [
+      "/STUDY/R/tibble/티블개요.html"
+    ]
+  },
+  {
     "listing": "/STUDY/R/index.html",
     "items": [
-      "/STUDY/R/base/연산자.html"
+      "/STUDY/R/base/연산자.html",
+      "/STUDY/R/tibble/티블개요.html"
     ]
   },
   {
@@ -135,6 +154,8 @@
     "items": [
       "/STUDY/Computer/Shell/Linux-Connands.html",
       "/STUDY/Computer/Shell/powershell.html",
+      "/STUDY/Quarto/Code-Cells/knitr.html",
+      "/STUDY/Quarto/html/code-blocks.html",
       "/STUDY/Quarto/website-navigation/navbar.html",
       "/STUDY/Quarto/website-navigation/navhybrid.html",
       "/STUDY/Quarto/website-navigation/others.html",
@@ -143,6 +164,7 @@
       "/STUDY/Quarto/website-navigation/search.html",
       "/STUDY/Quarto/website-navigation/sidebar.html",
       "/STUDY/R/base/연산자.html",
+      "/STUDY/R/tibble/티블개요.html",
       "/STUDY/Quarto/website-blog/about.html",
       "/STUDY/Quarto/website-blog/home.html",
       "/STUDY/Quarto/website-blog/post.html",
@@ -185,6 +207,8 @@
   {
     "listing": "/STUDY/Quarto/index.html",
     "items": [
+      "/STUDY/Quarto/Code-Cells/knitr.html",
+      "/STUDY/Quarto/html/code-blocks.html",
       "/STUDY/Quarto/website-navigation/navbar.html",
       "/STUDY/Quarto/website-navigation/navhybrid.html",
       "/STUDY/Quarto/website-navigation/others.html",
