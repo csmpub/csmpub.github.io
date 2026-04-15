@@ -1,0 +1,15 @@
+{
+  "hash": "6834abc5fd531392daef05d75cb316f7",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"티블 개요\"\ndate: \"2026-04-15\"\ndate-modified: \"2026-04-15\"\ncategories: [tibble, tbl_df, tidyverse]\ntoc: true\ndraft: false\n---\n\n데이터 프레임의 현대적 재해석 `tibble`, `tbl_df`\n\n#### 티블 설치\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# 패키지 모음 tidyverse의 구성 요소로서 설치\ninstall.packages(\"tidyverse\")\n# 티블 패키지만 단독으로 설치\ninstall.packages(\"tibble\")\n# 깃헙에서 개발자 버전 설치\npak::pak(\"tidyverse/tibble\")\n```\n:::\n\n\n#### 티블 객체 생성\n\n##### 데이터프레임을 `as_tibble()`로 변환\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tibble)\nhead(datasets::women, 3)\n##   height weight\n## 1     58    115\n## 2     59    117\n## 3     60    120\nhead(as_tibble(women), 3)\n## # A tibble: 3 × 2\n##   height weight\n##    <dbl>  <dbl>\n## 1     58    115\n## 2     59    117\n## 3     60    120\n```\n:::\n\n\n##### 열벡터에 `tibble()` 사용\n\n\n::: {.cell}\n\n```{.r .cell-code}\ntibble(x = 2:4, y = 7, z = x^2 + y)\n## # A tibble: 3 × 3\n##       x     y     z\n##   <int> <dbl> <dbl>\n## 1     2     7    11\n## 2     3     7    16\n## 3     4     7    23\n```\n:::\n\n\n\n::: {.callout-important}\n\n#### tibble()\n\n- 입력 값의 형식을 변경없이 그대로(예, 리스트 형식의 열) 사용한다.\n- 압력 값의 재사용 규칙은 길이가 1인 경우에만 적용된다.\n- 변수 이름을 변경하지 않는다. (row_names()도 만들지 않음)\n\n:::\n\n##### 행별 입력값에 `tribble()` 사용 \n\n\n::: {.cell}\n\n```{.r .cell-code}\ntribble(\n    ~코드, ~시군구, ~영문,\n    \"11\", \"서울특별시\", \"Seoul\",\n    \"11110\", \"종로구\", \"Jongno-gu\",\n    \"11140\", \"중구\", \"Jung-gu\"\n)\n## # A tibble: 3 × 3\n##   코드  시군구     영문     \n##   <chr> <chr>      <chr>    \n## 1 11    서울특별시 Seoul    \n## 2 11110 종로구     Jongno-gu\n## 3 11140 중구       Jung-gu\n```\n:::\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "3163d2c0381da1029e6e855b28d08465",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Code Blocks\"\ndate: \"2026-04-15\"\ndate-modified: \"2026-04-15\"\ncategories: [html, code-block]\ntoc: true\ndraft: false\n---\n\nHTML 문서 안에서 Code Block 설정\n\n#### 코드 숨기기\n\n##### 문서 옵션 설정\n\n```yml\n---\nexecute:\n    echo: false\n---\n```\n\n##### 코드 블록 설정\n\n```txt\n#| echo: true\n\n```\n\n#### 코드 접기\n\n##### code-fold 옵션\n\n- false: 접지 않음\n- true: 코드 접음(가리고 시작)\n- show: 코드 접음(보이면서 시작)\n\n##### html 기본 설정\n\n```yml\nformat:\n    html:\n        code-fold: true\n        code-summary: \"코드 보기\"\n```\n\n##### 코드블록 설정\n\n\n::: {.cell}\n\n:::\n\n\n#### 긴 코드 줄넘기기\n\n##### html 기본 설정\n\n```yml\nformat:\n    html:\n        code-overflow: scroll\n```\n\n##### 코드블록 설정\n\n\n::: {.cell}\n\n:::\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

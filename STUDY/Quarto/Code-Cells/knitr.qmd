@@ -1,0 +1,213 @@
+---
+title: "Knitr"
+date: "2026-04-15"
+date-modified: "2026-04-15"
+categiries: [knitr, R]
+toc: true
+---
+
+동적 문서 생성을 위한 R 패키지 Knitr
+
+#### 코드 정크 옵션(Cell Options)
+
+실행할 수 있는 프로그램 코드의 실행과 출력 관련한 설정을 제어하는 옵션으로 라인 맨 앞에 `#| `를 사용하여 지정한다.
+
+```{r}
+#| label: sample-code
+#| echo: false
+```
+
+##### 속성(Attriutes)
+
+###### label
+코드쎌의 유일한 이름. 코드쎌을 `fig-samples`, `tbl-summary` 등에서 상호참조할 때 사용한다.
+
+###### classes
+코드쎌에 적용할 클라스.
+
+###### renderings
+렌더링 이름들의 배열(예시, [light, dark])
+
+
+##### 코드 출력(Code Output)
+
+###### eval	
+코드쎌 실행 여부.
+
+- true (기본값): 실행
+- false: 실행하지 않음(코드 자체는 출력에 표시)
+- [...]: 실행에 포함 또는 제외할 표현식 들의 양수 또는 음수 들의 리스트 (`knitr` 사용할 때만 적용 가능)
+
+###### echo	
+소스코드를 렌더링 결과에 포함시킬지 여부.
+
+- true (대부분 포멧의 기본값): 포함
+- false (beamer, revealjs, pptx 포멧 등의 기본값): 제외
+- fenced: echo 옵션에 추가하여, 코드쎌 구분자(delimiter)를 출력에 포함.
+- [...]: 실행에 포함 또는 제외할 표현식 들의 양수 또는 음수 들의 리스트 (`knitr` 사용할 때만 적용 가능)
+
+###### code-fold	
+사용자가 필요할 때 펼처 볼 수 있또록 코드를 HTML <details> 태그 안으로 펼쳐 넣을지 여부.
+
+- true: 펼쳐 넣음
+- false (기본값): 펼처 넣지 않음
+- show: 처음에 코드를 펼친 상태로 HTML <details> 태그 사용.
+
+###### code-summary	
+code-fold를 사용한 경우 표시할 요약 문자열
+
+###### code-overflow	
+코드가 길어서 코드쎌 폭을 넘어갈 때 처리 방법.
+
+- scroll: 좌/우 스크롤
+- wrap: 줄바꿈
+
+###### code-line-numbers	
+코드블록 출력에 라인 번호 표시 여부 (true 또는 false).
+
+
+::: {.callout-tip}
+
+revealjs 출력에서만 특정 라인을 강조(에니메이션 포함)할 수 있음.
+
+###### 여러 줄은 콤마(commas)로 표시:
+- 3,4,5
+- 1,10,12
+
+###### 범위는 대시(dashes)로 표시하고 콤마(commas)로 결함:
+- 1-3,5
+- 5-10,12,14
+
+###### 애니메이션 단계는 |로 분리:
+- 1-3|1-3,5 처음에 1-3, 그 다음에 1-3,5 라인
+- |5|5-10,12 처음에 번호 없음, 다음에 5, 그리고 나서 5-10 and 12 라인
+
+:::
+
+###### lst-label	
+상호참조에 쓰이는 코드리스팅의 유일한 이름.
+
+###### lst-cap	
+코드리스팅의 캡션
+
+###### tidy	
+R 코드를 재정렬 할 지 여부.
+
+###### tidy-opts	
+정렬 툴에 전달해 줄 옵션 리스트.
+
+###### collapse	
+모든 소스와 출력 블록을 하나의 블록으로.
+
+###### prompt	
+R 코드에 프롬프트를 포함할 지 여부.
+
+###### class-source	
+소스코드 블록의 클라스 이름
+
+###### attr-source	
+소스코드 블록의 속성
+
+
+##### 실행 결과 출력(Cell Output)
+
+###### output	
+코드실행의 결과를 포함할 지 여부.
+
+- true: 포함
+- false: 제외
+- asis: 출력을 마크다운으로 간주(블록안에 별도로 취급하지 않음)
+
+###### warning	
+실행 결과의 경고 포함 여부.
+
+###### error	
+실행결과의 에러 포함 여부 (이 옵션 사용시 에러가 발생해도 코드 실행이 중지되지 않음).
+
+###### include	
+모든 출력(코드 또는 실행결과) 포함 여부.
+
+###### panel
+출력 패널의 형식(tabset, input, sidebar, fill, center)
+
+###### output-location	
+출력을 생성한 코드에 대한 출력 결과의 상대적인 위치. (revealjs에만 적용)
+
+- default: 코드 다음에 표시
+- fragment: In a fragment (not visible until you advance)
+- slide: 새로운 슬리이드
+- column: 인접한 칼럼
+- column-fragment: In an adjacent column (not visible until you advance)
+
+###### message	
+메지지을 출력에 포함할 지 여부.
+
+- true: 포함.
+- false: 제외.
+- NA: 출력에 포함되지 않음(knitr 로그 콘솔에는 포함).
+
+###### results	
+텍스트 (warnings, messages, errors 아닌 일반 텍스트) 결과 표시 지정. 
+
+- markup: 출력 결과를 코드블록 안에 표시
+
+```
+[1] 1 2 3
+```
+
+- asis: 출력 결과를 다른 마크업 없이 문서로 바로 출력
+
+```{r}
+#| results: asis
+cat("I'm raw **Markdown** content.\n")
+```
+
+- hold: Hold all pieces of text output in a chunk and flush them to the end of the chunk.
+
+- hide (or false): Hide text output.
+
+###### comment	
+텍스트 출력물 앞에 표시할 코멘트 문자. (기본값 ##)
+
+###### class-output	
+Class name(s) for text/console output
+
+###### attr-output	
+Attribute(s) for text/console output
+
+###### class-warning	
+Class name(s) for warning output
+
+###### attr-warning	
+Attribute(s) for warning output
+
+###### class-message	
+Class name(s) for message output
+
+###### attr-message	
+Attribute(s) for message output
+
+###### class-error	
+Class name(s) for error output
+
+###### attr-error	
+Attribute(s) for error output
+
+
+##### 그림(Figures)
+
+
+##### 표(Tables)
+
+
+##### 패널 배열(Panel Layout)
+
+
+##### 페이지 열(Page Columns)
+
+
+
+##### 캐시(Cache)
+
+
+##### 포함(Include)
