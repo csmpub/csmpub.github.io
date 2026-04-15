@@ -1,0 +1,45 @@
+---
+title: "건설공사계약"
+date: "2026-04-15"
+date-modified: "2026-04-15"
+categories: [건설공사, 계약금액]
+toc: true
+draft: true
+---
+
+### 건설공사계약 분석
+
+```{r}
+#| echo: false
+#| output: false
+library(tidyverse)
+```
+
+데이터 파일: FILES/통계누리/건설/현장소재지별_건설공사계약금액.csv
+
+```{r}
+#| echo: false
+#| output: false
+contract <- read_csv("../FILES/통계누리/건설/현장소재지별_건설공사계약금액.csv") |>
+    mutate(구분 = as.factor(구분), 시도별 = as.factor(시도별))
+contract$구분 <- fct_relevel(contract$구분, "전국", "수도권", "지방")
+contract$시도별 <- fct_relevel(contract$시도별, "전국", "서울", "부산", "대구", "인천", "광주", "대전", "울산", "세종", "경기", "강원", "충북", "충남", "전북", "전남", "경북", "경남", "제주")
+met <- contract |> group_by(`분기`, `구분`) |> summarize(`계약금액(억원)` = sum(`계약금액(억원)`))
+cpd <- contract |> group_by(`분기`, `시도별`) |> summarize(`계약금액(억원)` = sum(`계약금액(억원)`))
+```
+
+#### 최근 5년간 현장 소재지별 건설공사 계약금액(억원)
+
+##### 구분(마지막 6개 데이터)
+
+```{r}
+#| echo: false
+knitr::kable(tail(met |> filter(as.numeric(substr(`분기`, 1, 4)) >= 2021)))
+```
+
+##### 시군구(마지막 6개 데이터)
+
+```{r}
+#| echo: false
+knitr::kable(tail(cpd |> filter(as.numeric(substr(`분기`, 1, 4)) >= 2021)))
+```
