@@ -21,11 +21,12 @@ toc: true
 ```{r}
 #| echo: false
 #| output: false
+library(tidyverse)
 library(readxl)
 contract <- read_excel("현장소재지별_건설공사계약금액(201401-202504).xlsx", skip = 4)
 names(contract) <- c("분기", "구분", "시도별", "계약금액(억원)")
 contract$`계약금액(억원)` <- as.numeric(gsub(",", "", contract$`계약금액(억원)`))
-write.csv(contract, "현장소재지별_건설공사계약금액.csv")
+write_csv(contract, "현장소재지별_건설공사계약금액.csv")
 rm(contract)
 ```
 
