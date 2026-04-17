@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-04-12">
+<meta name="dcterms.date" content="2026-04-17">
 
-<title>기타 설정 – Wintree</title>
+<title>관측값(행, 케이스) 조작 – Wintree</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,41 +23,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -106,7 +71,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "검색"
   }
 }</script>
-<meta name="quarto:status" content="draft">
 
 
 <link rel="stylesheet" href="../../../styles.css">
@@ -115,7 +79,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner"><div id="quarto-draft-alert" class="alert alert-warning"><i class="bi bi-pencil-square"></i>초안</div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -167,7 +131,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../STUDY/index.html">데이터 과학</a></li><li class="breadcrumb-item"><a href="../../../STUDY/Quarto/index.html">Quarto</a></li><li class="breadcrumb-item"><a href="../../../STUDY/Quarto/website-navigation/index.html">website navigation</a></li><li class="breadcrumb-item"><a href="../../../STUDY/Quarto/website-navigation/others.html">기타 설정</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../STUDY/index.html">데이터 과학</a></li><li class="breadcrumb-item"><a href="../../../STUDY/R/index.html">R and RStudio</a></li><li class="breadcrumb-item"><a href="../../../STUDY/R/dplyr/index.html">dplyr</a></li><li class="breadcrumb-item"><a href="../../../STUDY/R/dplyr/관측값조작.html">관측값(행, 케이스) 조작</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -176,13 +140,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../STUDY/index.html">데이터 과학</a></li><li class="breadcrumb-item"><a href="../../../STUDY/Quarto/index.html">Quarto</a></li><li class="breadcrumb-item"><a href="../../../STUDY/Quarto/website-navigation/index.html">website navigation</a></li><li class="breadcrumb-item"><a href="../../../STUDY/Quarto/website-navigation/others.html">기타 설정</a></li></ol></nav>
-      <h1 class="title">기타 설정</h1>
+    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../STUDY/index.html">데이터 과학</a></li><li class="breadcrumb-item"><a href="../../../STUDY/R/index.html">R and RStudio</a></li><li class="breadcrumb-item"><a href="../../../STUDY/R/dplyr/index.html">dplyr</a></li><li class="breadcrumb-item"><a href="../../../STUDY/R/dplyr/관측값조작.html">관측값(행, 케이스) 조작</a></li></ol></nav>
+      <h1 class="title">관측값(행, 케이스) 조작</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">quarto</div>
-                <div class="quarto-category">website</div>
-                <div class="quarto-category">E404</div>
-                <div class="quarto-category">reader-mode</div>
+                <div class="quarto-category">manipulate</div>
+                <div class="quarto-category">cases</div>
+                <div class="quarto-category">tidyverse</div>
               </div>
                   </div>
   </div>
@@ -194,14 +157,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">날짜</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">2026-04-12</p>
+        <p class="date">2026-04-17</p>
       </div>
     </div>
     
       <div>
       <div class="quarto-title-meta-heading">개정</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">2026-04-15</p>
+        <p class="date-modified">2026-04-17</p>
       </div>
     </div>
       
@@ -280,11 +243,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../../../STUDY/R/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">R and RStudio</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="토글 섹션">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../STUDY/R/RStudio/index.html" class="sidebar-item-text sidebar-link">
@@ -318,11 +281,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../../../STUDY/R/dplyr/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">dplyr</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="토글 섹션">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../STUDY/R/dplyr/dplyr개요.html" class="sidebar-item-text sidebar-link">
@@ -331,26 +294,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../STUDY/R/dplyr/열-변수-조작.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">변수(열) 조작</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../STUDY/R/dplyr/테이블-결합.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">테이블 결합</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../STUDY/R/dplyr/행-케이스-요약.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/R/dplyr/관측값요약.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">관측값(행, 케이스) 요약</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../STUDY/R/dplyr/행-케이스-조작.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/R/dplyr/관측값조작.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">관측값(행, 케이스) 조작</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../STUDY/R/dplyr/변수조작.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">변수(열) 조작</span></a>
   </div>
 </li>
       </ul>
@@ -436,20 +393,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../../../STUDY/Quarto/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Quarto</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../STUDY/Quarto/website-navigation/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">website navigation</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth3 show">  
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../STUDY/Quarto/website-navigation/navbar.html" class="sidebar-item-text sidebar-link">
@@ -464,7 +421,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../STUDY/Quarto/website-navigation/others.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../STUDY/Quarto/website-navigation/others.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">기타 설정</span></a>
   </div>
 </li>
@@ -670,52 +627,46 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>파일을 찾지 못한 에러 발생시 보여질 페이지 사용자 설정</p>
-<section id="에러-페이지" class="level4">
-<h4 class="anchored" data-anchor-id="에러-페이지">404에러 페이지</h4>
+<p>관측값 조작(Manipulate Cases) 함수</p>
+<section id="관측값행-추출" class="level4">
+<h4 class="anchored" data-anchor-id="관측값행-추출">관측값(행) 추출</h4>
+<p>행 함수(row functions)는 추출한 행(부분 집합)으로 새로운 테이블을 반환한다.</p>
 <ul>
-<li>프로젝트 폴더에 404.qmd 배치 (404.html 같이 배치할 수 있음)</li>
-<li>사이트 경로가 도메인 루트가 아닌 경우 <code>site-url:</code> 이나 <code>site-path:</code> 설정</li>
+<li><code>filter()</code>, <code>filter_out()</code> 논리 조건에 부합하는 행 유지, 행 제거</li>
+<li><code>distict()</code> 중복값 제거하고 유일한 값만 남김</li>
+<li><code>slice()</code> 행 위치로 추출</li>
+<li><code>slice_sample()</code> 무작위로 선택한 행</li>
+<li><code>slice_min()</code>, <code>slice_max()</code> 가장 작은값, 큰 값을 갖는 행</li>
+<li><code>slice_head()</code>, <code>slice_tail()</code> 처음, 마지막 행(n = 5)</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Site"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">site-path</span><span class="kw">:</span><span class="at"> </span><span class="st">"/mysite/"</span></span></code></pre></div><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Site"</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">site-url</span><span class="kw">:</span><span class="at"> </span><span class="st">"https://example.com/mysite/"</span></span></code></pre></div><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">힌트</span>filter() 조건의 연산자
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code>, <code>is.na()</code>, <code>!is.na()</code>, <code>%in%</code>, <code>!</code>, <code>|</code>, <code>&amp;</code>, <code>xor()</code></p>
+</div>
+</div>
 </section>
-<section id="읽기모드-설정" class="level4">
-<h4 class="anchored" data-anchor-id="읽기모드-설정">읽기모드 설정</h4>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">reader-mode</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code></pre></div><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="github-link-설정" class="level4">
-<h4 class="anchored" data-anchor-id="github-link-설정">GitHub Link 설정</h4>
-<section id="프로젝트-설정_quarto.yml" class="level5">
-<h5 class="anchored" data-anchor-id="프로젝트-설정_quarto.yml">프로젝트 설정(_quarto.yml)</h5>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">repo-url</span><span class="kw">:</span><span class="at"> https://github.com/quarto-dev/quarto-demo</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">repo-actions</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">edit</span><span class="kw">,</span><span class="at"> source</span><span class="kw">,</span><span class="at"> issue</span><span class="kw">]</span></span></code></pre></div><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="문서-설정yml-헤더" class="level5">
-<h5 class="anchored" data-anchor-id="문서-설정yml-헤더">문서 설정(yml 헤더)</h5>
-<p>특정 페이지에서 GutHub 액션 중지 설정</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">repo-actions</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="추가-옵션" class="level5">
-<h5 class="anchored" data-anchor-id="추가-옵션">추가 옵션</h5>
+<section id="관측값-정렬" class="level4">
+<h4 class="anchored" data-anchor-id="관측값-정렬">관측값 정렬</h4>
 <ul>
-<li><code>repo-subdir</code> 소스 파일이 있는 리포지토리 폴더 (기본값 루트 폴더)</li>
-<li><code>repo-branch</code> 소스 파일이 있는 리포지토리 브랜치 (기본값 main 브렌치)</li>
-<li><code>issue-url</code> 문제 리포트(Report an Issue) 클릭시 연결될 URL</li>
-<li><code>repo-link-target</code> 리포지토리 실행 링크(repo action links)의 타깃 속성 (예, “_blank” 설정시 새로운 탭이나 창이 열림)</li>
-<li><code>repo-link-rel</code> 리포지토리 실행 링크(repo action links)의 <code>rel</code> 속성</li>
+<li><code>arrange()</code> 열(변수) 값이 작은 값에서 큰 값 순으로 행 정렬</li>
+<li><code>arrance(desc())</code> 반대로(큰 값에서 작은 값 순으로) 정렬</li>
+</ul>
+</section>
+<section id="관측값-추가" class="level4">
+<h4 class="anchored" data-anchor-id="관측값-추가">관측값 추가</h4>
+<ul>
+<li><code>add_row()</code> 행 추가</li>
 </ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -792,7 +743,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("git@icloud:csmpub\/csmpub\.github\.io\.git");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

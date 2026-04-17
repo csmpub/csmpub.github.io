@@ -327,6 +327,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">dplyr 개요</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../STUDY/R/dplyr/열-변수-조작.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">변수(열) 조작</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../STUDY/R/dplyr/테이블-결합.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">테이블 결합</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../STUDY/R/dplyr/행-케이스-요약.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">관측값(행, 케이스) 요약</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../STUDY/R/dplyr/행-케이스-조작.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">관측값(행, 케이스) 조작</span></a>
+  </div>
+</li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
@@ -726,9 +750,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 수치형 변수만 선택</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span> <span class="fu">select</span>(<span class="fu">where</span>(is.numeric))</span></code></pre></div><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-
-
 </section>
+</section>
+<section id="행-이름row-names" class="level4">
+<h4 class="anchored" data-anchor-id="행-이름row-names">행 이름(Row Names)</h4>
+<p>잘 정제된(tidy) 데이터에서는 행이름을 사용하지 않고 데이터 테이블 밖에 저장한다.<br>
+따라서, 행 이름을 사용하려면 먼저 열로 옮겨야 한다.<br>
+관련 함수들은 패키지 <code>tibble</code>에 정의되어 있다.</p>
+<ul>
+<li><code>rownames_to_column()</code> 행 이름을 변수로</li>
+<li><code>column_to_rownames()</code> 변수를 행 이름으로</li>
+<li><code>has_rownames()</code> 행 이름이 있는지 여부(논리값)</li>
+<li><code>remove_rownames()</code> 행 이름 제거</li>
+</ul>
+
+
 </section>
 
 

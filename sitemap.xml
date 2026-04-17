@@ -121,8 +121,16 @@
     <lastmod>2026-04-17T05:41:29.380Z</lastmod>
   </url>
   <url>
+    <loc>git@icloud:csmpub/csmpub.github.io.git/STUDY/R/dplyr/테이블-결합.html</loc>
+    <lastmod>2026-04-17T15:10:07.657Z</lastmod>
+  </url>
+  <url>
     <loc>git@icloud:csmpub/csmpub.github.io.git/STUDY/R/dplyr/index.html</loc>
     <lastmod>2026-04-17T05:41:29.381Z</lastmod>
+  </url>
+  <url>
+    <loc>git@icloud:csmpub/csmpub.github.io.git/STUDY/R/dplyr/행-케이스-조작.html</loc>
+    <lastmod>2026-04-17T13:34:53.756Z</lastmod>
   </url>
   <url>
     <loc>git@icloud:csmpub/csmpub.github.io.git/STUDY/R/RStudio/index.html</loc>
@@ -161,8 +169,16 @@
     <lastmod>2026-04-17T05:41:29.382Z</lastmod>
   </url>
   <url>
+    <loc>git@icloud:csmpub/csmpub.github.io.git/STUDY/R/dplyr/열-변수-조작.html</loc>
+    <lastmod>2026-04-17T13:58:21.768Z</lastmod>
+  </url>
+  <url>
+    <loc>git@icloud:csmpub/csmpub.github.io.git/STUDY/R/dplyr/행-케이스-요약.html</loc>
+    <lastmod>2026-04-17T14:05:26.347Z</lastmod>
+  </url>
+  <url>
     <loc>git@icloud:csmpub/csmpub.github.io.git/STUDY/R/dplyr/dplyr개요.html</loc>
-    <lastmod>2026-04-17T05:41:29.381Z</lastmod>
+    <lastmod>2026-04-17T14:19:00.801Z</lastmod>
   </url>
   <url>
     <loc>git@icloud:csmpub/csmpub.github.io.git/STUDY/R/base/연산자.html</loc>
@@ -254,7 +270,7 @@
   </url>
   <url>
     <loc>git@icloud:csmpub/csmpub.github.io.git/index.html</loc>
-    <lastmod>2026-04-17T05:41:29.447Z</lastmod>
+    <lastmod>2026-04-17T15:10:35.843Z</lastmod>
   </url>
   <url>
     <loc>git@icloud:csmpub/csmpub.github.io.git/about.html</loc>
