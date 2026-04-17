@@ -1,0 +1,15 @@
+---
+title: "dplyr"
+categories: [dplyr, tidyverse]
+listing: 
+    contents:
+        - "*.qmd"
+    fields: [title, description, date-modified]
+    type: table
+    sort: "date-modified desc"
+    sort-ui: true
+    filter-ui: true
+    categories: true
+sidebar: note
+---
+

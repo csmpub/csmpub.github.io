@@ -1,0 +1,105 @@
+---
+title: "dplyr 개요"
+date: "2026-04-17"
+date-modified: "2026-04-17"
+categories: [dplyr, tidy-select, tidyverse]
+toc: true
+draft: false
+---
+
+대부분의 데이터 작업을 가능하게 하는 일관된 방식의 데이터 조작 문법(Data Manipulation Syntax)
+
+#### dplyr 설치
+
+```{r}
+#| label: install-tibble
+#| eval: false
+#| output: false
+# 패키지 모음 tidyverse의 구성 요소로서 설치
+install.packages("tidyverse")
+# dplyr 패키지만 단독으로 설치
+install.packages("dplyr")
+# 깃헙에서 개발자 버전 설치
+pak::pak("tidyverse/dplyr")
+```
+
+#### 주요 기능[^1]
+
+[^1]: `dplyr`에서는 동사(`verb`)라는 용어를 사용한다. 이 기능들은 `group_by()`와 함께 사용하면 데이터 작업을 그룹별로 할 수 있다.
+
+- `mutate()` 기존 변수들을 사용해 새로운 변수를 생성
+- `select()` 이름을 사용해 특정 열(변수, variables)를 선택
+- `filter()` 변수값에 기초해 행(관측치, cases)을 선택
+- `summarise()` 여러 값들을 하나의 값으로 요약
+- `arrange()` 행 순서를 재조정
+
+#### 변수 선택(tidy-select)
+
+tidyverse 패키지 그룹에서 변수를 선택할 때 사용하는 문법
+
+##### 기본 선택
+
+- `:`   연속적인 변수 범위(변수 위치 기준) 선택
+- `!`   여집합(complement) 선택 - 선택된 변수들을 제외
+- `&`, `|`  교집합(intersection), 합집합(union) 선택 - 선택된 변수들의 논리 결합
+- `c()` 선택을 결합
+
+##### 조력 함수(helpers)
+
+특정 변수 선택
+
+- `everything()`  모든 변수
+- `last_col()`    마지막 변수(오프셋 사용 가능)
+- `group_cols()`  모든 그룹 변수
+
+```{r}
+#| eval: false
+#| output: false
+df |> select(everything())
+tbl |> select(1:lastcol(5))
+gdf <- df |> group_by(g_var)
+gdf |> select(group_cols())
+```
+
+변수 이름의 패턴으로 선택
+
+- `starts_with()` 접두사로 지정
+- `ends_with()`   접미사로 지정
+- `contains()`    문자열로 지정
+- `matches()`     정규식(regular expression)으로 지정
+- `num_range()`   문자 범위로 지정
+
+```{r}
+#| eval: false
+#| output: false
+df |> select(starts_with("wk"))
+df |> select(ends_with("Length"))
+df |> select(contains("al"))
+# wk10, wk11, wk12 변수
+df |> select(num_range("wk", 10:12))
+# "pal", "tal" 포함하는 변수들
+df |> select(matches("[pt]al"))
+```
+
+문자 벡터 변수에서 선택
+
+- `all_of()`  문자 벡터에 있는 모든 변수(어느 하나라도 없으면 에러)
+- `any_of()`  문자 벡터에 있는 모든 변수(어느 하나라도 있으면 선택)
+
+```{r}
+#| eval: false
+#| output: false
+vars <- c("var1", "var2")
+df |> select(-any_of(vars))
+```
+
+서술(predicate) 함수 사용
+
+- `where()`   모든 변수에 함수를 적용한 후 결과값이 TRUE이면 선택
+
+```{r}
+#| eval: false
+#| output: false
+# 수치형 변수만 선택
+df |> select(where(is.numeric))
+```
