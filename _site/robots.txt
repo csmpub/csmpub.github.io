@@ -1,1 +1,0 @@
-Sitemap: git@icloud:csmpub/csmpub.github.io.git/sitemap.xml
