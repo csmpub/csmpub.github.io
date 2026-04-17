@@ -1,0 +1,85 @@
+---
+title: "변수(열) 조작"
+date: "2026-04-17"
+date-modified: "2026-04-17"
+categories: [manipulate, variables, tidyverse]
+toc: true
+draft: false
+---
+
+변수 조작(Manipulate Variables) 함수
+
+#### 변수 추출
+
+열 함수(column functions)는 추출한 변수로 벡터나 테이블을 반환한다.
+
+- `pull()`    이름이나 인덱스를 사용해 열의 값을 벡터로 추출
+- `select()`  열을 테이블로 추출
+- `relocate()`    열을 새로운 위치로 이동
+
+#### 여러 변수 한번에 조작
+
+- `across()`  여러 열을 같은 방식으로 요약하거나 생성
+- `c_across()`    행방향 데이터에서 열을 가로 질러
+
+::: {.callout-tip}
+
+#### select(), across()와 많이 쓰이는 helpers
+
+- `contains(match)`, `ends_with(match)`, `starts_with(match)`
+- `num_range(prefix, range)`, `all_of(x)`, `any_of(x, ..., vars)`
+- `matches(match)`, `everything()`
+
+:::
+
+#### 새 변수 만들기
+
+- `mutate()`  새로운 열 생성
+- `add_column()`  열 추가
+- `rename()`  열 이름 변경
+- `rename_with()` 함수를 사용하여 열이름 변경
+
+#### mutate() 함수
+
+`mutate()`는 새로운 열을 생성하기 위해 기존 열에 벡터화 함수(vectorized functions)[^1]를 적용한다.
+
+[^1]: 연산을 배열이나 행렬 전체에 한번에 적용하여 연산 효율을 극대화한 함수. 
+
+##### 오프셋(offset)
+
+- `lead()`  벡터 요소 인덱스를 1 감소
+- `lag()`   벡터 요소 인덱스를 1 증가
+
+##### 누적 집계(cumulative aggregate)
+
+- `cumall()`
+- `cumany()`
+- `cummax()`
+- `cummean()`
+- `cummin()`
+- `cumprod()`
+- `cumsum()` 
+
+##### 순위(ranking)
+
+`cume_dist()`
+`dense_rank()`
+`min_rank()`
+`ntile()`
+`percent_rank()`
+`row_number()`
+
+##### 수학(math)
+
+- `+`, `-`, `*`, `/`, `^`, `%/%`, `%%`
+- `log()`, `log2()`, `log10()`
+- `<`, `<=`, `>`, `>=`, `!=`, `==`
+- `between()`, `near()`
+
+##### 기타(miscellaneous)
+
+- `case_when()`
+- `if_else()`
+- `na_if()`
+- `pmax()`, `pmin()` 
+

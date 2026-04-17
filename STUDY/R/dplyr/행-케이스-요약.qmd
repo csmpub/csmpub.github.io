@@ -1,0 +1,61 @@
+---
+title: "관측값(행, 케이스) 요약"
+date: "2026-04-17"
+date-modified: "2026-04-17"
+categories: [summarise, cases, tidyverse]
+toc: true
+draft: false
+---
+
+관측값 요약(Summarise Cases) 함수
+
+#### 관측값 요약
+
+- `summarise()`   행 그룹을 한 행으로 요약
+- `count()`, `tally()`  변수들(변수)의 유일한 값의 숫자
+- `add_count()`, `add_tally()`  mutate()와 쓰이는 count(), tally()
+
+#### summary 함수
+
+##### 숫자(count)
+
+- n()           값/열의 수
+- n_distinct()  유일한 값의 수
+- sum(!is.na()) NA가 아닌 값의 수
+
+##### 위치(position)
+
+- mean()        평균값
+- median()      중앙값
+
+##### 논리(logocal)
+
+- mean()        TRUE의 비율
+- sum()         TRUE의 갯수
+
+##### 순서(order)
+
+- first()       첫번째 값
+- last()        마지막 값
+- nth()         벡터의 n번째 위치 값
+
+##### 순위(rank)
+
+- quantile()    분위
+- min()         최소값
+- max()         최대값
+
+##### 분포(spread)
+
+- IQR()         4분위 범위
+- mad()         중앙값 절대 편차
+- sd()          표준편차
+- var()         분산
+
+
+#### 행(케이스) 그룹 함수
+
+- `group_by()`  그룹화된 복사본 생성
+- `rowwise()`   개별 행을 그룹화하여 적용
+- `ungroup()`   그룹화 제거된 테이블 반환
+

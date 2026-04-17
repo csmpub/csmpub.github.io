@@ -1,0 +1,38 @@
+---
+title: "관측값(행, 케이스) 조작"
+date: "2026-04-17"
+date-modified: "2026-04-17"
+categories: [manipulate, cases, tidyverse]
+toc: true
+draft: false
+---
+
+관측값 조작(Manipulate Cases) 함수
+
+#### 관측값(행) 추출
+
+행 함수(row functions)는 추출한 행(부분 집합)으로 새로운 테이블을 반환한다.
+
+- `filter()`, `filter_out()`    논리 조건에 부합하는 행 유지, 행 제거
+- `distict()` 중복값 제거하고 유일한 값만 남김
+- `slice()`   행 위치로 추출
+- `slice_sample()`    무작위로 선택한 행
+- `slice_min()`, `slice_max()`  가장 작은값, 큰 값을 갖는 행
+- `slice_head()`, `slice_tail()`    처음, 마지막 행(n = 5)
+
+::: {.callout-tip}
+
+#### filter() 조건의 연산자
+
+`==`, `!=`, `<`, `>`, `<=`,  `>=`, `is.na()`, `!is.na()`, `%in%`, `!`, `|`, `&`, `xor()` 
+
+:::
+
+#### 관측값 정렬
+
+- `arrange()` 열(변수) 값이 작은 값에서 큰 값 순으로 행 정렬
+- `arrance(desc())`   반대로(큰 값에서 작은 값 순으로) 정렬
+
+#### 관측값 추가
+
+- `add_row()` 행 추가

@@ -103,3 +103,15 @@ df |> select(-any_of(vars))
 # 수치형 변수만 선택
 df |> select(where(is.numeric))
 ```
+
+#### 행 이름(Row Names)
+
+잘 정제된(tidy) 데이터에서는 행이름을 사용하지 않고 데이터 테이블 밖에 저장한다.\
+따라서, 행 이름을 사용하려면 먼저 열로 옮겨야 한다.\
+관련 함수들은 패키지 `tibble`에 정의되어 있다.
+
+- `rownames_to_column()`    행 이름을 변수로
+- `column_to_rownames()`    변수를 행 이름으로
+- `has_rownames()`          행 이름이 있는지 여부(논리값)
+- `remove_rownames()`       행 이름 제거
+
