@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>마크다운(MarkDown) – Wintree</title>
+<title>dplyr – Wintree</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,25 +26,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-8ce484d92116c4accc59257505a5c3a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-8ce484d92116c4accc59257505a5c3a2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -82,9 +82,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-description','listing-date-modified',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-title','listing-description','listing-date-modified',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -133,7 +133,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -143,11 +143,11 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../logo.png" alt="" class="navbar-logo light-content">
-    <img src="../../logo.png" alt="" class="navbar-logo dark-content">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../logo.png" alt="" class="navbar-logo light-content">
+    <img src="../../../logo.png" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Wintree</span>
     </a>
   </div>
@@ -158,7 +158,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../../index.html" aria-current="page"> 
+    <a class="nav-link active" href="../../../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -167,17 +167,17 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-data">    
         <li>
-    <a class="dropdown-item" href="../../note.html">
+    <a class="dropdown-item" href="../../../note.html">
  <span class="dropdown-text">Data Science</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../data.html">
+    <a class="dropdown-item" href="../../../data.html">
  <span class="dropdown-text">Data Repository</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
+    <a class="nav-link" href="../../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -191,7 +191,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../STUDY/index.html">데이터 과학</a></li><li class="breadcrumb-item"><a href="../../STUDY/MarkDown/index.html">마크다운(MarkDown)</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../STUDY/index.html">데이터 과학</a></li><li class="breadcrumb-item"><a href="../../../STUDY/R/index.html">R and RStudio</a></li><li class="breadcrumb-item"><a href="../../../STUDY/R/dplyr/index.html">dplyr</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="사이드바 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -200,10 +200,11 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../STUDY/index.html">데이터 과학</a></li><li class="breadcrumb-item"><a href="../../STUDY/MarkDown/index.html">마크다운(MarkDown)</a></li></ol></nav>
-      <h1 class="title">마크다운(MarkDown)</h1>
+    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../STUDY/index.html">데이터 과학</a></li><li class="breadcrumb-item"><a href="../../../STUDY/R/index.html">R and RStudio</a></li><li class="breadcrumb-item"><a href="../../../STUDY/R/dplyr/index.html">dplyr</a></li></ol></nav>
+      <h1 class="title">dplyr</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">markdown</div>
+                <div class="quarto-category">dplyr</div>
+                <div class="quarto-category">tidyverse</div>
               </div>
                   </div>
   </div>
@@ -224,26 +225,26 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Wintree’s Home</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../data.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Repository</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../note.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../note.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Science</span></a>
   </div>
 </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../STUDY/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../STUDY/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">데이터 과학</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -252,34 +253,34 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../STUDY/MarkDown/index.html" class="sidebar-item-text sidebar-link active">
+            <a href="../../../STUDY/MarkDown/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">마크다운(MarkDown)</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="토글 섹션">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/MarkDown/general/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/MarkDown/general/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Mark Down</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/MarkDown/github/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/MarkDown/github/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub flavored</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/MarkDown/obsidian/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/MarkDown/obsidian/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Obsidian flavored</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/MarkDown/quarto/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/MarkDown/quarto/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Quarto flavored</span></a>
   </div>
 </li>
@@ -287,28 +288,28 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../STUDY/R/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../STUDY/R/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">R and RStudio</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="토글 섹션">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/R/RStudio/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/R/RStudio/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">R Studio</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/R/stats/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/R/stats/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Stats</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../STUDY/R/tibble/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../STUDY/R/tibble/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">tibble</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -317,7 +318,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/R/tibble/티블개요.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/R/tibble/티블개요.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">티블 개요</span></a>
   </div>
 </li>
@@ -325,16 +326,16 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../STUDY/R/dplyr/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../STUDY/R/dplyr/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">dplyr</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="토글 섹션">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/R/dplyr/dplyr개요.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/R/dplyr/dplyr개요.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">dplyr 개요</span></a>
   </div>
 </li>
@@ -342,7 +343,7 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../STUDY/R/base/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../STUDY/R/base/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Base R</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -351,7 +352,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/R/base/연산자.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/R/base/연산자.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">R의 연산자</span></a>
   </div>
 </li>
@@ -361,7 +362,7 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../STUDY/Computer/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../STUDY/Computer/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">컴퓨터 기초</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -370,31 +371,31 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Computer/Vim/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Computer/Vim/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Vi Improved</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Computer/GitGithub/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Computer/GitGithub/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Github</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Computer/SSH/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Computer/SSH/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">SSH</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Computer/VSCode/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Computer/VSCode/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Visual Studio Code</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../STUDY/Computer/Shell/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../STUDY/Computer/Shell/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Shell Commands</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -403,13 +404,13 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Computer/Shell/Linux-Connands.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Computer/Shell/Linux-Connands.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">리눅스 명령어</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Computer/Shell/powershell.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Computer/Shell/powershell.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">파워쉘(Powershell)</span></a>
   </div>
 </li>
@@ -419,7 +420,7 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../STUDY/Quarto/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../STUDY/Quarto/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Quarto</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -428,7 +429,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../STUDY/Quarto/website-navigation/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../STUDY/Quarto/website-navigation/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">website navigation</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -437,43 +438,43 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Quarto/website-navigation/navbar.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Quarto/website-navigation/navbar.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">메뉴바(navbar)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Quarto/website-navigation/navhybrid.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Quarto/website-navigation/navhybrid.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">연결메뉴(hybrid navigation)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Quarto/website-navigation/others.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Quarto/website-navigation/others.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">기타 설정</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Quarto/website-navigation/page.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Quarto/website-navigation/page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">페이지 설정</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Quarto/website-navigation/redirect.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Quarto/website-navigation/redirect.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">다른 페이지로(redirect)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Quarto/website-navigation/search.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Quarto/website-navigation/search.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">검색(search)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Quarto/website-navigation/sidebar.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Quarto/website-navigation/sidebar.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">메뉴목록(sidebar)</span></a>
   </div>
 </li>
@@ -481,7 +482,7 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../STUDY/Quarto/website-listing/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../STUDY/Quarto/website-listing/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">website listing</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -490,49 +491,49 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Quarto/website-listing/categories-feeds.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Quarto/website-listing/categories-feeds.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">분류, 피드</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Quarto/website-listing/fields.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Quarto/website-listing/fields.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">필드</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Quarto/website-listing/including-excluding.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Quarto/website-listing/including-excluding.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">포함, 제외</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Quarto/website-listing/options.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Quarto/website-listing/options.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">옵션</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Quarto/website-listing/others.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Quarto/website-listing/others.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">위치, 다중리스트, YAML리스트</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Quarto/website-listing/overview.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Quarto/website-listing/overview.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">개요, 항목</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Quarto/website-listing/types-sort.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Quarto/website-listing/types-sort.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">타입, 정렬</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Quarto/website-listing/usertools.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Quarto/website-listing/usertools.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">사용자 툴</span></a>
   </div>
 </li>
@@ -540,7 +541,7 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../STUDY/Quarto/html/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../STUDY/Quarto/html/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">HTML</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -549,7 +550,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Quarto/html/code-blocks.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Quarto/html/code-blocks.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Code Blocks</span></a>
   </div>
 </li>
@@ -557,7 +558,7 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../STUDY/Quarto/website-draft/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../STUDY/Quarto/website-draft/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">website draft</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -566,7 +567,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Quarto/website-draft/draft.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Quarto/website-draft/draft.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">웹사이트 초안</span></a>
   </div>
 </li>
@@ -574,7 +575,7 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../STUDY/Quarto/Code-Cells/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../STUDY/Quarto/Code-Cells/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Code Cells</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -583,7 +584,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Quarto/Code-Cells/knitr.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Quarto/Code-Cells/knitr.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Knitr</span></a>
   </div>
 </li>
@@ -591,7 +592,7 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../STUDY/Quarto/website-blog/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../STUDY/Quarto/website-blog/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">website bolg</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false" aria-label="토글 섹션">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -600,37 +601,37 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Quarto/website-blog/about.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Quarto/website-blog/about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About page</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Quarto/website-blog/home.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Quarto/website-blog/home.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">블로그 홈</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Quarto/website-blog/post.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Quarto/website-blog/post.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">포스팅 폴더</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Quarto/website-blog/rssfeed.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Quarto/website-blog/rssfeed.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">RSS 피드</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Quarto/website-blog/subscribe.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Quarto/website-blog/subscribe.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">구독</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../STUDY/Quarto/website-blog/themes.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../STUDY/Quarto/website-blog/themes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">블로그 테마</span></a>
   </div>
 </li>
@@ -647,7 +648,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">분류</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">전체 <span class="quarto-category-count">(0)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">분류</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">전체 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZHBseXI=">dplyr <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dGlkeS1zZWxlY3Q=">tidy-select <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dGlkeXZlcnNl">tidyverse <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -655,27 +656,60 @@ window.Quarto = {
 
 
 
-<p>Markdown 공통 및 GitHub, Quarto, Obsidian 지원 문법</p>
 
 
 
 
 <div class="quarto-listing quarto-listing-container-table" id="listing-listing">
 <div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-listing-sort" class="form-select" aria-label="정렬" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">정렬</option>
+      <option value="index" data-direction="asc">기본</option>
+      <option value="listing-title-sort" data-direction="asc">
+        제목
+      </option>
+    </select>
+  </div>
     <div class="input-group input-group-sm quarto-listing-filter">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
       <input type="text" class="search form-control" placeholder="필터">
     </div>
 </div>
-<table class="quarto-listing-table table caption-top">
+<table class="quarto-listing-table table">
 <thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">제목</th>
-<th data-quarto-table-cell-role="th">설명</th>
-<th data-quarto-table-cell-role="th">개정</th>
+<tr>
+
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">제목</a>
+</th>
+
+<th>
+설명
+</th>
+
+<th>
+개정
+</th>
+
 </tr>
 </thead>
 <tbody class="list">
+
+<tr data-index="0" data-categories="ZHBseXIlMkN0aWR5LXNlbGVjdCUyQ3RpZHl2ZXJzZQ==" data-listing-date-sort="1776351600000" data-listing-file-modified-sort="1776403510693" data-listing-date-modified-sort="1776351600000" data-listing-reading-time-sort="2" data-listing-word-count-sort="265" data-listing-title-sort="dplyr 개요" data-listing-filename-sort="dplyr개요.qmd">
+<td>
+<a href="../../../STUDY/R/dplyr/dplyr개요.html" class="title listing-title">dplyr 개요</a>
+</td>
+<td>
+<span class="listing-description">대부분의 데이터 작업을 가능하게 하는 일관된 방식의 데이터 조작 문법(Data Manipulation Syntax)</span>
+</td>
+<td>
+<span class="listing-date-modified">2026-04-17</span>
+</td>
+
+</tr>
+
 </tbody>
 </table>
 <div class="listing-no-matching d-none">일치 없음</div>

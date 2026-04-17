@@ -116,6 +116,7 @@
   {
     "listing": "/STUDY/index.html",
     "items": [
+      "/STUDY/R/dplyr/dplyr개요.html",
       "/STUDY/Computer/Shell/Linux-Connands.html",
       "/STUDY/Computer/Shell/powershell.html",
       "/STUDY/Quarto/Code-Cells/knitr.html",
@@ -149,6 +150,7 @@
   {
     "listing": "/STUDY/R/index.html",
     "items": [
+      "/STUDY/R/dplyr/dplyr개요.html",
       "/STUDY/R/base/연산자.html",
       "/STUDY/R/tibble/티블개요.html"
     ]
@@ -182,6 +184,12 @@
   {
     "listing": "/STUDY/R/RStudio/index.html",
     "items": []
+  },
+  {
+    "listing": "/STUDY/R/dplyr/index.html",
+    "items": [
+      "/STUDY/R/dplyr/dplyr개요.html"
+    ]
   },
   {
     "listing": "/STUDY/R/base/index.html",
