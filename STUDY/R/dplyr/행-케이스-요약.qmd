@@ -19,38 +19,38 @@ draft: false
 
 ##### 숫자(count)
 
-- n()           값/열의 수
-- n_distinct()  유일한 값의 수
-- sum(!is.na()) NA가 아닌 값의 수
+- `n()`           값/열의 수
+- `n_distinct()`  유일한 값의 수
+- `sum(!is.na())` NA가 아닌 값의 수
 
 ##### 위치(position)
 
-- mean()        평균값
-- median()      중앙값
+- `mean()`        평균값
+- `median()`      중앙값
 
 ##### 논리(logocal)
 
-- mean()        TRUE의 비율
-- sum()         TRUE의 갯수
+- `mean()`        TRUE의 비율
+- `sum()`         TRUE의 갯수
 
 ##### 순서(order)
 
-- first()       첫번째 값
-- last()        마지막 값
-- nth()         벡터의 n번째 위치 값
+- `first()`       첫번째 값
+- `last()`        마지막 값
+- `nth()`         벡터의 n번째 위치 값
 
 ##### 순위(rank)
 
-- quantile()    분위
-- min()         최소값
-- max()         최대값
+- `quantile()`    분위
+- `min()`         최소값
+- `max()`         최대값
 
 ##### 분포(spread)
 
-- IQR()         4분위 범위
-- mad()         중앙값 절대 편차
-- sd()          표준편차
-- var()         분산
+- `IQR()`         4분위 범위
+- `mad()`         중앙값 절대 편차
+- `sd()`          표준편차
+- `var()`         분산
 
 
 #### 행(케이스) 그룹 함수

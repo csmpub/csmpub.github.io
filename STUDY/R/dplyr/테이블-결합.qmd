@@ -44,9 +44,9 @@ draft: false
 
 ##### 집합 연산
 
-- intersect(x, y, ...)  x 테이블, y 테이블 모두 있는 행들
-- setdiff(x, y, ...)    x 테이블에는 있지만 y 테이블에는 없는 행들
-- union(x, y, ...)      x 또는 y 의 행들 (중복 제거)
-- union_all(x, y, ...)  x 또는 y 의 행들 (중복 유지)
-- setequal(x, y, ...)   두 데이블이 같은 행을 갖는지 테스트
+- `intersect(x, y, ...)`  x 테이블, y 테이블 모두 있는 행들
+- `setdiff(x, y, ...)`    x 테이블에는 있지만 y 테이블에는 없는 행들
+- `union(x, y, ...)`      x 또는 y 의 행들 (중복 제거)
+- `union_all(x, y, ...)`  x 또는 y 의 행들 (중복 유지)
+- `setequal(x, y, ...)`   두 데이블이 같은 행을 갖는지 테스트
 
