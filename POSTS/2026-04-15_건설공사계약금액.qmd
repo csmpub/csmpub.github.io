@@ -22,7 +22,7 @@ library(tidyverse)
 ```{r}
 #| echo: false
 #| output: false
-contract <- read_csv("../FILES/통계누리/건설/현장소재지별_건설공사계약금액.csv") |>
+contract <- read_csv("FILES/통계누리/건설/현장소재지별_건설공사계약금액.csv") |>
     mutate(분기 = sub("/0", ":Q", 분기), 구분 = as.factor(구분), 시도별 = as.factor(시도별))
 contract$구분 <- fct_relevel(contract$구분, "전국", "수도권", "지방")
 contract$시도별 <- fct_relevel(contract$시도별, "전국", "서울", "부산", "대구", "인천", "광주", "대전", "울산", "세종", "경기", "강원", "충북", "충남", "전북", "전남", "경북", "경남", "제주")
@@ -71,4 +71,14 @@ ccd4q <- ccd |> filter(`분기` == "2025:Q4" | `분기` == "2025:Q3" | `분기` 
 #| echo: false
 #| tab.cap: 2025/04 분기 시도별 전년동기, 전기대비 건설공사 계약금액(억원)
 knitr::kable(ccd4q, align = "lrrrrr", format.args = list(big.mark = ","))
+```
+
+#### 그래프
+
+```{r}
+#| echo: false
+#| output: false
+tb <- contract |> filter(구분 == "전국") |>
+    mutate(당기 = `계약금액(억원)`, 전기 = lag(당기, 1), 전년 = lag(당기, 4), 전기대비 = 당기 - 전기, 전년대비 = 당기 - 전년, QoQ = sprintf("%.2f", 전기대비 / 전기), YoY = sprintf("%.2f", 전년대비 / 전년)) |>
+    select(분기, 당기:YoY)
 ```
