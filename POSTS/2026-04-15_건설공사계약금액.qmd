@@ -22,63 +22,110 @@ library(tidyverse)
 ```{r}
 #| echo: false
 #| output: false
-contract <- read_csv("FILES/통계누리/건설/현장소재지별_건설공사계약금액.csv") |>
-    mutate(분기 = sub("/0", ":Q", 분기), 구분 = as.factor(구분), 시도별 = as.factor(시도별))
-contract$구분 <- fct_relevel(contract$구분, "전국", "수도권", "지방")
-contract$시도별 <- fct_relevel(contract$시도별, "전국", "서울", "부산", "대구", "인천", "광주", "대전", "울산", "세종", "경기", "강원", "충북", "충남", "전북", "전남", "경북", "경남", "제주")
-met <- contract |> group_by(`분기`, `구분`) |> summarize(`계약금액(억원)` = sum(`계약금액(억원)`))
-ccd <- contract |> group_by(`분기`, `시도별`) |> summarize(`계약금액(억원)` = sum(`계약금액(억원)`))
+cont <- read_csv("FILES/통계누리/건설/현장소재지별_건설공사계약금액.csv") |>
+    mutate(권역별 = case_when(시도별 == "전국" ~ "전국", 시도별 == "서울" ~ "수도권", 시도별 == "부산" ~ "영남권", 시도별 == "대구" ~ "영남권", 시도별 == "인천" ~ "수도권", 시도별 == "광주" ~ "호남권", 시도별 == "대전" ~ "충청권", 시도별 == "울산" ~ "영남권", 시도별 == "세종" ~ "충청권", 시도별 == "경기" ~ "수도권", 시도별 == "강원" ~ "강원권", 시도별 == "충북" ~ "충청권", 시도별 == "충남" ~ "충청권", 시도별 == "전북" ~ "호남권", 시도별 == "전남" ~ "호남권", 시도별 == "경북" ~ "영남권", 시도별 == "경남" ~ "영남권", 시도별 == "제주" ~ "영남권"))
+met <- cont |> summarise(`계약금액(억원)` = sum(`계약금액(억원)`), .by = c(분기, 구분))
+ccd <- cont |> summarise(`계약금액(억원)` = sum(`계약금액(억원)`), .by = c(분기, 시도별))
+con <- cont |> summarise(`계약금액(억원)` = sum(`계약금액(억원)`), .by = c(분기, 권역별))
 ```
+
 \
 
 ##### 2025년 현장 소재지별 건설공사 계약금액(억원)
 
 ```{r}
 #| echo: false
-#| tab.cap: 지역별 분기별 건설공사 계약금액(억원)
-knitr::kable(met |> filter(as.numeric(substr(`분기`, 1, 4)) == 2025) |> pivot_wider(names_from = `분기`, values_from = `계약금액(억원)`) |> mutate(`2025` = sum(c_across(`2025:Q1`:`2025:Q4`))), format.args = list(big.mark = ","))
+#| tab.cap: 권역별 건설공사 계약금액(억원)
+knitr::kable(con |> filter(as.numeric(substr(`분기`, 1, 4)) == 2025) |> pivot_wider(names_from = `분기`, values_from = `계약금액(억원)`) |> rowwise() |> mutate(`2025` = sum(c_across(`2025/01`:`2025/04`))), format.args = list(big.mark = ",", scientific = FALSE))
 ```
 
 ```{r}
 #| echo: false
-#| tab.cap: 시도별 분기별 건설공사 계약금액(억원)
-knitr::kable(ccd |> filter(as.numeric(substr(`분기`, 1, 4)) == 2025) |> pivot_wider(names_from = `분기`, values_from = `계약금액(억원)`) |> mutate(`2025` = sum(c_across(`2025:Q1`:`2025:Q4`))), format.args = list(big.mark = ","))
+#| tab.cap: 시도별 건설공사 계약금액(억원)
+knitr::kable(ccd |> filter(as.numeric(substr(`분기`, 1, 4)) == 2025) |> pivot_wider(names_from = `분기`, values_from = `계약금액(억원)`) |> rowwise() |> mutate(`2025` = sum(c_across(`2025/01`:`2025/04`))), format.args = list(big.mark = ",", scientific = FALSE))
 ```
 
 \
 
-##### 2025/04 분기 현장 소재지별 건설공사 계약금액(억원)
+##### 2025년 4분기 현장 소재지별 건설공사 계약금액(억원)
 
 ```{r}
 #| echo: false
 #| output: false
-met4q <- met |> filter(`분기` == "2025:Q4" | `분기` == "2025:Q3" | `분기` == "2024:Q4") |> pivot_wider(names_from = `분기`, values_from = `계약금액(억원)`) |> mutate(YoY = sprintf("%.2f%%", 100 * (`2025:Q4` - `2024:Q4`) / `2024:Q4`), QoQ = sprintf("%.2f%%", 100 * (`2025:Q4` - `2025:Q3`) / `2025:Q3`))
+con4q <- con |> filter(`분기` == "2025/04" | `분기` == "2025/03" | `분기` == "2024/04") |> pivot_wider(names_from = `분기`, values_from = `계약금액(억원)`) |> mutate(YoY = sprintf("%.2f%%", 100 * (`2025/04` - `2024/04`) / `2024/04`), QoQ = sprintf("%.2f%%", 100 * (`2025/04` - `2025/03`) / `2025/03`))
 ```
 
 ```{r}
 #| echo: false
-#| tab.cap: 2025/04 분기 지역별 전년동기, 전기대비 건설공사 계약금액(억원)
-knitr::kable(met4q, align = "lrrrrr", format.args = list(big.mark = ","))
+#| tab.cap: 2025년 4분기 권역별 전년동기, 전기대비 건설공사 계약금액(억원)
+knitr::kable(con4q, align = "lrrrrr", format.args = list(big.mark = ","))
 ```
+
+\
 
 ```{r}
 #| echo: false
 #| output: false
-ccd4q <- ccd |> filter(`분기` == "2025:Q4" | `분기` == "2025:Q3" | `분기` == "2024:Q4") |> pivot_wider(names_from = `분기`, values_from = `계약금액(억원)`) |> mutate(YoY = sprintf("%.2f%%", 100 * (`2025:Q4` - `2024:Q4`) / `2024:Q4`), QoQ = sprintf("%.2f%%", 100 * (`2025:Q4` - `2025:Q3`) / `2025:Q3`))
+theme_set(theme_bw(base_family="Apple SD 산돌고딕 Neo"))
+#theme(text=element_text(family="Apple SD 산돌고딕 Neo"))
+gd <- con |> slice(260:264, 278:282, 284:288) |> mutate(권역별 = factor(권역별, levels = c("수도권", "영남권", "충청권", "호남권", "강원권")))
 ```
 
 ```{r}
 #| echo: false
-#| tab.cap: 2025/04 분기 시도별 전년동기, 전기대비 건설공사 계약금액(억원)
+ggplot(gd, aes(x = 분기, y = `계약금액(억원)`, fill = 권역별)) +
+    geom_bar(position = "dodge", stat = "identity") +
+    ggtitle("2025년 4분기 권역별 건설공사 계약금액 (전년동기대비, 전기대비 )") +
+    scale_fill_brewer(palette = "Purples")
+```
+
+
+```{r}
+#| echo: false
+#| output: false
+ccd4q <- ccd |> filter(`분기` == "2025/04" | `분기` == "2025/03" | `분기` == "2024/04") |> pivot_wider(names_from = `분기`, values_from = `계약금액(억원)`) |> mutate(YoY = sprintf("%.2f%%", 100 * (`2025/04` - `2024/04`) / `2024/04`), QoQ = sprintf("%.2f%%", 100 * (`2025/04` - `2025/03`) / `2025/03`))
+```
+
+```{r}
+#| echo: false
+#| tab.cap: 2025년 4분기 시도별 전년동기, 전기대비 건설공사 계약금액(억원)
 knitr::kable(ccd4q, align = "lrrrrr", format.args = list(big.mark = ","))
 ```
 
-#### 그래프
+\
 
 ```{r}
 #| echo: false
 #| output: false
-tb <- contract |> filter(구분 == "전국") |>
-    mutate(당기 = `계약금액(억원)`, 전기 = lag(당기, 1), 전년 = lag(당기, 4), 전기대비 = 당기 - 전기, 전년대비 = 당기 - 전년, QoQ = sprintf("%.2f", 전기대비 / 전기), YoY = sprintf("%.2f", 전년대비 / 전년)) |>
-    select(분기, 당기:YoY)
+theme_set(theme_bw(base_family="Apple SD 산돌고딕 Neo"))
+gd <- cont |> filter(권역별 == "수도권") |>
+    filter(`분기` == "2025/04" | `분기` == "2025/03" | `분기` == "2024/04") |>
+    summarise(`계약금액(억원)` = sum(`계약금액(억원)`), .by = c(분기, 시도별)) |>
+    mutate(시도별 = factor(시도별, levels = c("경기", "서울", "인천")))
+```
+
+```{r}
+#| echo: false
+ggplot(gd, aes(x = 분기, y = `계약금액(억원)`, fill = 시도별)) +
+    geom_bar(position = "dodge", stat = "identity") +
+    ggtitle("2025년 4분기 수도권 건설공사 계약금액 (전년동기대비, 전기대비 )") +
+    scale_fill_brewer(palette = "Purples")
+```
+
+```{r}
+#| echo: false
+#| output: false
+theme_set(theme_bw(base_family="Apple SD 산돌고딕 Neo"))
+gd <- cont |> filter(권역별 == "충청권") |>
+    filter(`분기` == "2025/04" | `분기` == "2025/03" | `분기` == "2024/04") |>
+    summarise(`계약금액(억원)` = sum(`계약금액(억원)`), .by = c(분기, 시도별)) |>
+    mutate(시도별 = factor(시도별, levels = c("충남", "충북", "대전", "세종")))
+```
+
+```{r}
+#| echo: false
+ggplot(gd, aes(x = 분기, y = `계약금액(억원)`, fill = 시도별)) +
+    geom_bar(position = "dodge", stat = "identity") +
+    ggtitle("2025년 4분기 충청권 건설공사 계약금액 (전년동기대비, 전기대비 )") +
+    scale_fill_brewer(palette = "Purples")
 ```
