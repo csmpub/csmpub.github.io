@@ -2,7 +2,7 @@
 title: "Wintree's Home"
 listing: 
     contents:
-        - POSTS
+        - "POSTS/*.qmd"
     fields: [title, description, date]
     type: table
     sort: "date desc"
