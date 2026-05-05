@@ -51,5 +51,5 @@ format:
 
 lang: ko
 language: korean.yml
-date-format: iso
+date-format: "'YY년 MM월 DD일"
 title-block-banner: true
