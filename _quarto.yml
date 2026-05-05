@@ -53,5 +53,3 @@ lang: ko
 language: korean.yml
 date-format: iso
 title-block-banner: true
-
-freeze: auto
