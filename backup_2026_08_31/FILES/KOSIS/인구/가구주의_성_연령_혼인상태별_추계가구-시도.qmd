@@ -27,6 +27,7 @@ draft: true
 - 시점: 년, 2026년 - 2052년
 
 ```{r}
+#| eval: false
 #| echo: false
 #| output: false
 library(readxl)

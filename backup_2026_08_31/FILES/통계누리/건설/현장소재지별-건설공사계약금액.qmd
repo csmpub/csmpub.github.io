@@ -19,6 +19,7 @@ toc: true
 - "건설공사계약 금액"을 "계약금액(억원)"으로 변경 하고, 해당 값이 텍스트로 입력된 것을 수치로 바꿈
 
 ```{r}
+#| eval: false
 #| echo: false
 #| output: false
 library(tidyverse)

@@ -12,6 +12,7 @@ draft: false
 #### 건설공사계약
 
 ```{r}
+#| eval: false
 #| echo: false
 #| output: false
 library(tidyverse)
@@ -20,6 +21,7 @@ library(tidyverse)
 [데이터 파일: 현장소재지별_건설공사계약금액.csv](../FILES/%ED%86%B5%EA%B3%84%EB%88%84%EB%A6%AC/%EA%B1%B4%EC%84%A4/%ED%98%84%EC%9E%A5%EC%86%8C%EC%9E%AC%EC%A7%80%EB%B3%84_%EA%B1%B4%EC%84%A4%EA%B3%B5%EC%82%AC%EA%B3%84%EC%95%BD%EA%B8%88%EC%95%A1.csv){download=""}
 
 ```{r}
+#| eval: false
 #| echo: false
 #| output: false
 cont <- read_csv("FILES/통계누리/건설/현장소재지별_건설공사계약금액.csv") |>
@@ -34,12 +36,14 @@ con <- cont |> summarise(`계약금액(억원)` = sum(`계약금액(억원)`), .
 ##### 2025년 현장 소재지별 건설공사 계약금액(억원)
 
 ```{r}
+#| eval: false
 #| echo: false
 #| tab.cap: 권역별 건설공사 계약금액(억원)
 knitr::kable(con |> filter(as.numeric(substr(`분기`, 1, 4)) == 2025) |> pivot_wider(names_from = `분기`, values_from = `계약금액(억원)`) |> rowwise() |> mutate(`2025` = sum(c_across(`2025/01`:`2025/04`))), format.args = list(big.mark = ",", scientific = FALSE))
 ```
 
 ```{r}
+#| eval: false
 #| echo: false
 #| tab.cap: 시도별 건설공사 계약금액(억원)
 knitr::kable(ccd |> filter(as.numeric(substr(`분기`, 1, 4)) == 2025) |> pivot_wider(names_from = `분기`, values_from = `계약금액(억원)`) |> rowwise() |> mutate(`2025` = sum(c_across(`2025/01`:`2025/04`))), format.args = list(big.mark = ",", scientific = FALSE))
@@ -50,12 +54,14 @@ knitr::kable(ccd |> filter(as.numeric(substr(`분기`, 1, 4)) == 2025) |> pivot_
 ##### 2025년 4분기 현장 소재지별 건설공사 계약금액(억원)
 
 ```{r}
+#| eval: false
 #| echo: false
 #| output: false
 con4q <- con |> filter(`분기` == "2025/04" | `분기` == "2025/03" | `분기` == "2024/04") |> pivot_wider(names_from = `분기`, values_from = `계약금액(억원)`) |> mutate(YoY = sprintf("%.2f%%", 100 * (`2025/04` - `2024/04`) / `2024/04`), QoQ = sprintf("%.2f%%", 100 * (`2025/04` - `2025/03`) / `2025/03`))
 ```
 
 ```{r}
+#| eval: false
 #| echo: false
 #| tab.cap: 2025년 4분기 권역별 전년동기, 전기대비 건설공사 계약금액(억원)
 knitr::kable(con4q, align = "lrrrrr", format.args = list(big.mark = ","))
@@ -64,6 +70,7 @@ knitr::kable(con4q, align = "lrrrrr", format.args = list(big.mark = ","))
 \
 
 ```{r}
+#| eval: false
 #| echo: false
 #| output: false
 theme_set(theme_bw(base_family="Apple SD 산돌고딕 Neo"))
@@ -72,6 +79,7 @@ gd <- con |> slice(260:264, 278:282, 284:288) |> mutate(권역별 = factor(권�
 ```
 
 ```{r}
+#| eval: false
 #| echo: false
 ggplot(gd, aes(x = 분기, y = `계약금액(억원)`, fill = 권역별)) +
     geom_bar(position = "dodge", stat = "identity") +
@@ -81,12 +89,14 @@ ggplot(gd, aes(x = 분기, y = `계약금액(억원)`, fill = 권역별)) +
 
 
 ```{r}
+#| eval: false
 #| echo: false
 #| output: false
 ccd4q <- ccd |> filter(`분기` == "2025/04" | `분기` == "2025/03" | `분기` == "2024/04") |> pivot_wider(names_from = `분기`, values_from = `계약금액(억원)`) |> mutate(YoY = sprintf("%.2f%%", 100 * (`2025/04` - `2024/04`) / `2024/04`), QoQ = sprintf("%.2f%%", 100 * (`2025/04` - `2025/03`) / `2025/03`))
 ```
 
 ```{r}
+#| eval: false
 #| echo: false
 #| tab.cap: 2025년 4분기 시도별 전년동기, 전기대비 건설공사 계약금액(억원)
 knitr::kable(ccd4q, align = "lrrrrr", format.args = list(big.mark = ","))
@@ -95,6 +105,7 @@ knitr::kable(ccd4q, align = "lrrrrr", format.args = list(big.mark = ","))
 \
 
 ```{r}
+#| eval: false
 #| echo: false
 #| output: false
 theme_set(theme_bw(base_family="Apple SD 산돌고딕 Neo"))
@@ -106,6 +117,7 @@ gd <- cont |> filter(권역별 == "수도권") |>
 ```
 
 ```{r}
+#| eval: false
 #| echo: false
 ggplot(gd, aes(x = 분기, y = `계약금액(억원)`, fill = 시도별)) +
     geom_bar(position = "dodge", stat = "identity") +
@@ -114,6 +126,7 @@ ggplot(gd, aes(x = 분기, y = `계약금액(억원)`, fill = 시도별)) +
 ```
 
 ```{r}
+#| eval: false
 #| echo: false
 #| output: false
 theme_set(theme_bw(base_family="Apple SD 산돌고딕 Neo"))
@@ -124,6 +137,7 @@ gd <- cont |> filter(권역별 == "충청권") |>
 ```
 
 ```{r}
+#| eval: false
 #| echo: false
 ggplot(gd, aes(x = 분기, y = `계약금액(억원)`, fill = 시도별)) +
     geom_bar(position = "dodge", stat = "identity") +

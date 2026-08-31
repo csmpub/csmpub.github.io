@@ -4,43 +4,45 @@ project:
 
 website:
   title: "Wintree"
+
   navbar:
     logo: "logo.png"
     right:
       - href: index.qmd
         text: "Home"
-      - text: "Data"
-        menu: 
-        - href: note.qmd
-          text: "Data Science"
-        - href: data.qmd
-          text: "Data Repository"
-      - href: about.qmd
-        text: "About"
+#      - text: "Data"
+#        menu: 
+#        - href: note.qmd
+#          text: "Data Science"
+#        - href: data.qmd
+#          text: "Data Repository"
+#      - href: about.qmd
+#        text: "About"
+
   sidebar:
     - id: menu
       title: "Menu"
       contents:
         - index.qmd
-        - note.qmd
-        - data.qmd
-        - text: "---" 
-    - id: data
-      title: "Data"
-      contents: 
-        - index.qmd
-        - note.qmd
-        - data.qmd
-        - text: "---"
-        - auto: FILES
-    - id: note
-      title: "Note"
-      contents: 
-        - index.qmd
-        - data.qmd
-        - note.qmd
-        - text: "---"
-        - auto: STUDY
+#        - note.qmd
+#        - data.qmd
+#        - text: "---" 
+#    - id: data
+#      title: "Data"
+#      contents: 
+#        - index.qmd
+#        - note.qmd
+#        - data.qmd
+#        - text: "---"
+#        - auto: FILES
+#    - id: note
+#      title: "Note"
+#      contents: 
+#        - index.qmd
+#        - data.qmd
+#        - note.qmd
+#        - text: "---"
+#        - auto: STUDY
 
   draft-mode: visible
 
