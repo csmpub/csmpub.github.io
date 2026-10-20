@@ -1,7 +1,6 @@
 ---
-tiele: Configurations
+tiele: Admin Home
 ---
 
 Site from scratch.
 
-System configurations
