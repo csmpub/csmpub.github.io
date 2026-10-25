@@ -9,7 +9,18 @@ execute:
 website: 
   navbar: 
     left: 
-      - href: https://cfgs.csmphd.com/index.html
-        text: "외부 링크로 연결"
-      - href: configurations/_site/index.html
-        text: "repo 내부"
+#      - href: https://cfgs.csmphd.com/index.html
+#        text: "외부 링크로 연결"
+#      - href: configurations/_site/index.html
+#        text: "repo 내부"
+      - href: index.qmd
+
+format:
+  html: 
+    theme: cosmo
+    css: styles.css
+
+draft-mode: visible
+
+lang: ko
+language: korean.yml

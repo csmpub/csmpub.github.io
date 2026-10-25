@@ -1,6 +1,5 @@
 ---
-tiele: Admin Home
+title: My Public Site
 ---
 
-Site from scratch.
-
+A site from scratch.
