@@ -3,24 +3,28 @@ project:
   resources:
     - CNAME
 
-execute: 
-  freeze: auto
-
 website: 
   navbar: 
     left: 
-#      - href: https://cfgs.csmphd.com/index.html
-#        text: "외부 링크로 연결"
-#      - href: configurations/_site/index.html
-#        text: "repo 내부"
       - href: index.qmd
+        text: Home
+
+    right:
+      - text: Data
+        menu: 
+          - text: Data Resources
+            href: https://data.csmpub.com/resources.html
+          - text: Data Downloads
+            href: https://data.csmpub.com/downloads.html
+
+  draft-mode: visible
 
 format:
   html: 
-    theme: cosmo
-    css: styles.css
-
-draft-mode: visible
+    theme:
+      light: flatkly
+      dark: darkly
+# flatkly - darkly / cosmo - cyborg / lumen - slate / yeti - uperhero
 
 lang: ko
 language: korean.yml
