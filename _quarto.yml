@@ -15,7 +15,7 @@ website:
       - text: Data
         menu: 
           - text: Data Resources
-            href: https://data.csmpub.com/resources.html
+            href: https://data.csmpub.com/index.html
           - text: Data Downloads
             href: https://data.csmpub.com/downloads.html
 
