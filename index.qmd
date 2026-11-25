@@ -1,5 +1,18 @@
 ---
-title: My Public Site
+title: Wintree's Home
+listing:
+    type: table
+    fields: 
+      - date
+      - title
+      - description
+    contents: notes
+language: 
+  listing-page-field-title: "주제"
+  listing-page-field-description: "요약"
+date-format: "YY.MM.DD"
 ---
 
-A site from scratch.
+---
+
+\
