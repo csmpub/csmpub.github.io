@@ -87,9 +87,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: [],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -369,60 +369,20 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-table" id="listing-listing">
 <div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="정렬" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">정렬</option>
-      <option value="index" data-direction="asc">기본</option>
-      <option value="listing-date-sort" data-direction="asc">
-        날짜 - 오름차순
-      </option>
-      <option value="listing-date-sort" data-direction="desc">
-        날짜 - 내림차순
-      </option>
-      <option value="listing-title-sort" data-direction="asc">
-        주제
-      </option>
-    </select>
-  </div>
     <div class="input-group input-group-sm quarto-listing-filter">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
       <input type="text" class="search form-control" placeholder="필터">
     </div>
 </div>
-<table class="quarto-listing-table table">
+<table class="quarto-listing-table table caption-top">
 <thead>
-<tr>
-
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">날짜</a>
-</th>
-
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">주제</a>
-</th>
-
-<th>
-요약
-</th>
-
+<tr class="header">
+<th data-quarto-table-cell-role="th">날짜</th>
+<th data-quarto-table-cell-role="th">주제</th>
+<th data-quarto-table-cell-role="th">요약</th>
 </tr>
 </thead>
 <tbody class="list">
-
-<tr data-index="0" data-listing-date-sort="1795532400000" data-listing-file-modified-sort="1795624302957" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="348" data-listing-title-sort="AI가 수학 난제를 증명 했다고?" data-listing-filename-sort="수학자는_끝인가.qmd">
-<td>
-<span class="listing-date">26.11.25</span>
-</td>
-<td>
-<a href="./notes/수학자는_끝인가.html" class="title listing-title">AI가 수학 난제를 증명 했다고?</a>
-</td>
-<td>
-<span class="listing-description">“50만쪽이 넘는 증명 과정을 제시하고 증명했음!” 주장 하는 AI(혹은 그 <strong>개발자</strong>). 과연 앞으로 수학자는 끝인가?</span>
-</td>
-
-</tr>
-
 </tbody>
 </table>
 <div class="listing-no-matching d-none">일치 없음</div>
