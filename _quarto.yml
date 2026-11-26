@@ -13,17 +13,11 @@ website:
       - text: "How to ..."
         href: "https://comp.csmpub.com/index.html"
 
-#    right:
-#      - text: Comp
-#        href: https://comp.csmpub.com/index.html
-#      - text: Data
-#        menu: 
-#          - text: Data Resources
-#            href: https://data.csmpub.com/index.html
-#          - text: Data Downloads
-#            href: https://data.csmpub.com/downloads.html
-
-  draft-mode: visible
+    right:
+        - text: Data Resources
+          href: https://data.csmpub.com/index.html
+        - text: Data Downloads
+          href: https://data.csmpub.com/downloads.html
 
 format:
   html:
