@@ -10,8 +10,8 @@ website:
     left: 
       - text: "Home"
         href: "index.qmd"
-      - text: "How to ..."
-        href: "https://comp.csmpub.com/index.html"
+#      - text: "How to ..."
+#        href: "https://comp.csmpub.com/index.html"
 
     right:
         - text: "Data Resources"
