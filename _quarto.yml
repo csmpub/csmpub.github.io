@@ -23,8 +23,8 @@ website:
     - id: home
       style: floating
       contents:
-        - text: "How to ..."
-          href: "https://comp.csmpub.com/index.html" 
+#        - text: "How to ..."
+#          href: "https://comp.csmpub.com/index.html" 
         - text: "Data Resources"
           href: "https://data.csmpub.com/resources.html" 
         - text: "Data Downloads"
