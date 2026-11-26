@@ -2,14 +2,18 @@
 title: "Home"
 listing:
     type: table
+    contents: notes
+    categories: unnumbered
     fields: 
       - date
       - title
       - description
-    contents: notes
 language: 
-  listing-page-field-title: "주제"
   listing-page-field-description: "요약"
+format: 
+  html: 
+    page-layout: full
+toc: false
 date-format: "YY.MM.DD"
 ---
 

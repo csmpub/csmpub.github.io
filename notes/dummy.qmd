@@ -1,3 +1,9 @@
 ---
 title: dummy
+date: 2025-04-01
+date-modified: 2025-04-01
+categories:
+    - keywords
 ---
+
+dummy file for testing layout
