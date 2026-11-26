@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "notes/dummy.html",
+    "href": "notes/dummy.html",
+    "title": "dummy",
+    "section": "",
+    "text": "dummy file for testing layout"
+  },
+  {
     "objectID": "drafts/수학자는_끝인가.html",
     "href": "drafts/수학자는_끝인가.html",
     "title": "AI가 수학 난제를 증명 했다고?",
@@ -18,6 +25,6 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "정렬\n      기본\n      \n        날짜 - 오름차순\n      \n      \n        날짜 - 내림차순\n      \n      \n        주제\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n날짜\n\n\n\n주제\n\n\n\n요약\n\n\n\n\n\n\n\n\n \n\n\ndummy\n\n\n\n\n\n\n\n\n\n일치 없음"
+    "text": "정렬\n      기본\n      \n        날짜 - 오름차순\n      \n      \n        날짜 - 내림차순\n      \n      \n        제목\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n날짜\n\n\n\n제목\n\n\n\n요약\n\n\n\n\n\n\n\n\n25.04.01\n\n\ndummy\n\n\n\n\n\n\n\n\n\n일치 없음"
   }
 ]
