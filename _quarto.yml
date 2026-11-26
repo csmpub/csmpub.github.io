@@ -20,14 +20,15 @@ website:
           href: "https://data.csmpub.com/downloads.html"
 
   sidebar:
-    style: floating
-    contents:
-      - text: "How to ..."
-        href: "https://comp.csmphd.com/index.html" 
-      - text: "Data Resources"
-        href: "https://data.csmphd.com/resources.html" 
-      - text: "Data Downloads"
-        href: "https://data.csmphd.com/downloads.html" 
+    - id: home
+      style: floating
+      contents:
+        - text: "How to ..."
+          href: "https://comp.csmpub.com/index.html" 
+        - text: "Data Resources"
+          href: "https://data.csmpub.com/resources.html" 
+        - text: "Data Downloads"
+          href: "https://data.csmpub.com/downloads.html" 
 
 format:
   html:

@@ -15,6 +15,7 @@ format:
     page-layout: full
 toc: false
 date-format: "YY.MM.DD"
+sidebar: home
 ---
 
 ---
