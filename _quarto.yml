@@ -3,11 +3,15 @@ project:
   resources:
     - CNAME
 
-website: 
-  navbar: 
+website:
+  title: "Wintree's"
+  navbar:
+#    title: false
     left: 
-      - href: index.qmd
-        text: Home
+      - text: "Home"
+        href: index.qmd
+      - text: "How to ..."
+        href: "https://comp.csmpub.com/index.html"
 
 #    right:
 #      - text: Comp
