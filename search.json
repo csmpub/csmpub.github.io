@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Wintree’s Home",
-    "section": "",
-    "text": "날짜\n주제\n요약\n\n\n\n\n\n일치 없음"
-  },
-  {
     "objectID": "drafts/수학자는_끝인가.html",
     "href": "drafts/수학자는_끝인가.html",
     "title": "AI가 수학 난제를 증명 했다고?",
@@ -19,5 +12,12 @@
     "title": "AI가 수학 난제를 증명 했다고?",
     "section": "각주",
     "text": "각주\n\n\nhttps://www.chosun.com/economy/science/2026/11/21/EIBR47HSIBBSDBGW73KPAKA554/↩︎\n어떤 이들은 같은 코드를 사용해 다른 AI로 재현 가능하다고 주장할 지도 모르겠다. 하지만 이 코드라는 것 자체도 AI가 만들었다고 보면 과도한 비약일까? 인간이 과연 수학의 증명 과정을 단계별로 잘 구조화해 1,740만 줄의 코드를 작성하고, 오류를 검증하는 것이 가능할까하는 생각도 든다. 물론 여러 개발자들이 협업해 모듈별로 나누어 개발하는 프로그램의 소스 코드의 분량도 상상을 초월하는 경우도 많기는 하다. 우리는 그런 프로그램의 수많은 개정(업데이트)을 일상에서 자주 경험하고 있다. 그렇다면 AI가 장황하게 풀이한 증명도 오류가 있으면 다음 버전으로 대치하면 될까?↩︎"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "정렬\n      기본\n      \n        날짜 - 오름차순\n      \n      \n        날짜 - 내림차순\n      \n      \n        주제\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n날짜\n\n\n\n주제\n\n\n\n요약\n\n\n\n\n\n\n\n\n \n\n\ndummy\n\n\n\n\n\n\n\n\n\n일치 없음"
   }
 ]
